@@ -144,7 +144,211 @@
           "hf_url": "https://huggingface.co/papers/2606.14819"
         }
       ]
+    },
+    {
+      "date": "2026-06-15",
+      "count": 15,
+      "topics": [
+        "Agentic AI",
+        "Orchestration"
+      ],
+      "page": "days/2026-06-15/index.html",
+      "papers": [
+        {
+          "id": "2606.13432",
+          "title": "OmniDirector: General Multi-Shot Camera Cloning without Cross-Paired Data",
+          "organizations": [
+            "Kling Team (콰이쇼우)",
+            "칭화대학교",
+            "베이징대학교"
+          ],
+          "upvotes": 96,
+          "summary_line": "교차 페어 데이터 없이 '카메라 그리드'로 멀티샷 카메라 모션을 복제하는 통합 영상생성 프레임워크.",
+          "image": "days/2026-06-15/img/paper-01.png",
+          "hf_url": "https://huggingface.co/papers/2606.13432"
+        },
+        {
+          "id": "2606.12384",
+          "title": "APPO: Agentic Procedural Policy Optimization",
+          "organizations": [
+            "중국과학기술대학(USTC)",
+            "AMAP·알리바바",
+            "남방과기대학(SUSTech)"
+          ],
+          "upvotes": 69,
+          "summary_line": "분기·크레딧 할당 단위를 도구 호출이 아닌 미세 의사결정 지점으로 옮긴 에이전트 RL 기법 제안.",
+          "image": "days/2026-06-15/img/paper-02.png",
+          "hf_url": "https://huggingface.co/papers/2606.12384"
+        },
+        {
+          "id": "2606.06036",
+          "title": "Memory is Reconstructed, Not Retrieved: Graph Memory for LLM Agents",
+          "organizations": [
+            "싱가포르 국립대학교(NUS)"
+          ],
+          "upvotes": 62,
+          "summary_line": "메모리 접근에 LLM 추론을 통합한 능동적·연상적 기억 재구성 패러다임 제안.",
+          "image": "days/2026-06-15/img/paper-03.png",
+          "hf_url": "https://huggingface.co/papers/2606.06036"
+        },
+        {
+          "id": "2606.14502",
+          "title": "From Chatbot to Digital Colleague: The Paradigm Shift Toward Persistent Autonomous AI",
+          "organizations": [
+            "Tencent Youtu Lab",
+            "칭화대학교",
+            "중산대학교",
+            "중남대학교",
+            "UIC"
+          ],
+          "upvotes": 45,
+          "summary_line": "LLM의 챗봇→디지털 동료 진화를 인지·실행 두 축과 'Workspace+Skill' 메커니즘으로 정리한 서베이.",
+          "image": "days/2026-06-15/img/paper-04.png",
+          "hf_url": "https://huggingface.co/papers/2606.14502"
+        },
+        {
+          "id": "2606.12291",
+          "title": "Measuring Epistemic Resilience of LLMs Under Misleading Medical Context",
+          "organizations": [
+            "University of Oxford",
+            "University of Washington",
+            "UCL",
+            "University of Waterloo"
+          ],
+          "upvotes": 40,
+          "summary_line": "오해 맥락 속 LLM의 의학적 판단 유지력(인식적 회복탄력성)을 측정하는 최초의 벤치마크 MedMisBench 제안.",
+          "image": "days/2026-06-15/img/paper-05.png",
+          "hf_url": "https://huggingface.co/papers/2606.12291"
+        },
+        {
+          "id": "2606.13707",
+          "title": "Orchestra-o1: Omnimodal Agent Orchestration",
+          "organizations": [
+            "홍콩중문대학교(CUHK)",
+            "LIGHTSPEED",
+            "베이징대학교",
+            "칭화대학교",
+            "통지대학교"
+          ],
+          "upvotes": 40,
+          "summary_line": "옴니모달 에이전트 오케스트레이션 프레임워크와 결정 정렬 RL(DA-GRPO)로 SOTA 달성.",
+          "image": "days/2026-06-15/img/paper-06.png",
+          "hf_url": "https://huggingface.co/papers/2606.13707"
+        },
+        {
+          "id": "2606.14249",
+          "title": "HarnessX: A Composable, Adaptive, and Evolvable Agent Harness Foundry",
+          "organizations": [
+            "샤오미(Xiaomi) Darwin Agent Team"
+          ],
+          "upvotes": 37,
+          "summary_line": "하네스를 조합·적응·진화하는 파운드리와 트레이스 기반 하네스-모델 공진화 제안.",
+          "image": "days/2026-06-15/img/paper-07.png",
+          "hf_url": "https://huggingface.co/papers/2606.14249"
+        },
+        {
+          "id": "2606.12683",
+          "title": "From AGI to ASI",
+          "organizations": [
+            "Google DeepMind",
+            "University of Waterloo",
+            "Australian National University",
+            "UCL"
+          ],
+          "upvotes": 28,
+          "summary_line": "AGI에서 ASI로 가는 네 경로와 마찰 요인을 Universal AI 이론에 근거해 체계화한 연구 의제 제시.",
+          "image": "days/2026-06-15/img/paper-08.png",
+          "hf_url": "https://huggingface.co/papers/2606.12683"
+        },
+        {
+          "id": "2606.10813",
+          "title": "RedAct: Redacting Agent Capability Traces for Procedural Skill Protection",
+          "organizations": [
+            "홍콩과학기술대학교(HKUST)",
+            "중국과학원대학교(UCAS)"
+          ],
+          "upvotes": 19,
+          "summary_line": "에이전트 트레이스의 절차 스킬 누출을 막는 선택적 재작성·워터마크 프레임워크 REDACT 제안.",
+          "image": "days/2026-06-15/img/paper-09.png",
+          "hf_url": "https://huggingface.co/papers/2606.10813"
+        },
+        {
+          "id": "2606.14061",
+          "title": "LLM Agents Can See Code Repositories",
+          "organizations": [
+            "Shanghai Jiao Tong University"
+          ],
+          "upvotes": 13,
+          "summary_line": "저장소 구조 시각 그래프를 텍스트에 결합해 토큰 효율·정확도를 모두 잡은 하이브리드 코딩 에이전트 설계 제시.",
+          "image": "days/2026-06-15/img/paper-10.png",
+          "hf_url": "https://huggingface.co/papers/2606.14061"
+        },
+        {
+          "id": "2606.10747",
+          "title": "The Arbiter Agent: Continually Monitoring Multi-Agent Conversations to Detect Emergent Misalignment",
+          "organizations": [
+            "University of Southern Denmark",
+            "University of Turin"
+          ],
+          "upvotes": 11,
+          "summary_line": "다중 에이전트 대화를 예산 제약 하에 실시간 감시·비정렬 탐지하는 Arbiter 에이전트 제안.",
+          "image": "days/2026-06-15/img/paper-11.png",
+          "hf_url": "https://huggingface.co/papers/2606.10747"
+        },
+        {
+          "id": "2606.09813",
+          "title": "iMaC: Translating Actions into Motion and Contact Images for Embodied World Models",
+          "organizations": [
+            "베이징우전대학교",
+            "칭화대학교",
+            "GigaAI",
+            "난양공과대학교"
+          ],
+          "upvotes": 10,
+          "summary_line": "로봇 행동을 motion/contact 이미지로 변환해 공간적으로 명시 조건화한 임바디드 월드 모델 제안.",
+          "image": "days/2026-06-15/img/paper-12.png",
+          "hf_url": "https://huggingface.co/papers/2606.09813"
+        },
+        {
+          "id": "2606.14600",
+          "title": "LoSoNA: A Benchmark for Local Social Norm Adaptation in Group Conversations",
+          "organizations": [
+            "Humalike Research"
+          ],
+          "upvotes": 3,
+          "summary_line": "그룹 채팅에서 LLM의 암묵적 지역 규범 추론·적응 능력을 측정하는 벤치마크 LoSoNA 제안.",
+          "image": "days/2026-06-15/img/paper-13.png",
+          "hf_url": "https://huggingface.co/papers/2606.14600"
+        },
+        {
+          "id": "2606.12736",
+          "title": "Benchmarking AI Agents for Addressing Scientific Challenges Across Scales",
+          "organizations": [
+            "예일대학교",
+            "Broad Institute",
+            "스탠퍼드대학교",
+            "하버드대학교",
+            "UC 버클리",
+            "Microsoft Research"
+          ],
+          "upvotes": 3,
+          "summary_line": "5개 과학 도메인을 아우르는 단계별 검증형 AI 에이전트 벤치마크 SciAgentArena 제안.",
+          "image": "days/2026-06-15/img/paper-14.png",
+          "hf_url": "https://huggingface.co/papers/2606.12736"
+        },
+        {
+          "id": "2604.18401",
+          "title": "StepPO: Step-Aligned Policy Optimization for Agentic Reinforcement Learning",
+          "organizations": [
+            "중국과학기술대학(USTC) 인지지능 국가중점실험실"
+          ],
+          "upvotes": 3,
+          "summary_line": "에이전트 RL을 스텝 단위 MDP로 재정의해 스텝 단위 신용 할당·정책 최적화를 정렬한 StepPO 제안.",
+          "image": "days/2026-06-15/img/paper-15.png",
+          "hf_url": "https://huggingface.co/papers/2604.18401"
+        }
+      ]
     }
   ],
-  "updated_at": "2026-06-16T14:21:21.053009+00:00"
+  "updated_at": "2026-06-16T14:44:50.171096+00:00"
 }

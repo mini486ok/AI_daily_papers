@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="ko" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>2026-06-15 · AI Daily Papers</title>
+  <meta name="description" content="2026-06-15 허깅페이스 Daily Papers 핵심 논문 15편 한글 요약" />
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem("theme");
+        if (!t) t = matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+        document.documentElement.setAttribute("data-theme", t);
+      } catch (e) {}
+    })();
+  </script>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+  <link rel="stylesheet" href="../../assets/css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="../../">
+        <span class="logo">AI</span>
+        <span>AI Daily Papers<small>허깅페이스 논문 요약 아카이브</small></span>
+      </a>
+      <div class="header-actions">
+        <button class="icon-btn" id="themeToggle" title="라이트/다크 모드 전환" aria-label="테마 전환">🌙</button>
+      </div>
+    </div>
+  </header>
+
+  <section class="day-hero">
+    <div class="wrap">
+      <a class="back" href="../../">← 전체 아카이브</a>
+      <h1>2026-06-15 의 AI 논문</h1>
+      <p>허깅페이스 Daily Papers에서 선별한 핵심 논문 15편을 한글로 요약했습니다.</p>
+    </div>
+  </section>
+
+  <main>
+    <div class="wrap">
+      
+      <article class="paper" id="paper-2606.13432">
+        <div class="prank">#1</div>
+        <h3>OmniDirector: General Multi-Shot Camera Cloning without Cross-Paired Data</h3>
+        
+        <figure class="paper-figure">
+          <img loading="lazy" src="img/paper-01.png" alt="OmniDirector: General Multi-Shot Camera Cloning without Cross-Paired Data 인포그래픽" />
+        </figure>
+        
+        <div class="meta">
+          <span class="org">🏛 Kling Team (콰이쇼우), 칭화대학교, 베이징대학교</span>
+        </div>
+
+        
+        <div class="sec"><h4>핵심 아이디어</h4><p>카메라 파라미터를 빈 3D 공간 속 격자 움직임 영상으로 시각화한 '카메라 그리드' 표현을 제안해, 교차 페어링 데이터 없이도 참조 영상의 다양한 카메라 모션을 단일·멀티샷 모두에 통일적으로 복제한다. 이 그리드는 카메라 모션을 외형·콘텐츠 신호와 분리하고 어떤 영상에서도 자동 추출돼 백만 규모 학습 데이터 구축을 가능하게 한다.</p></div>
+        
+        
+        <div class="sec"><h4>주요 결과</h4><ul><li>카메라 정확도에서 모든 베이스라인 능가(RRE 2.64°, T-Pre 72.74%로 차순위 대비 병진 정밀도 39.3% 상대 개선)</li><li>샷 전환 정확도 Tem-Pre 96.52%, Sem-Pre 83.79%로 멀티샷 전환에서 베이스라인 압도</li><li>참조 영상 정보 누수율 최저(프레임 0.51%, 샷 3.38%)</li><li>재학습 없이 RGB·Canny 영상으로도 카메라 제어가 되는 창발적 일반화 확인</li></ul></div>
+        
+        
+        <div class="sec"><h4>결론 및 시사점</h4><p>카메라 그리드와 백만 규모 그리드-영상 페어, 계층적 프롬프트 확장 에이전트를 결합해 교차 페어링 데이터 없이 일반적 멀티샷 카메라 복제를 달성했다. 스케일 불일치와 정보 누수를 해소하며 접근성 높은 디렉터급 영상 제어 패러다임을 제시한다.</p></div>
+        
+        
+        <div class="sec"><h4>한계점</h4><p>토큰 연결 방식으로 멀티모달 신호를 통합해 매우 긴 영상에서는 장기 기억·시간 일관성 유지가 어려우며, 향후 장문맥 cross-attention이나 메모리 뱅크 도입이 과제다.</p></div>
+        
+
+        <div class="links">
+          <a class="btn primary" href="https://arxiv.org/pdf/2606.13432" target="_blank" rel="noopener">arXiv 원문 PDF</a>
+          <a class="btn" href="https://arxiv.org/abs/2606.13432" target="_blank" rel="noopener">arXiv 초록</a>
+          <a class="btn" href="https://huggingface.co/papers/2606.13432" target="_blank" rel="noopener">Hugging Face</a>
+        </div>
+      </article>
+      
+      <article class="paper" id="paper-2606.12384">
+        <div class="prank">#2</div>
+        <h3>APPO: Agentic Procedural Policy Optimization</h3>
+        
+        <figure class="paper-figure">
+          <img loading="lazy" src="img/paper-02.png" alt="APPO: Agentic Procedural Policy Optimization 인포그래픽" />
+        </figure>
+        
+        <div class="meta">
+          <span class="org">🏛 중국과학기술대학(USTC), AMAP·알리바바, 남방과기대학(SUSTech)</span>
+        </div>
+
+        
+        <div class="sec"><h4>핵심 아이디어</h4><p>APPO는 에이전트 RL의 크레딧 할당 단위를 도구 호출 경계 같은 거친 단위에서 시퀀스 내 미세한 의사결정 지점(procedure)으로 옮긴 알고리즘이다. 토큰 엔트로피와 미래 가치를 결합한 Branching Score로 분기 위치를 고르고, procedure 수준 advantage 스케일링으로 크레딧을 더 정밀하게 분배한다.</p></div>
+        
+        
+        <div class="sec"><h4>주요 결과</h4><ul><li>13개 벤치마크에서 강력한 베이스라인 대비 평균 3~4점 향상(Qwen2.5-7B에서 ARPO 대비 +3.9)</li><li>DeepSearch에서 Qwen3-8B/14B 기준 GAIA 평균 42.7/46.6점으로 폐쇄형 대형 모델까지 능가하는 SOTA</li><li>Pass@K에서도 격차 확대로 구조적으로 다양한 추론 경로 탐색 입증</li><li>Ablation: 미래 인지 advantage 제거 시 Qwen2.5-7B 58.1→54.7점 하락</li></ul></div>
+        
+        
+        <div class="sec"><h4>결론 및 시사점</h4><p>분기·크레딧 할당을 거친 도구 단위에서 미세 의사결정 지점으로 전환해, 효율적 도구 호출과 해석 가능성을 유지하면서 일관된 성능 향상을 달성했다. procedural 의사결정 모델링이 에이전트 RL의 탐색·크레딧 할당을 개선하는 실용적 방향임을 보였다.</p></div>
+        
+        
+        <div class="sec"><h4>한계점</h4><p>Branching Score가 최적 분기 기준이라는 이론적 보장 없이 실험으로만 검증됐고, 사용 도구가 검색·Python으로 제한돼 다른 도구로의 확장이 미검증이다.</p></div>
+        
+
+        <div class="links">
+          <a class="btn primary" href="https://arxiv.org/pdf/2606.12384" target="_blank" rel="noopener">arXiv 원문 PDF</a>
+          <a class="btn" href="https://arxiv.org/abs/2606.12384" target="_blank" rel="noopener">arXiv 초록</a>
+          <a class="btn" href="https://huggingface.co/papers/2606.12384" target="_blank" rel="noopener">Hugging Face</a>
+        </div>
+      </article>
+      
+      <article class="paper" id="paper-2606.06036">
+        <div class="prank">#3</div>
+        <h3>Memory is Reconstructed, Not Retrieved: Graph Memory for LLM Agents</h3>
+        
+        <figure class="paper-figure">
+          <img loading="lazy" src="img/paper-03.png" alt="Memory is Reconstructed, Not Retrieved: Graph Memory for LLM Agents 인포그래픽" />
+        </figure>
+        
+        <div class="meta">
+          <span class="org">🏛 싱가포르 국립대학교(NUS)</span>
+        </div>
+
+        
+        <div class="sec"><h4>핵심 아이디어</h4><p>LLM 에이전트의 메모리 접근을 정적 '검색 후 추론'에서 벗어나, 인지신경과학의 능동적·연상적 기억 재구성 관점으로 재정의한 MRAgent를 제안한다. 메모리를 Cue-Tag-Content 연상 그래프로 표현하고 LLM 추론을 메모리 접근에 직접 통합해, 중간 증거에 따라 탐색 경로를 반복 확장·가지치기한다.</p></div>
+        
+        
+        <div class="sec"><h4>주요 결과</h4><ul><li>LoCoMo에서 Gemini-2.5-Flash 기준 LLM-Judge 68.31→84.21로 최강 베이스라인 대비 23.3% 상대 향상</li><li>LongMemEval에서 72.95점으로 약 32% 상대 향상(검색 결합 시 86.76점)</li><li>샘플당 토큰 118k로 A-Mem(632k)·LangMem(3,268k) 대비 크게 절감</li><li>능동 검색 정책이 수동 검색보다 엄격히 더 표현력이 높음을 이론적으로 증명</li></ul></div>
+        
+        
+        <div class="sec"><h4>결론 및 시사점</h4><p>복잡한 관계 의존성 모델링을 구축 단계가 아닌 검색 단계로 옮겨, 더 적은 연산으로 다단계 멀티홉·시간 추론을 해결함을 입증했다. 능동적 기억 재구성은 맥락 인식 장기 상호작용 AI 어시스턴트 설계의 새 패러다임을 제시한다.</p></div>
+        
+        
+        <div class="sec"><h4>한계점</h4><p>관계 추론을 검색 단계로 미루는 설계상 탐색 깊이가 깊어질수록 비용·지연이 커지고, 정적 구축이라 메모리가 통합 없이 단조 증가해 장기 운영 시 저장 부담이 커진다.</p></div>
+        
+
+        <div class="links">
+          <a class="btn primary" href="https://arxiv.org/pdf/2606.06036" target="_blank" rel="noopener">arXiv 원문 PDF</a>
+          <a class="btn" href="https://arxiv.org/abs/2606.06036" target="_blank" rel="noopener">arXiv 초록</a>
+          <a class="btn" href="https://huggingface.co/papers/2606.06036" target="_blank" rel="noopener">Hugging Face</a>
+        </div>
+      </article>
+      
+      <article class="paper" id="paper-2606.14502">
+        <div class="prank">#4</div>
+        <h3>From Chatbot to Digital Colleague: The Paradigm Shift Toward Persistent Autonomous AI</h3>
+        
+        <figure class="paper-figure">
+          <img loading="lazy" src="img/paper-04.png" alt="From Chatbot to Digital Colleague: The Paradigm Shift Toward Persistent Autonomous AI 인포그래픽" />
+        </figure>
+        
+        <div class="meta">
+          <span class="org">🏛 Tencent Youtu Lab, 칭화대학교, 중산대학교, 중남대학교, UIC</span>
+        </div>
+
+        
+        <div class="sec"><h4>핵심 아이디어</h4><p>LLM이 대화형 챗봇에서 추론·행동·기억·자기개선이 가능한 '디지털 동료'로 전환되는 패러다임 변화를 정리한 서베이다. 이를 인지 코어(Chatbot→Thinking LLM)와 도구 기반 작업 실행(Agent→OpenClaw)이라는 두 축으로 구조화하고, 영속적 작업 공간과 재사용 스킬을 결합한 'Workspace + Skill'을 핵심 전환 메커니즘으로 제시한다.</p></div>
+        
+        
+        <div class="sec"><h4>주요 결과</h4><ul><li>프런티어 에이전트의 50% 작업 시간 지평이 2019년 수 초에서 2026년 초 12시간 이상으로 지수적 성장</li><li>인지 코어가 다음 토큰 예측 'System-1'에서 추론 시간 연산·RL 기반 'System-2' 숙고형 추론으로 이동</li><li>도구 사용이 임시 API 호출에서 파일·터미널·브라우저·권한·검증 루프를 갖춘 영속 작업 공간으로 발전</li><li>학습·평가 단위가 명령-응답 쌍·정적 벤치마크에서 상태-행동-관찰 궤적·작업 완료율 기반으로 전환</li></ul></div>
+        
+        
+        <div class="sec"><h4>결론 및 시사점</h4><p>챗봇에서 디지털 동료로의 전환은 대화형 답변에서 영속적 작업으로의 이동이며, 'Workspace + Skill' 패러다임이 상태 영속성·재사용 절차·작업 완료로 이를 이끈다. 신뢰할 수 있는 디지털 동료에는 영속 환경·재사용 스킬·안전 거버넌스가 통합된 자가진화 생태계가 필요하다.</p></div>
+        
+        
+        <div class="sec"><h4>한계점</h4><p>장기 작업의 오류 누적, 권한·안전 거버넌스, 영속 기억 관리, 인간-AI 협업의 윤리·데이터 주권 등이 미해결 과제로 남는다.</p></div>
+        
+
+        <div class="links">
+          <a class="btn primary" href="https://arxiv.org/pdf/2606.14502" target="_blank" rel="noopener">arXiv 원문 PDF</a>
+          <a class="btn" href="https://arxiv.org/abs/2606.14502" target="_blank" rel="noopener">arXiv 초록</a>
+          <a class="btn" href="https://huggingface.co/papers/2606.14502" target="_blank" rel="noopener">Hugging Face</a>
+        </div>
+      </article>
+      
+      <article class="paper" id="paper-2606.12291">
+        <div class="prank">#5</div>
+        <h3>Measuring Epistemic Resilience of LLMs Under Misleading Medical Context</h3>
+        
+        <figure class="paper-figure">
+          <img loading="lazy" src="img/paper-05.png" alt="Measuring Epistemic Resilience of LLMs Under Misleading Medical Context 인포그래픽" />
+        </figure>
+        
+        <div class="meta">
+          <span class="org">🏛 University of Oxford, University of Washington, UCL, University of Waterloo</span>
+        </div>
+
+        
+        <div class="sec"><h4>핵심 아이디어</h4><p>LLM이 의료 면허시험에서 전문가 수준 점수를 받아도, 오해를 유발하는 맥락에서 올바른 의학적 판단을 유지하는 것은 아님을 보인다. 정답을 맞히던 문항에 그럴듯하지만 거짓인 맥락을 주입했을 때 정답을 포기하는지를 측정하는 '인식적 회복탄력성' 개념과 벤치마크 MedMisBench를 제안한다.</p></div>
+        
+        
+        <div class="sec"><h4>주요 결과</h4><ul><li>11개 모델 평균 정확도가 원문항 71.1%에서 집중 오류 맥락 주입 시 38.0%로 하락, 공격 성공률 51.5%</li><li>권위(가이드라인) 기반 거짓 주입 ASR 69.5%로 규칙·형식적 거짓이 가장 강력(환자 주장 framing은 18.5%로 약함)</li><li>10,932문항·48,889쌍 구성, 임상 패널 검토에서 84.3%가 위해 가능 오답으로 판정</li><li>검색 도구가 Gemini Pro의 ASR을 81.5%→16.1%로 낮췄으나 약한 모델은 40.7% 잔존해 완전 해결은 못 함</li></ul></div>
+        
+        
+        <div class="sec"><h4>결론 및 시사점</h4><p>기존 의료 벤치마크는 모델이 무엇을 아는지는 측정하나 오해 맥락에서 판단을 유지하는지는 측정 못 하는 사각지대가 있다. 깨끗한 입력의 높은 정확도가 회복탄력성을 보장하지 않으므로, 임상 배포 전 MedMisBench 같은 평가와 응답 단위 위해 검토가 필요하다.</p></div>
+        
+        
+        <div class="sec"><h4>한계점</h4><p>자동 채점을 위해 객관식·합성 오해 맥락만 사용해 개방형 응답·다중 턴 상담·멀티모달 등 실제 임상 배포를 완전히 모사하지 못하고, 임상 검토도 표본 기반이라는 한계가 있다.</p></div>
+        
+
+        <div class="links">
+          <a class="btn primary" href="https://arxiv.org/pdf/2606.12291" target="_blank" rel="noopener">arXiv 원문 PDF</a>
+          <a class="btn" href="https://arxiv.org/abs/2606.12291" target="_blank" rel="noopener">arXiv 초록</a>
+          <a class="btn" href="https://huggingface.co/papers/2606.12291" target="_blank" rel="noopener">Hugging Face</a>
+        </div>
+      </article>
+      
+      <article class="paper" id="paper-2606.13707">
+        <div class="prank">#6</div>
+        <h3>Orchestra-o1: Omnimodal Agent Orchestration</h3>
+        
+        <figure class="paper-figure">
+          <img loading="lazy" src="img/paper-06.png" alt="Orchestra-o1: Omnimodal Agent Orchestration 인포그래픽" />
+        </figure>
+        
+        <div class="meta">
+          <span class="org">🏛 홍콩중문대학교(CUHK), LIGHTSPEED, 베이징대학교, 칭화대학교, 통지대학교</span>
+        </div>
+
+        
+        <div class="sec"><h4>핵심 아이디어</h4><p>텍스트·이미지·오디오·비디오가 공존하는 옴니모달 과제를 위해 상위 오케스트레이터가 모달리티 인식 작업 분해, 온라인 서브에이전트 특화, 병렬 실행을 수행하는 Orchestra-o1을 제안한다. 또한 단계별 오케스트레이션 결정을 전문가 궤적과 정렬시키는 RL 기법 DA-GRPO로 오픈소스 8B 메인 에이전트를 학습한다.</p></div>
+        
+        
+        <div class="sec"><h4>주요 결과</h4><ul><li>OmniGAIA에서 GPT-5 기반 Orchestra-o1이 72.8%로 SOTA, 2위 Gemini-3-Pro(62.5%) 대비 +10.3%p</li><li>DA-GRPO 학습 8B 오픈소스 모델이 30.0%로 최강 오픈소스 베이스라인(20.8%)을 큰 폭 능가</li><li>Ablation에서 ReAct 12.5%→오케스트레이션 26.3%→DA-GRPO 30.0%로 단계적 향상</li><li>효율성에서 72.8% 정확도를 비용 341.6으로 달성해 AOrchestra(40.0%, 565.7)보다 우수</li></ul></div>
+        
+        
+        <div class="sec"><h4>결론 및 시사점</h4><p>고수준 오케스트레이션과 저수준 도구 실행을 분리하고 의존성 인식 병렬 스케줄링·구조화 메모리를 결합하면, 네이티브 모델 확장뿐 아니라 전문 에이전트·도구의 조율 학습으로도 옴니모달 지능을 발전시킬 수 있음을 보였다.</p></div>
+        
+        
+        <div class="sec"><h4>한계점</h4><p>오케스트레이션은 서브에이전트 이력·도구 스키마·비용 회계·비동기 실행 관리로 시스템 복잡도를 높이며, DA-GRPO는 메인 에이전트만 학습하고 서브에이전트 백엔드는 고정돼 종단간 공동 최적화를 못 한다.</p></div>
+        
+
+        <div class="links">
+          <a class="btn primary" href="https://arxiv.org/pdf/2606.13707" target="_blank" rel="noopener">arXiv 원문 PDF</a>
+          <a class="btn" href="https://arxiv.org/abs/2606.13707" target="_blank" rel="noopener">arXiv 초록</a>
+          <a class="btn" href="https://huggingface.co/papers/2606.13707" target="_blank" rel="noopener">Hugging Face</a>
+        </div>
+      </article>
+      
+      <article class="paper" id="paper-2606.14249">
+        <div class="prank">#7</div>
+        <h3>HarnessX: A Composable, Adaptive, and Evolvable Agent Harness Foundry</h3>
+        
+        <figure class="paper-figure">
+          <img loading="lazy" src="img/paper-07.png" alt="HarnessX: A Composable, Adaptive, and Evolvable Agent Harness Foundry 인포그래픽" />
+        </figure>
+        
+        <div class="meta">
+          <span class="org">🏛 샤오미(Xiaomi) Darwin Agent Team</span>
+        </div>
+
+        
+        <div class="sec"><h4>핵심 아이디어</h4><p>AI 에이전트 성능을 좌우하는 런타임 하네스(프롬프트·도구·메모리·제어흐름)를 손으로 짜는 정적 산물이 아니라 조합·적응·진화 가능한 1급 객체로 다루는 파운드리 HarnessX를 제안한다. 타입화된 프로세서를 치환 대수로 조합하고, 실행 트레이스로 구동되는 진화 엔진 AEGIS가 하네스를 적응시키며 트레이스를 RL 신호로도 재활용한다.</p></div>
+        
+        
+        <div class="sec"><h4>주요 결과</h4><ul><li>5개 벤치마크·3개 모델군 15개 구성 중 14개 향상, 평균 +14.5%p·최대 +44.0%p로 약한 에이전트일수록 이득이 큰 역스케일링</li><li>이질적 태스크셋에서 단일 하네스는 정체(Δ=0.0)지만 변종 격리는 +13.6%로 회복하며 토큰도 더 효율적</li><li>하네스-모델 공진화가 GAIA·WebShop에서 하네스 단독 진화 대비 평균 +4.7% 추가 이득</li><li>4단계 AEGIS 파이프라인이 정확도는 동등하나 압축 덕에 약 12~14% 적은 토큰 소비</li></ul></div>
+        
+        
+        <div class="sec"><h4>결론 및 시사점</h4><p>하네스를 모델-환경 사이 조합 가능한 1급 인터페이스로 보고 트레이스로부터 진화시키는 것은 모델 스케일링에 의존하지 않는 보완적 성능 레버이며, 능력이 제한된 약한 에이전트에서 효과가 가장 크다.</p></div>
+        
+        
+        <div class="sec"><h4>한계점</h4><p>모든 향상이 진화에 쓴 동일 태스크셋에서 측정돼 홀드아웃 평가가 없어 과적합 가능성이 있고, 이산 행동공간·폐쇄형 메타에이전트·제한된 벤치마크 표본에 한정된다.</p></div>
+        
+
+        <div class="links">
+          <a class="btn primary" href="https://arxiv.org/pdf/2606.14249" target="_blank" rel="noopener">arXiv 원문 PDF</a>
+          <a class="btn" href="https://arxiv.org/abs/2606.14249" target="_blank" rel="noopener">arXiv 초록</a>
+          <a class="btn" href="https://huggingface.co/papers/2606.14249" target="_blank" rel="noopener">Hugging Face</a>
+        </div>
+      </article>
+      
+      <article class="paper" id="paper-2606.12683">
+        <div class="prank">#8</div>
+        <h3>From AGI to ASI</h3>
+        
+        <figure class="paper-figure">
+          <img loading="lazy" src="img/paper-08.png" alt="From AGI to ASI 인포그래픽" />
+        </figure>
+        
+        <div class="meta">
+          <span class="org">🏛 Google DeepMind, University of Waterloo, Australian National University, UCL</span>
+        </div>
+
+        
+        <div class="sec"><h4>핵심 아이디어</h4><p>인간 수준 AGI 이후 AI가 인공 초지능(ASI)으로 어떻게 발전할 수 있는지를 기계 지능의 연속선상에서 탐구한다. ASI를 '수천 명의 인간 전문가 집단을 거의 모든 과업에서 능가하는 시스템'으로 규정하고, 이론적 상한인 Universal AI(AIXI)를 기준점으로 AGI→ASI 경로와 마찰 요인을 분석한다.</p></div>
+        
+        
+        <div class="sec"><h4>주요 결과</h4><ul><li>ASI로 가는 네 경로 제시: 스케일링, 알고리즘 패러다임 전환, 재귀적 자기개선, 대규모 멀티에이전트 집단의 창발(상호 배타적 아님)</li><li>디지털 지능의 고유 이점: 처리 속도, 작업 기억, 기판 독립성, 무손실 복제, 경험의 고대역폭 공유</li><li>마찰 요인: 데이터 고갈, 경제·에너지 한계, 추상화 장벽·체화된 병목, 규제·사회적 반발</li><li>ASI도 전지전능하지 않고 물리·복잡도·논리적 한계에 구속되며 AIXI가 지능의 근본 상한을 형식화</li></ul></div>
+        
+        
+        <div class="sec"><h4>결론 및 시사점</h4><p>ASI 진보의 불확실성이 매우 커 향후 수년간 가속 가능성을 배제할 수 없다. 인간 수준 AGI 등장은 단일 단계 변화라기보다 AI가 촉진하는 과학·기술 전반의 연속적 변혁으로 나타날 수 있어, 전 지구적 학제 간 연구가 필요하다.</p></div>
+        
+        
+        <div class="sec"><h4>한계점</h4><p>경로·마찰 분석은 높은 불확실성을 동반하고 지도가 불완전할 수 있어, 저자들은 확정된 예측이 아닌 갱신이 필요한 미해결 연구 프로그램으로 다룬다.</p></div>
+        
+
+        <div class="links">
+          <a class="btn primary" href="https://arxiv.org/pdf/2606.12683" target="_blank" rel="noopener">arXiv 원문 PDF</a>
+          <a class="btn" href="https://arxiv.org/abs/2606.12683" target="_blank" rel="noopener">arXiv 초록</a>
+          <a class="btn" href="https://huggingface.co/papers/2606.12683" target="_blank" rel="noopener">Hugging Face</a>
+        </div>
+      </article>
+      
+      <article class="paper" id="paper-2606.10813">
+        <div class="prank">#9</div>
+        <h3>RedAct: Redacting Agent Capability Traces for Procedural Skill Protection</h3>
+        
+        <figure class="paper-figure">
+          <img loading="lazy" src="img/paper-09.png" alt="RedAct: Redacting Agent Capability Traces for Procedural Skill Protection 인포그래픽" />
+        </figure>
+        
+        <div class="meta">
+          <span class="org">🏛 홍콩과학기술대학교(HKUST), 중국과학원대학교(UCAS)</span>
+        </div>
+
+        
+        <div class="sec"><h4>핵심 아이디어</h4><p>공개되는 에이전트 실행 트레이스가 도구 호출·중간 결정·오류 복구 등 풍부한 절차 정보를 담아, 가중치·스킬 파일 없이도 사유 절차 스킬을 복원당할 수 있는 보안 위험을 정식화한다. 핵심 정보를 국소화해 보호 부분만 선택적으로 재작성하고(증거는 보존), 행동 워터마크로 출처를 추적하는 REDACT를 제안한다.</p></div>
+        
+        
+        <div class="sec"><h4>주요 결과</h4><ul><li>원본 트레이스 재사용 공격의 정규화 스킬 전이율 44.7~67.1%가 REDACT 적용 후 No-skill 베이스라인 이하로 하락</li><li>복원된 보호 정보가 채널 전반에서 37~48% 감소</li><li>독립형 행동 워터마크가 참 탐지율 93.6~100.0%, 오탐율 최대 1.9%</li><li>보호 후에도 감사 증거가 원본 대비 91.0~96.6% 유지(핵심 항목 70.6% 제거)</li></ul></div>
+        
+        
+        <div class="sec"><h4>결론 및 시사점</h4><p>공개 에이전트 트레이스를 단순 투명성 도구가 아닌 '보안 인터페이스'로 재해석하며, 선택적 재작성으로 감사 증거를 보존하면서 절차 역량 누출을 줄일 수 있음을 보인다. 새 평가 문제와 벤치마크·방어·출처추적 프레임워크를 제시한다.</p></div>
+        
+        
+        <div class="sec"><h4>한계점</h4><p>평가가 자동 검증기를 갖춘 75개 통제 과제에 한정돼 실제 배포의 노이즈·도구 변화를 반영 못 하고, 맥락형 워터마크가 독립형보다 유지가 어렵다는 한계가 있다.</p></div>
+        
+
+        <div class="links">
+          <a class="btn primary" href="https://arxiv.org/pdf/2606.10813" target="_blank" rel="noopener">arXiv 원문 PDF</a>
+          <a class="btn" href="https://arxiv.org/abs/2606.10813" target="_blank" rel="noopener">arXiv 초록</a>
+          <a class="btn" href="https://huggingface.co/papers/2606.10813" target="_blank" rel="noopener">Hugging Face</a>
+        </div>
+      </article>
+      
+      <article class="paper" id="paper-2606.14061">
+        <div class="prank">#10</div>
+        <h3>LLM Agents Can See Code Repositories</h3>
+        
+        <figure class="paper-figure">
+          <img loading="lazy" src="img/paper-10.png" alt="LLM Agents Can See Code Repositories 인포그래픽" />
+        </figure>
+        
+        <div class="meta">
+          <span class="org">🏛 Shanghai Jiao Tong University</span>
+        </div>
+
+        
+        <div class="sec"><h4>핵심 아이디어</h4><p>LLM 코딩 에이전트는 대부분 저장소를 텍스트로만 소비하지만 인간은 폴더 계층·의존성 같은 시각 구조를 활용한다는 점에 착안해, 멀티모달 LLM으로 저장소 구조의 시각 그래프를 텍스트와 함께 보조 모달리티로 통합하는 효과를 검증한 최초의 체계적 실증 연구다.</p></div>
+        
+        
+        <div class="sec"><h4>주요 결과</h4><ul><li>시각 정보만 쓰는 설정은 심볼릭 세부 부족으로 반복 시각 질의를 유발해 정확도 저하·토큰 비용 증가</li><li>시각 그래프를 텍스트와 함께 통합하면 입력 토큰 소비가 최대 26% 감소</li><li>시각 그래프 통합 시 이슈 해결 정확도는 유지 또는 향상</li><li>시각화는 결함 위치 파악과 에이전트가 탐색 깊이를 자율 제어할 때 가장 유용</li></ul></div>
+        
+        
+        <div class="sec"><h4>결론 및 시사점</h4><p>순수 시각 입력만으로는 한계가 있으나, 텍스트에 저장소 구조 시각 그래프를 보조로 결합하는 하이브리드 방식은 정확도를 유지하며 토큰 비용을 줄인다. 차세대 코딩 에이전트의 텍스트-비전 혼합 설계 방향을 제시한다.</p></div>
+        
+        
+        <div class="sec"><h4>한계점</h4><p>최근 멀티모달 모델 4종 평가에 국한되며, 순수 시각 설정은 심볼릭 세부 부족으로 정확도 저하·토큰 증가라는 명확한 한계를 보인다.</p></div>
+        
+
+        <div class="links">
+          <a class="btn primary" href="https://arxiv.org/pdf/2606.14061" target="_blank" rel="noopener">arXiv 원문 PDF</a>
+          <a class="btn" href="https://arxiv.org/abs/2606.14061" target="_blank" rel="noopener">arXiv 초록</a>
+          <a class="btn" href="https://huggingface.co/papers/2606.14061" target="_blank" rel="noopener">Hugging Face</a>
+        </div>
+      </article>
+      
+      <article class="paper" id="paper-2606.10747">
+        <div class="prank">#11</div>
+        <h3>The Arbiter Agent: Continually Monitoring Multi-Agent Conversations to Detect Emergent Misalignment</h3>
+        
+        <figure class="paper-figure">
+          <img loading="lazy" src="img/paper-11.png" alt="The Arbiter Agent: Continually Monitoring Multi-Agent Conversations to Detect Emergent Misalignment 인포그래픽" />
+        </figure>
+        
+        <div class="meta">
+          <span class="org">🏛 University of Southern Denmark, University of Turin</span>
+        </div>
+
+        
+        <div class="sec"><h4>핵심 아이디어</h4><p>개별 에이전트는 정상이어도 상호작용 중 시스템 수준 정렬 실패가 창발할 수 있다는 문제의식에서, 다중 에이전트 대화를 실시간 지속 감시해 어떤 참가자가 비정렬인지 식별하는 'Arbiter' 에이전트를 제안한다. 제한된 검사 예산 하에 대기·심문·시스템 프롬프트/추론 흔적 검사·사건 기록 도구를 선택적으로 쓰는 reasoning-and-acting 루프로 작동한다.</p></div>
+        
+        
+        <div class="sec"><h4>주요 결과</h4><ul><li>가중치 유발 비정렬은 순수 관찰 F1=0.12에서 심문+기록 도구로 F1=0.51로 향상, 탐지 시점도 9.6→5.9턴 단축</li><li>지시 유발 비정렬은 공모 F1=1.00, 평가 인지 조건은 CoT/프롬프트 검사로 F1=0.97</li><li>기록 도구는 진짜 탐지(F1 0.28→0.51)는 높이나 정상 대화 평균 오탐을 0.10→1.15로 증가시키는 이중 효과</li><li>백본 영향이 커 DeepSeek-v3.2가 Qwen3.6-plus 대비 미정렬 탐지 F1 0.51 vs 0.17</li></ul></div>
+        
+        
+        <div class="sec"><h4>결론 및 시사점</h4><p>제한된 예산 하의 지속적·예산 인지 모니터링이 다중 에이전트 비정렬을 조기에 효과적으로 포착하며, 능동적 검사 도구가 탐지 정확도·속도를 모두 개선한다. 감사자를 사후 분석자가 아닌 대화에 능동 개입하는 참가자로 다뤄야 함을 시사한다.</p></div>
+        
+        
+        <div class="sec"><h4>한계점</h4><p>대화가 짧고(30턴·3에이전트) 비정렬 신호가 비교적 강해 실제 대비 탐지율이 과대평가될 수 있고, 단일 도메인·감시 대상이 Arbiter보다 약한 설정이라는 한계가 있다.</p></div>
+        
+
+        <div class="links">
+          <a class="btn primary" href="https://arxiv.org/pdf/2606.10747" target="_blank" rel="noopener">arXiv 원문 PDF</a>
+          <a class="btn" href="https://arxiv.org/abs/2606.10747" target="_blank" rel="noopener">arXiv 초록</a>
+          <a class="btn" href="https://huggingface.co/papers/2606.10747" target="_blank" rel="noopener">Hugging Face</a>
+        </div>
+      </article>
+      
+      <article class="paper" id="paper-2606.09813">
+        <div class="prank">#12</div>
+        <h3>iMaC: Translating Actions into Motion and Contact Images for Embodied World Models</h3>
+        
+        <figure class="paper-figure">
+          <img loading="lazy" src="img/paper-12.png" alt="iMaC: Translating Actions into Motion and Contact Images for Embodied World Models 인포그래픽" />
+        </figure>
+        
+        <div class="meta">
+          <span class="org">🏛 베이징우전대학교, 칭화대학교, GigaAI, 난양공과대학교</span>
+        </div>
+
+        
+        <div class="sec"><h4>핵심 아이디어</h4><p>iMaC는 로봇의 미래 행동을 벡터 대신 URDF/순기구학으로 렌더링한 motion image와 포인트클라우드 기반 contact image라는 이미지 제어 신호로 변환해, 영상 생성을 공간적으로 명시 조건화하는 임바디드 월드 모델이다. 미래 로봇 외형과 로봇-장면 접촉 기하를 직접 영상에 주입해 정밀한 조작 작업 예측을 수행한다.</p></div>
+        
+        
+        <div class="sec"><h4>주요 결과</h4><ul><li>8개 실제 장기 조작 작업 중 6개에서 월드 모델 점수가 실제 성공률과 강한 양의 상관(0.833~0.956)으로 정책 순위 선별 능력 입증</li><li>미래 영상 예측 평균 FID 36.96·FVD 489.51로 Ctrl-World·ABot-PhysWorld 등 베이스라인 대비 최고</li><li>Ablation: contact image 제거 시 파지 실패, motion image 제거 시 정밀 파지 실패로 두 신호 모두 필수</li><li>카메라 시점에서 높이 관계가 약하게 관측되는 작업은 상관이 낮은 실패 모드</li></ul></div>
+        
+        
+        <div class="sec"><h4>결론 및 시사점</h4><p>URDF 기반 제어, 깊이 예측, 양방향 contact image, 학습 시 rollout을 결합해 영상 생성에 미래 로봇 상태·기하 지침을 제공하며, 정책 체크포인트 순위를 실제 성능과 양의 상관으로 매기는 학습형 실세계 시뮬레이터로 검증됐다.</p></div>
+        
+        
+        <div class="sec"><h4>한계점</h4><p>추정 깊이 감독이 조작 장면에서 cm 단위 오차를 유발할 수 있고, 모든 시점에서 높이 등 핵심 물리 관계가 누락되면 월드 모델이 장면 변화를 잘못 예측하는 한계가 있다.</p></div>
+        
+
+        <div class="links">
+          <a class="btn primary" href="https://arxiv.org/pdf/2606.09813" target="_blank" rel="noopener">arXiv 원문 PDF</a>
+          <a class="btn" href="https://arxiv.org/abs/2606.09813" target="_blank" rel="noopener">arXiv 초록</a>
+          <a class="btn" href="https://huggingface.co/papers/2606.09813" target="_blank" rel="noopener">Hugging Face</a>
+        </div>
+      </article>
+      
+      <article class="paper" id="paper-2606.14600">
+        <div class="prank">#13</div>
+        <h3>LoSoNA: A Benchmark for Local Social Norm Adaptation in Group Conversations</h3>
+        
+        <figure class="paper-figure">
+          <img loading="lazy" src="img/paper-13.png" alt="LoSoNA: A Benchmark for Local Social Norm Adaptation in Group Conversations 인포그래픽" />
+        </figure>
+        
+        <div class="meta">
+          <span class="org">🏛 Humalike Research</span>
+        </div>
+
+        
+        <div class="sec"><h4>핵심 아이디어</h4><p>LoSoNA는 다자간 그룹 채팅에서 명시되지 않은 지역적 사회 규범을 LLM이 대화 기록으로부터 추론·적응할 수 있는지 평가하는 벤치마크다. 각 시나리오는 다른 참여자들이 숨겨진 규범을 따르는 채팅 기록과 응답을 유도하는 마지막 발화로 구성되며, 단 한 번의 응답으로 규범을 추론해 따르는지를 측정한다.</p></div>
+        
+        
+        <div class="sec"><h4>주요 결과</h4><ul><li>8개 모델을 4가지 프롬프트로 평가, naive 프롬프트 평균 33.2%로 벤치마크 난이도가 높음(최저 21~24%)</li><li>규범을 암시하는 norm_informed 프롬프트가 가장 강력해 평균 46.1%로 상승(Gemini 3.1 Pro 84.2%, Claude Fable 5 81.6%)</li><li>norm_informed 효과의 모델별 편차가 커 +47.4%p~ -10.5%p로 균일하지 않음</li><li>17개 이벤트·22개 규범 유형의 38개 인간 검증 시나리오·3,648 응답 평가, 데이터셋 공개</li></ul></div>
+        
+        
+        <div class="sec"><h4>결론 및 시사점</h4><p>명시적 규범 인지 프롬프트가 일부 모델의 지역 규범 적응을 크게 끌어올리나 모든 모델에 균일하게 이롭지 않고 큰 능력 격차를 드러냈다. 그룹 채팅 에이전트가 인간으로 오인되거나 유해한 규범을 모방할 위험을 시사해 공개·배포 통제의 중요성을 강조한다.</p></div>
+        
+        
+        <div class="sec"><h4>한계점</h4><p>합성 영어 데이터 38개 시나리오로 규모가 작고 시나리오당 단일 규범만 다루며, LLM 판정자(Gemini 계열) 편향 우려가 있다. 다국어·실제 채팅·다중 규범·다중 턴 평가가 과제다.</p></div>
+        
+
+        <div class="links">
+          <a class="btn primary" href="https://arxiv.org/pdf/2606.14600" target="_blank" rel="noopener">arXiv 원문 PDF</a>
+          <a class="btn" href="https://arxiv.org/abs/2606.14600" target="_blank" rel="noopener">arXiv 초록</a>
+          <a class="btn" href="https://huggingface.co/papers/2606.14600" target="_blank" rel="noopener">Hugging Face</a>
+        </div>
+      </article>
+      
+      <article class="paper" id="paper-2606.12736">
+        <div class="prank">#14</div>
+        <h3>Benchmarking AI Agents for Addressing Scientific Challenges Across Scales</h3>
+        
+        <figure class="paper-figure">
+          <img loading="lazy" src="img/paper-14.png" alt="Benchmarking AI Agents for Addressing Scientific Challenges Across Scales 인포그래픽" />
+        </figure>
+        
+        <div class="meta">
+          <span class="org">🏛 예일대학교, Broad Institute, 스탠퍼드대학교, 하버드대학교, UC 버클리, Microsoft Research</span>
+        </div>
+
+        
+        <div class="sec"><h4>핵심 아이디어</h4><p>실제 과학 연구 시나리오에서 AI 에이전트를 평가하기 위해 단일세포·공간 오믹스, 신약 발굴, 전자의무기록, 유전학 등 5개 도메인 약 200개의 단계별 검증 가능 과제로 구성된 벤치마크 SciAgentArena를 제안한다. 실행·평가 프레임워크를 분리한 환경에서 18개 에이전트를 데이터 분석·최적화·발견·타당성 검증 4개 범주로 평가한다.</p></div>
+        
+        
+        <div class="sec"><h4>주요 결과</h4><ul><li>절차가 알려진 데이터 분석 과제에서 가장 강하고 최적화·발견·타당성 검증으로 갈수록 신뢰도가 급락하는 능력 구배</li><li>분자 최적화 단일 목적은 대부분 해결하나 다목적은 급락(어떤 에이전트도 못 푼 과제 존재)</li><li>에이전트들이 Leiden·Harmony·scVI 등 인기 기본 방법으로 강하게 수렴해 과제 특화 적응이 부족</li><li>EHR 약물 관리는 모든 에이전트 F1<0.32로 최난, 유전학 타당성 검증은 Claude Code만 10/10 만점</li></ul></div>
+        
+        
+        <div class="sec"><h4>결론 및 시사점</h4><p>현재 AI 에이전트는 명세가 명확한 데이터 분석엔 효과적이나 새 통찰 생성·자기주도 탐색·잘못된 전제 거부에선 신뢰성이 떨어지는 불균등한 협력자다. 차세대 에이전트는 도구 그라운딩·API 검증·상태 추적·근거 검증·잘못된 과제 거부 메커니즘을 갖춰야 한다.</p></div>
+        
+        
+        <div class="sec"><h4>한계점</h4><p>과제가 주로 도메인 전문가 선정이라 편향이 있을 수 있고, 물리·재료 등 더 넓은 도메인과 멀티모달 에이전트 등 새 패러다임을 반영하도록 지속 갱신이 필요하다.</p></div>
+        
+
+        <div class="links">
+          <a class="btn primary" href="https://arxiv.org/pdf/2606.12736" target="_blank" rel="noopener">arXiv 원문 PDF</a>
+          <a class="btn" href="https://arxiv.org/abs/2606.12736" target="_blank" rel="noopener">arXiv 초록</a>
+          <a class="btn" href="https://huggingface.co/papers/2606.12736" target="_blank" rel="noopener">Hugging Face</a>
+        </div>
+      </article>
+      
+      <article class="paper" id="paper-2604.18401">
+        <div class="prank">#15</div>
+        <h3>StepPO: Step-Aligned Policy Optimization for Agentic Reinforcement Learning</h3>
+        
+        <figure class="paper-figure">
+          <img loading="lazy" src="img/paper-15.png" alt="StepPO: Step-Aligned Policy Optimization for Agentic Reinforcement Learning 인포그래픽" />
+        </figure>
+        
+        <div class="meta">
+          <span class="org">🏛 중국과학기술대학(USTC) 인지지능 국가중점실험실</span>
+        </div>
+
+        
+        <div class="sec"><h4>핵심 아이디어</h4><p>기존 에이전트 RL은 RLHF/RLVR을 물려받아 토큰 단위로 최적화하지만 LLM 에이전트는 관측-행동 사이클의 스텝 단위로 의사결정한다는 입도 불일치가 있다. StepPO는 에이전트 RL을 스텝 단위 MDP로 재정의하고 상호작용 스텝을 기본 궤적 단위로 삼아 스텝 단위 신용 할당과 PPO식 정책 최적화를 수행한다.</p></div>
+        
+        
+        <div class="sec"><h4>주요 결과</h4><ul><li>Qwen3-1.7B/4B 두 백본 모두에서 PPO·GRPO·GiGPO·GSPO 등 모든 베이스라인 대비 전 지표 최고(4B HotpotQA 63.78 vs 차선 58.14)</li><li>WebShop 4B에서 Score 77.52·구매성공률 57.80으로 최고치, out-of-domain 일반화도 우위</li><li>Ablation: 스텝 단위 GAE 또는 중요도 샘플링 제거 시 모든 과제 성능 저하</li><li>γ를 0.99→0.95로 낮출 때 토큰 단위 GAE는 13.09% 하락하나 스텝 단위는 5.53%만 하락해 지연 보상을 더 잘 보존</li></ul></div>
+        
+        
+        <div class="sec"><h4>결론 및 시사점</h4><p>StepPO는 토큰 단위 최적화와 스텝 단위 에이전트 의사결정 간 입도 불일치를 해소하는 스텝 중심 패러다임으로, 학습 안정성·가치 추정·장기 의사결정을 동시에 개선한다. 상호작용 스텝을 공통 단위로 정렬하는 것이 멀티턴 에이전트 훈련에 중요함을 보였다.</p></div>
+        
+        
+        <div class="sec"><h4>한계점</h4><p>실험이 Qwen3-1.7B/4B 두 소형 백본과 4개 과제(최대 5~20 스텝)에 한정돼, 더 큰 모델·장기 시계열 확장성과 비동기·효율 시스템 통합은 향후 과제로 남는다.</p></div>
+        
+
+        <div class="links">
+          <a class="btn primary" href="https://arxiv.org/pdf/2604.18401" target="_blank" rel="noopener">arXiv 원문 PDF</a>
+          <a class="btn" href="https://arxiv.org/abs/2604.18401" target="_blank" rel="noopener">arXiv 초록</a>
+          <a class="btn" href="https://huggingface.co/papers/2604.18401" target="_blank" rel="noopener">Hugging Face</a>
+        </div>
+      </article>
+      
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      데이터 출처: <a href="https://huggingface.co/papers" target="_blank" rel="noopener">Hugging Face Daily Papers</a> · 원문: <a href="https://arxiv.org" target="_blank" rel="noopener">arXiv</a>
+    </div>
+  </footer>
+
+  <script src="../../assets/js/main.js"></script>
+</body>
+</html>
