@@ -3,7 +3,7 @@
   "days": [
     {
       "date": "2026-06-16",
-      "count": 11,
+      "count": 39,
       "topics": [
         "Agentic AI",
         "Orchestration"
@@ -16,7 +16,7 @@
           "organizations": [
             "JD.com (징둥)"
           ],
-          "upvotes": 150,
+          "upvotes": 153,
           "summary_line": "세계를 계속 보며 말할지·침묵할지·위임할지를 매초 스스로 결정하는 8B 비전 우선 실시간 상호작용 모델과 배포형 시스템 전체를 오픈소스로 공개했다.",
           "image": "days/2026-06-16/img/paper-01.png",
           "hf_url": "https://huggingface.co/papers/2606.14777"
@@ -28,10 +28,34 @@
             "University of Oxford",
             "Stanford University"
           ],
-          "upvotes": 82,
+          "upvotes": 92,
           "summary_line": "원본 데이터를 검증·추적 가능한 멀티모달 기사로 만드는 7개 역할 기반 멀티에이전트 데이터 저널리즘 프레임워크를 제안했다.",
           "image": "days/2026-06-16/img/paper-02.png",
           "hf_url": "https://huggingface.co/papers/2606.11176"
+        },
+        {
+          "id": "2606.17046",
+          "title": "Geometric Action Model for Robot Policy Learning",
+          "organizations": [
+            "KAIST AI",
+            "ETH Zurich",
+            "ETH AI Center"
+          ],
+          "upvotes": 80,
+          "summary_line": "사전학습된 기하 파운데이션 모델을 인식·미래 예측·행동 디코딩의 공유 백본으로 직접 재활용하고 인과적 미래 예측기를 삽입해 기하와 행동을 단일 토큰 공간에서 함께 예측하는 로봇 조작 정책 GAM을 제안했다.",
+          "image": "days/2026-06-16/img/paper-03.png",
+          "hf_url": "https://huggingface.co/papers/2606.17046"
+        },
+        {
+          "id": "2606.16993",
+          "title": "DreamX-World 1.0: A General-Purpose Interactive World Model",
+          "organizations": [
+            "AMAP-ML"
+          ],
+          "upvotes": 76,
+          "summary_line": "공간 축소 토큰에 투영 카메라 기하를 적용하는 경량 E-PRoPE와 기하 기반 메모리·자기회귀 증류·강화학습 정렬을 결합해, 다중 도메인에서 카메라·이벤트를 제어하며 실시간 장기 인터랙티브 영상을 생성하는 범용 월드 모델을 제안했다.",
+          "image": "days/2026-06-16/img/paper-04.png",
+          "hf_url": "https://huggingface.co/papers/2606.16993"
         },
         {
           "id": "2606.14066",
@@ -40,10 +64,46 @@
             "Microsoft",
             "Shanghai Jiao Tong University"
           ],
-          "upvotes": 47,
+          "upvotes": 70,
           "summary_line": "저장소 탐색을 본 에이전트와 분리해 파일·라인 근거만 반환하는 전용 탐색 서브에이전트를 SFT·RL로 학습시켜 해결률 최대 5.5%p↑, 토큰 최대 60%↓를 달성했다.",
-          "image": "days/2026-06-16/img/paper-03.png",
+          "image": "days/2026-06-16/img/paper-05.png",
           "hf_url": "https://huggingface.co/papers/2606.14066"
+        },
+        {
+          "id": "2606.16140",
+          "title": "VibeThinker-3B: Exploring the Frontier of Verifiable Reasoning in Small Language Models",
+          "organizations": [
+            "Sina Weibo Inc. (WeiboAI)"
+          ],
+          "upvotes": 52,
+          "summary_line": "30억 파라미터 소형 모델이 적절한 사후학습만으로 검증 가능 추론 과제에서 수백 배 큰 프런티어 모델과 대등한 성능에 도달할 수 있음을 실증하고 파라미터 압축-커버리지 가설을 제안했다.",
+          "image": "days/2026-06-16/img/paper-06.png",
+          "hf_url": "https://huggingface.co/papers/2606.16140"
+        },
+        {
+          "id": "2606.16281",
+          "title": "Who Should Lead Decoding Now? Tracking Reliable Trajectories for Ensembling Masked Diffusion Language Models",
+          "organizations": [
+            "KAIST",
+            "AITRICS"
+          ],
+          "upvotes": 23,
+          "summary_line": "마스크 확산 언어 모델 간 신뢰할 만한 디코딩 궤적을 반복적으로 식별하고 전달하여 지식을 융합하는 MDLM 전용 앙상블 프레임워크 TIE를 제안했다.",
+          "image": "days/2026-06-16/img/paper-07.png",
+          "hf_url": "https://huggingface.co/papers/2606.16281"
+        },
+        {
+          "id": "2606.17049",
+          "title": "BRDFusion: Physics Meets Generation for Urban Scene Inverse Rendering",
+          "organizations": [
+            "National Yang Ming Chiao Tung University",
+            "University of Illinois Urbana-Champaign",
+            "National Taiwan University"
+          ],
+          "upvotes": 22,
+          "summary_line": "물리 기반 렌더링과 생성형 확산 모델을 순방향·역방향 렌더링 모두에 결합한 통합 프레임워크를 제안하여 동적 도심 장면의 고품질·제어 가능 역렌더링을 실현했다.",
+          "image": "days/2026-06-16/img/paper-08.png",
+          "hf_url": "https://huggingface.co/papers/2606.17049"
         },
         {
           "id": "2606.16295",
@@ -54,21 +114,45 @@
             "Google",
             "UC Berkeley"
           ],
-          "upvotes": 20,
+          "upvotes": 21,
           "summary_line": "스트리밍 영상을 엣지에서 캐스케이드 게이팅하고 실패 기반 스킬·메모리를 자가진화시켜 비용을 낮추면서 정확도를 높이는 멀티모달 에이전트를 제안했다.",
-          "image": "days/2026-06-16/img/paper-04.png",
+          "image": "days/2026-06-16/img/paper-09.png",
           "hf_url": "https://huggingface.co/papers/2606.16295"
         },
         {
-          "id": "2606.15300",
-          "title": "CODA-BENCH: Can Code Agents Handle Data-Intensive Tasks?",
+          "id": "2606.16838",
+          "title": "OneRank: Unified Transformer-Native Ranking Architecture for Multi-Task Recommendation",
           "organizations": [
-            "Renmin University of China (RUC-DataLab)"
+            "Renmin University of China",
+            "Shopee",
+            "Nanyang Technological University"
           ],
-          "upvotes": 11,
-          "summary_line": "코드 지능과 데이터 지능을 동시에 평가하는 최초의 데이터 집약적 에이전트 벤치마크 CODA-BENCH를 제안했다.",
-          "image": "days/2026-06-16/img/paper-05.png",
-          "hf_url": "https://huggingface.co/papers/2606.15300"
+          "upvotes": 14,
+          "summary_line": "멀티태스크 추론을 Transformer 스택 내부로 통합하여 인코더-예측기 분리를 제거하고 태스크별 특화 학습과 동적 매칭 기반 랭킹을 수행하는 OneRank 프레임워크를 제안했다.",
+          "image": "days/2026-06-16/img/paper-10.png",
+          "hf_url": "https://huggingface.co/papers/2606.16838"
+        },
+        {
+          "id": "2606.16519",
+          "title": "BadWorld: Adversarial Attacks on World Models",
+          "organizations": [
+            "The Hong Kong Polytechnic University"
+          ],
+          "upvotes": 14,
+          "summary_line": "자기회귀 시각 세계 모델에 대한 적대적 공격을 최초로 정식화하고, 모델의 예측 속도를 조작하는 라벨 없는 자기지도 공격과 궤적 적응형 이중 수준 최적화를 결합한 BadWorld 프레임워크를 제안했다.",
+          "image": "days/2026-06-16/img/paper-11.png",
+          "hf_url": "https://huggingface.co/papers/2606.16519"
+        },
+        {
+          "id": "2606.17030",
+          "title": "Qwen-RobotWorld Technical Report: Unifying Embodied World Modeling through Language-Conditioned Video Generation",
+          "organizations": [
+            "Qwen Team (Alibaba)"
+          ],
+          "upvotes": 13,
+          "summary_line": "자연어를 보편적 행동 인터페이스로 삼아 조작·주행·내비게이션·인간-로봇 전이를 단일 언어 조건부 비디오 월드 모델로 통합하고, 20종 이상 임바디먼트와 500종 이상 행동을 표준화한 8.6M 규모 EWK 데이터셋과 일반+전문가 점진적 커리큘럼으로 이를 실현했다.",
+          "image": "days/2026-06-16/img/paper-12.png",
+          "hf_url": "https://huggingface.co/papers/2606.17030"
         },
         {
           "id": "2606.17016",
@@ -79,10 +163,33 @@
             "Xidian University",
             "HomologyAI"
           ],
-          "upvotes": 10,
+          "upvotes": 13,
           "summary_line": "프롬프트 캐시 정렬을 보존하며 컨텍스트를 압축·제거해 LLM 에이전트의 추론 비용을 대폭 절감하는 이중 단위 컨텍스트 관리 프레임워크를 제안했다.",
-          "image": "days/2026-06-16/img/paper-06.png",
+          "image": "days/2026-06-16/img/paper-13.png",
           "hf_url": "https://huggingface.co/papers/2606.17016"
+        },
+        {
+          "id": "2606.15300",
+          "title": "CODA-BENCH: Can Code Agents Handle Data-Intensive Tasks?",
+          "organizations": [
+            "Renmin University of China (RUC-DataLab)"
+          ],
+          "upvotes": 11,
+          "summary_line": "코드 지능과 데이터 지능을 동시에 평가하는 최초의 데이터 집약적 에이전트 벤치마크 CODA-BENCH를 제안했다.",
+          "image": "days/2026-06-16/img/paper-14.png",
+          "hf_url": "https://huggingface.co/papers/2606.15300"
+        },
+        {
+          "id": "2606.15631",
+          "title": "Retrieve, Don't Retrain: Extending Vision Language Action Models to New Tasks at Test Time",
+          "organizations": [
+            "NAVER AI Lab",
+            "Korea University"
+          ],
+          "upvotes": 10,
+          "summary_line": "검색 조건부 잔차 정책과 월드-액션 모델의 미래 이미지 예측을 결합해 파라미터 갱신 없이 검색 풀 확장만으로 새 작업에 적응하는 ReCAP 패러다임을 제안했다.",
+          "image": "days/2026-06-16/img/paper-15.png",
+          "hf_url": "https://huggingface.co/papers/2606.15631"
         },
         {
           "id": "2606.15673",
@@ -93,8 +200,84 @@
           ],
           "upvotes": 10,
           "summary_line": "웹 에이전트를 시맨틱 MDP로 모델링해 결과가 아닌 과정 단위로 자동 평가하는 벤치마크 WEBSTEP을 제안했다.",
-          "image": "days/2026-06-16/img/paper-07.png",
+          "image": "days/2026-06-16/img/paper-16.png",
           "hf_url": "https://huggingface.co/papers/2606.15673"
+        },
+        {
+          "id": "2606.16771",
+          "title": "GD^2PO: Mitigating Multi-Reward Conflicts via Group-Dynamic reward-Decoupled Policy Optimization",
+          "organizations": [
+            "Alibaba Qwen Large Model Application Team",
+            "Renmin University of China",
+            "Peking University",
+            "ETH Zürich",
+            "University of Zurich",
+            "The Chinese University of Hong Kong"
+          ],
+          "upvotes": 9,
+          "summary_line": "보상 차원별 어드밴티지가 상충하는 롤아웃을 부호 또는 SNR 기준으로 동적 필터링하고 쿼리별로 재가중하는 계층적 다중 보상 정책 최적화 기법 GD2PO를 제안했다.",
+          "image": "days/2026-06-16/img/paper-17.png",
+          "hf_url": "https://huggingface.co/papers/2606.16771"
+        },
+        {
+          "id": "2606.14667",
+          "title": "Memento: Reconstruct to Remember for Consistent Long Video Generation",
+          "organizations": [
+            "Baidu (ERNIE Team)",
+            "Xiamen University"
+          ],
+          "upvotes": 9,
+          "summary_line": "메모리만으로 인물을 복원하도록 강제하는 인물 복원 목적함수와 장단기 단서를 분리하는 이중 쿼리 메모리를 갖춘 자기회귀 프레임워크 Memento를 제안해 긴 동영상의 인물 일관성을 명시적으로 보장했다.",
+          "image": "days/2026-06-16/img/paper-18.png",
+          "hf_url": "https://huggingface.co/papers/2606.14667"
+        },
+        {
+          "id": "2606.16396",
+          "title": "SP^3: Spherical Priors for Plug-and-Play Restoration",
+          "organizations": [
+            "Technion – Israel Institute of Technology"
+          ],
+          "upvotes": 8,
+          "summary_line": "구형 잠재 공간을 가진 Sphere Encoder를 투영 연산자로 활용하여 기울기 계산 없이 빠르고 안정적으로 수렴하는 Plug-and-Play 이미지 복원 알고리즘 SP3를 제안했다.",
+          "image": "days/2026-06-16/img/paper-19.png",
+          "hf_url": "https://huggingface.co/papers/2606.16396"
+        },
+        {
+          "id": "2606.06302",
+          "title": "Tangram: Unlocking Non-Uniform KV Cache Compression for Efficient Multi-turn LLM Serving",
+          "organizations": [
+            "Hanyang University",
+            "Rebellions",
+            "Apple"
+          ],
+          "upvotes": 8,
+          "summary_line": "헤드별 KV 보존이 입력에 무관한 2단계 구조적 규칙성을 갖는다는 점을 밝히고, 이를 오프라인으로 보정해 예산 예약·러기드 페이징·사전 부하 분산으로 비균일 KV 캐시 압축을 실용화하는 서빙 프레임워크 Tangram을 제안했다.",
+          "image": "days/2026-06-16/img/paper-20.png",
+          "hf_url": "https://huggingface.co/papers/2606.06302"
+        },
+        {
+          "id": "2606.16255",
+          "title": "UniDDT: Unifying Multimodal Understanding and Generation with Decoupled Diffusion Transformer",
+          "organizations": [
+            "Nanjing University",
+            "ByteDance Seed",
+            "University of Hong Kong"
+          ],
+          "upvotes": 8,
+          "summary_line": "통합 시각 공간과 분리되었지만 통합된 이해-생성 설계를 갖춘 네이티브 통합 멀티모달 모델 UniDDT를 제안했다.",
+          "image": "days/2026-06-16/img/paper-21.png",
+          "hf_url": "https://huggingface.co/papers/2606.16255"
+        },
+        {
+          "id": "2606.15079",
+          "title": "Ling and Ring 2.6 Technical Report: Efficient and Instant Agentic Intelligence at Trillion-Parameter Scale",
+          "organizations": [
+            "Inclusion AI (Ling Team)"
+          ],
+          "upvotes": 8,
+          "summary_line": "Ling-2.0 베이스를 하이브리드 선형 어텐션으로 개조하고 토큰 효율·에이전트 RL(KPop)을 적용해 1조 파라미터급 효율적 에이전트 모델군 Ling/Ring 2.6을 공개했다.",
+          "image": "days/2026-06-16/img/paper-22.png",
+          "hf_url": "https://huggingface.co/papers/2606.15079"
         },
         {
           "id": "2606.14832",
@@ -107,19 +290,21 @@
           ],
           "upvotes": 8,
           "summary_line": "CLI·GUI·도구 호출을 결합한 혼합 행동 폰 에이전트 하니스와 부수효과 검증 벤치마크 PhoneHarness를 제안했다.",
-          "image": "days/2026-06-16/img/paper-08.png",
+          "image": "days/2026-06-16/img/paper-23.png",
           "hf_url": "https://huggingface.co/papers/2606.14832"
         },
         {
-          "id": "2606.15079",
-          "title": "Ling and Ring 2.6 Technical Report: Efficient and Instant Agentic Intelligence at Trillion-Parameter Scale",
+          "id": "2606.17043",
+          "title": "Hierarchical Advantage Weighting for Online RL Fine-Tuning of VLAs from Sparse Episode Outcomes",
           "organizations": [
-            "Inclusion AI (Ling Team)"
+            "ACE Robotics",
+            "칭화대학교 선전 국제대학원",
+            "홍콩중문대학교"
           ],
           "upvotes": 6,
-          "summary_line": "Ling-2.0 베이스를 하이브리드 선형 어텐션으로 개조하고 토큰 효율·에이전트 RL(KPop)을 적용해 1조 파라미터급 효율적 에이전트 모델군 Ling/Ring 2.6을 공개했다.",
-          "image": "days/2026-06-16/img/paper-09.png",
-          "hf_url": "https://huggingface.co/papers/2606.15079"
+          "summary_line": "희소한 이진 에피소드 결과를 생존성과 효율성 두 신호로 분해해 이중 head critic으로 학습하고 상태 적응형 게이트와 개입 인지 신용 할당으로 전이별 가중치를 만드는 VLA 온라인 RL 미세조정 기법 HABC를 제안했다.",
+          "image": "days/2026-06-16/img/paper-24.png",
+          "hf_url": "https://huggingface.co/papers/2606.17043"
         },
         {
           "id": "2606.15007",
@@ -127,10 +312,143 @@
           "organizations": [
             "NVIDIA"
           ],
-          "upvotes": 3,
+          "upvotes": 5,
           "summary_line": "MoE 하이브리드 Mamba-Attention 구조로 동급 정확도를 유지하면서 최대 6배 빠른 추론을 달성한 에이전트형 오픈 LLM을 공개했다.",
-          "image": "days/2026-06-16/img/paper-10.png",
+          "image": "days/2026-06-16/img/paper-25.png",
           "hf_url": "https://huggingface.co/papers/2606.15007"
+        },
+        {
+          "id": "2606.12138",
+          "title": "Unstable Features, Reproducible Subspaces: Understanding Seed Dependence in Sparse Autoencoders",
+          "organizations": [
+            "T-Tech"
+          ],
+          "upvotes": 5,
+          "summary_line": "SAE 특징의 시드 의존성을 특징별 재등장 확률로 정량화하고, 불안정 특징이 재현 가능한 저차원 부분공간 내 기저 모호성을 반영함을 규명하며 고안정 특징 풀링으로 시드 견고한 SAE를 구축하는 방법을 제안했다.",
+          "image": "days/2026-06-16/img/paper-26.png",
+          "hf_url": "https://huggingface.co/papers/2606.12138"
+        },
+        {
+          "id": "2606.16673",
+          "title": "MMDiff: Extending Diffusion Transformers for Multi-Modal Generation",
+          "organizations": [
+            "University of Oxford, Visual Geometry Group"
+          ],
+          "upvotes": 3,
+          "summary_line": "동결된 디퓨전 트랜스포머의 다중 타임스텝 특징을 공간 적응적으로 융합하고 경량 디코더만 학습해, 생성 모델을 의미 분할·깊이·돌출도를 동시에 예측하는 다중 모달 생성 시스템으로 확장하는 MMDiff를 제안했다.",
+          "image": "days/2026-06-16/img/paper-27.png",
+          "hf_url": "https://huggingface.co/papers/2606.16673"
+        },
+        {
+          "id": "2606.15708",
+          "title": "Artificial Intelligence Index Report 2026",
+          "organizations": [
+            "Stanford Institute for Human-Centered AI (HAI)",
+            "AI Index Steering Committee",
+            "Schmidt Sciences",
+            "Epoch AI",
+            "McKinsey & Company",
+            "LinkedIn",
+            "GitHub",
+            "Lightcast",
+            "Quid",
+            "Zeki"
+          ],
+          "upvotes": 3,
+          "summary_line": "AI의 역량이 거버넌스·평가·교육·데이터 인프라의 적응 속도를 앞지르고 있음을 전 분야에 걸친 독립적 데이터로 종합해 제시했다.",
+          "image": "days/2026-06-16/img/paper-28.png",
+          "hf_url": "https://huggingface.co/papers/2606.15708"
+        },
+        {
+          "id": "2606.16449",
+          "title": "PermaVid: Consistent Video Generation Across Edits via Disentangled Context Memory",
+          "organizations": [
+            "Shanghai Jiao Tong University",
+            "Stanford University",
+            "S-Lab, Nanyang Technological University",
+            "The Chinese University of Hong Kong",
+            "Shanghai Innovation Institute"
+          ],
+          "upvotes": 2,
+          "summary_line": "공간 맥락을 의미적 외형과 기하 구조로 분리한 멀티모달 컨텍스트 메모리와 편집 인지형 갱신·검색 전략을 결합한 PermaVid 프레임워크를 제안했다.",
+          "image": "days/2026-06-16/img/paper-29.png",
+          "hf_url": "https://huggingface.co/papers/2606.16449"
+        },
+        {
+          "id": "2606.14958",
+          "title": "MVEB: Massive Video Embedding Benchmark",
+          "organizations": [
+            "Harvard University",
+            "SaluteDevices",
+            "MIRAI",
+            "Zendesk",
+            "Shanghai University of Finance and Economics",
+            "Google LLC",
+            "Salesforce",
+            "Cornell University",
+            "Astera Institute",
+            "Indian Institute of Technology Kharagpur",
+            "Barclays",
+            "Aarhus University",
+            "Stanford University"
+          ],
+          "upvotes": 2,
+          "summary_line": "184개 과제 풀에서 선별한 23개 과제 비디오 임베딩 벤치마크 MVEB와 모달리티 제한 리더보드를 제안하고, 오디오·비디오를 짝지은 평가로 33개 모델을 6개 임베딩 패러다임에 걸쳐 분석했다.",
+          "image": "days/2026-06-16/img/paper-30.png",
+          "hf_url": "https://huggingface.co/papers/2606.14958"
+        },
+        {
+          "id": "2602.21103",
+          "title": "Prompt-Level Distillation: A Non-Parametric Alternative to Model Fine-Tuning for Efficient Reasoning",
+          "organizations": [
+            "Google"
+          ],
+          "upvotes": 2,
+          "summary_line": "교사 모델의 추론 논리를 학생 모델의 시스템 프롬프트에 컴파일해 넣는 비모수적 지식 증류 프레임워크 PLD를 제안했다.",
+          "image": "days/2026-06-16/img/paper-31.png",
+          "hf_url": "https://huggingface.co/papers/2602.21103"
+        },
+        {
+          "id": "2606.16202",
+          "title": "EgoPhys: Learning Generalizable Physics Models of Deformable Objects from Egocentric Video",
+          "organizations": [
+            "UC San Diego"
+          ],
+          "upvotes": 1,
+          "summary_line": "단일 1인칭 RGB 영상만으로 변형체의 물리 기반 디지털 트윈을 구축하고, 객체별 스프링 강성 필드를 재사용 가능한 상태 조건부 재질 코드북으로 증류해 처음 보는 물체에 일반화하는 프레임워크를 제안했다.",
+          "image": "days/2026-06-16/img/paper-32.png",
+          "hf_url": "https://huggingface.co/papers/2606.16202"
+        },
+        {
+          "id": "2606.15768",
+          "title": "LaWAM: Latent World Action Models for Efficient Dynamics-Aware Robot Policies",
+          "organizations": [
+            "Tsinghua University",
+            "Jilin University",
+            "Nankai University",
+            "Peking University",
+            "Harbin Institute of Technology",
+            "Zhongguancun Academy",
+            "Striding.AI",
+            "Infinigence AI"
+          ],
+          "upvotes": 1,
+          "summary_line": "잠재 행동 모델의 순방향 디코더를 잠재 World Model로 재활용해 압축된 잠재 시각 서브골로 동역학을 인식하는 효율적 로봇 정책 LaWAM을 제안했다.",
+          "image": "days/2026-06-16/img/paper-33.png",
+          "hf_url": "https://huggingface.co/papers/2606.15768"
+        },
+        {
+          "id": "2606.16011",
+          "title": "Who Flips? Self- and Cross-Model Counterarguments Reveal Answer Instability in LLMs",
+          "organizations": [
+            "Technical University of Munich",
+            "Munich Center for Machine Learning",
+            "LMU Munich"
+          ],
+          "upvotes": 1,
+          "summary_line": "노골적 사회적 압박을 제거하고 논증 내용·길이·자기 귀속·출처 모델만을 분리해 LLM의 답변 안정성을 측정하는 통제된 프로토콜과 MAXFLIP 도전 세트를 제안했다.",
+          "image": "days/2026-06-16/img/paper-34.png",
+          "hf_url": "https://huggingface.co/papers/2606.16011"
         },
         {
           "id": "2606.14819",
@@ -140,14 +458,67 @@
           ],
           "upvotes": 1,
           "summary_line": "집계 지표가 가리는 모듈형 네트워크 브리지 노드의 거버넌스 실패를 드러내는 위치 가중 거버넌스 손실(L_gov) 지표를 제안했다.",
-          "image": "days/2026-06-16/img/paper-11.png",
+          "image": "days/2026-06-16/img/paper-35.png",
           "hf_url": "https://huggingface.co/papers/2606.14819"
+        },
+        {
+          "id": "2606.17054",
+          "title": "Human Universal Grasping",
+          "organizations": [
+            "New York University",
+            "Tsinghua University",
+            "University of Michigan"
+          ],
+          "upvotes": 0,
+          "summary_line": "로봇 데이터 없이 순수 인간 파지 데이터만으로 학습되어 여러 로봇 손에 배치 가능한 최초의 파지 프레임워크 HUG와 대규모 데이터셋·벤치마크를 제안했다.",
+          "image": "days/2026-06-16/img/paper-36.png",
+          "hf_url": "https://huggingface.co/papers/2606.17054"
+        },
+        {
+          "id": "2606.16852",
+          "title": "The Ghosts of Polymarket: When Off-Chain Matches Meet On-Chain Reverts",
+          "organizations": [
+            "Sun Yat-sen University",
+            "Zhejiang University"
+          ],
+          "upvotes": 0,
+          "summary_line": "저자들은 하이브리드 예측 시장의 고스트 필을 보안 실패 모드로 규명하고, 온체인 트레이스 기반 분석 엔진 GHOSTHUNTER를 구축해 취소 공격의 만연도·비용·공격 벡터와 컨트랙트 재사용을 통한 위험 확산을 정량적으로 측정했다.",
+          "image": "days/2026-06-16/img/paper-37.png",
+          "hf_url": "https://huggingface.co/papers/2606.16852"
+        },
+        {
+          "id": "2606.14142",
+          "title": "Implicit Reasoning for Large Language Model-based Generative Recommendation",
+          "organizations": [
+            "University of Virginia",
+            "Snap Inc."
+          ],
+          "upvotes": 0,
+          "summary_line": "SID 기반 생성 추천에서 명시적 CoT 추론의 실패 원인을 진단하고, 학습 가능한 <pause> 토큰으로 잠재 공간에서 암묵적 추론을 수행하는 경량 프레임워크 PauseRec을 제안했다.",
+          "image": "days/2026-06-16/img/paper-38.png",
+          "hf_url": "https://huggingface.co/papers/2606.14142"
+        },
+        {
+          "id": "2606.17006",
+          "title": "TuneJury: An Open Metric for Improving Music Generation Preference Alignment",
+          "organizations": [
+            "Carnegie Mellon University",
+            "Sony AI",
+            "Georgia Tech",
+            "KAIST",
+            "Peking University",
+            "QMUL"
+          ],
+          "upvotes": 0,
+          "summary_line": "가짜 라벨 증강 없이 네 개 공개 인간 평가 데이터로 페어와이즈 학습한 경량 음악 선호 보상 모델 TuneJury와, 새 생성 시스템에 재학습 없이 적응하는 anchor calibration 기법을 제안했다.",
+          "image": "days/2026-06-16/img/paper-39.png",
+          "hf_url": "https://huggingface.co/papers/2606.17006"
         }
       ]
     },
     {
       "date": "2026-06-15",
-      "count": 15,
+      "count": 48,
       "topics": [
         "Agentic AI",
         "Orchestration"
@@ -163,7 +534,7 @@
             "베이징대학교"
           ],
           "upvotes": 96,
-          "summary_line": "교차 페어 데이터 없이 '카메라 그리드'로 멀티샷 카메라 모션을 복제하는 통합 영상생성 프레임워크.",
+          "summary_line": "교차 페어 데이터 없이 '카메라 그리드' 표현으로 멀티샷 카메라 모션을 복제하는 통합 영상생성 프레임워크를 제안했다.",
           "image": "days/2026-06-15/img/paper-01.png",
           "hf_url": "https://huggingface.co/papers/2606.13432"
         },
@@ -176,7 +547,7 @@
             "남방과기대학(SUSTech)"
           ],
           "upvotes": 69,
-          "summary_line": "분기·크레딧 할당 단위를 도구 호출이 아닌 미세 의사결정 지점으로 옮긴 에이전트 RL 기법 제안.",
+          "summary_line": "분기·크레딧 할당 단위를 도구 호출이 아닌 미세 의사결정 지점으로 옮긴 에이전트 RL 기법 APPO를 제안했다.",
           "image": "days/2026-06-15/img/paper-02.png",
           "hf_url": "https://huggingface.co/papers/2606.12384"
         },
@@ -187,7 +558,7 @@
             "싱가포르 국립대학교(NUS)"
           ],
           "upvotes": 62,
-          "summary_line": "메모리 접근에 LLM 추론을 통합한 능동적·연상적 기억 재구성 패러다임 제안.",
+          "summary_line": "메모리 접근에 LLM 추론을 통합한 능동적·연상적 기억 재구성 패러다임을 제안했다.",
           "image": "days/2026-06-15/img/paper-03.png",
           "hf_url": "https://huggingface.co/papers/2606.06036"
         },
@@ -202,7 +573,7 @@
             "UIC"
           ],
           "upvotes": 45,
-          "summary_line": "LLM의 챗봇→디지털 동료 진화를 인지·실행 두 축과 'Workspace+Skill' 메커니즘으로 정리한 서베이.",
+          "summary_line": "LLM의 챗봇에서 디지털 동료로의 진화를 인지·실행 두 축과 'Workspace+Skill' 메커니즘으로 정리한 서베이를 제시했다.",
           "image": "days/2026-06-15/img/paper-04.png",
           "hf_url": "https://huggingface.co/papers/2606.14502"
         },
@@ -216,7 +587,7 @@
             "University of Waterloo"
           ],
           "upvotes": 40,
-          "summary_line": "오해 맥락 속 LLM의 의학적 판단 유지력(인식적 회복탄력성)을 측정하는 최초의 벤치마크 MedMisBench 제안.",
+          "summary_line": "오해 맥락 속 LLM의 의학적 판단 유지력(인식적 회복탄력성)을 측정하는 최초의 벤치마크 MedMisBench를 제안했다.",
           "image": "days/2026-06-15/img/paper-05.png",
           "hf_url": "https://huggingface.co/papers/2606.12291"
         },
@@ -231,7 +602,7 @@
             "통지대학교"
           ],
           "upvotes": 40,
-          "summary_line": "옴니모달 에이전트 오케스트레이션 프레임워크와 결정 정렬 RL(DA-GRPO)로 SOTA 달성.",
+          "summary_line": "옴니모달 에이전트 오케스트레이션 프레임워크와 결정 정렬 RL(DA-GRPO)로 SOTA를 달성했다.",
           "image": "days/2026-06-15/img/paper-06.png",
           "hf_url": "https://huggingface.co/papers/2606.13707"
         },
@@ -242,9 +613,21 @@
             "샤오미(Xiaomi) Darwin Agent Team"
           ],
           "upvotes": 37,
-          "summary_line": "하네스를 조합·적응·진화하는 파운드리와 트레이스 기반 하네스-모델 공진화 제안.",
+          "summary_line": "하네스를 조합·적응·진화하는 파운드리와 트레이스 기반 하네스-모델 공진화를 제안했다.",
           "image": "days/2026-06-15/img/paper-07.png",
           "hf_url": "https://huggingface.co/papers/2606.14249"
+        },
+        {
+          "id": "2606.13141",
+          "title": "Rethinking RAG in Long Videos: What to Retrieve and How to Use It?",
+          "organizations": [
+            "KAIST",
+            "Qualcomm AI Research"
+          ],
+          "upvotes": 32,
+          "summary_line": "긴 1인칭 비디오 RAG의 검색·생성을 분리 평가하는 벤치마크 V-RAGBench와, 청크마다 최적 모달리티-시간단위 설정을 재랭킹으로 선택해 생성까지 전파하는 CARVE 방법을 함께 제안했다.",
+          "image": "days/2026-06-15/img/paper-08.png",
+          "hf_url": "https://huggingface.co/papers/2606.13141"
         },
         {
           "id": "2606.12683",
@@ -256,9 +639,35 @@
             "UCL"
           ],
           "upvotes": 28,
-          "summary_line": "AGI에서 ASI로 가는 네 경로와 마찰 요인을 Universal AI 이론에 근거해 체계화한 연구 의제 제시.",
-          "image": "days/2026-06-15/img/paper-08.png",
+          "summary_line": "AGI에서 ASI로 가는 네 가지 경로와 마찰 요인을 Universal AI 이론에 근거해 체계화한 연구 의제를 제시했다.",
+          "image": "days/2026-06-15/img/paper-09.png",
           "hf_url": "https://huggingface.co/papers/2606.12683"
+        },
+        {
+          "id": "2606.14702",
+          "title": "OmniVideo-100K: A Dataset for Audio-Visual Reasoning through Structured Scripts and Evidence Chains",
+          "organizations": [
+            "Nanjing University",
+            "CASIA"
+          ],
+          "upvotes": 25,
+          "summary_line": "구조화 스크립트와 증거 사슬 기반의 단서 유도 전략으로 장기 시간 의존성과 교차 모달 추론을 갖춘 오디오-비주얼 QA 데이터셋 OmniVideo-100K를 자동 생성하는 데이터 엔진을 제안하고 공개했다.",
+          "image": "days/2026-06-15/img/paper-10.png",
+          "hf_url": "https://huggingface.co/papers/2606.14702"
+        },
+        {
+          "id": "2605.30789",
+          "title": "Smaller Models are Natural Explorers for Policy-Level Diversity in GRPO",
+          "organizations": [
+            "칭화대학교",
+            "상하이 AI 연구소",
+            "홍콩중문대학교",
+            "홍콩시립대학교"
+          ],
+          "upvotes": 22,
+          "summary_line": "작은 모델을 정책 수준 다양성의 자연스러운 탐색가로 활용해 큰 모델의 GRPO 학습을 돕는 S2L-PO 프레임워크를 제안했다.",
+          "image": "days/2026-06-15/img/paper-11.png",
+          "hf_url": "https://huggingface.co/papers/2605.30789"
         },
         {
           "id": "2606.10813",
@@ -268,9 +677,21 @@
             "중국과학원대학교(UCAS)"
           ],
           "upvotes": 19,
-          "summary_line": "에이전트 트레이스의 절차 스킬 누출을 막는 선택적 재작성·워터마크 프레임워크 REDACT 제안.",
-          "image": "days/2026-06-15/img/paper-09.png",
+          "summary_line": "에이전트 트레이스의 절차 스킬 누출을 막는 선택적 재작성·워터마크 프레임워크 REDACT를 제안했다.",
+          "image": "days/2026-06-15/img/paper-12.png",
           "hf_url": "https://huggingface.co/papers/2606.10813"
+        },
+        {
+          "id": "2606.06574",
+          "title": "Skip a Layer or Loop It? Learning Program-of-Layers in LLMs",
+          "organizations": [
+            "University of Maryland, College Park",
+            "MBZUAI"
+          ],
+          "upvotes": 18,
+          "summary_line": "사전학습 레이어를 건너뛰거나 반복하는 입력별 실행 프로그램(POLAR)을 비용 큰 탐색 없이 단번에 예측하는 경량 네트워크를 제안했다.",
+          "image": "days/2026-06-15/img/paper-13.png",
+          "hf_url": "https://huggingface.co/papers/2606.06574"
         },
         {
           "id": "2606.14061",
@@ -279,9 +700,47 @@
             "Shanghai Jiao Tong University"
           ],
           "upvotes": 13,
-          "summary_line": "저장소 구조 시각 그래프를 텍스트에 결합해 토큰 효율·정확도를 모두 잡은 하이브리드 코딩 에이전트 설계 제시.",
-          "image": "days/2026-06-15/img/paper-10.png",
+          "summary_line": "저장소 구조 시각 그래프를 텍스트에 결합해 토큰 효율과 정확도를 모두 잡은 하이브리드 코딩 에이전트 설계를 제시했다.",
+          "image": "days/2026-06-15/img/paper-14.png",
           "hf_url": "https://huggingface.co/papers/2606.14061"
+        },
+        {
+          "id": "2606.12594",
+          "title": "Pythagoras-Prover: Advancing Efficient Formal Proving via Augmented Lean Formalisation",
+          "organizations": [
+            "임페리얼 칼리지 런던",
+            "에든버러 대학교",
+            "난양 공과대학교",
+            "MBZUAI"
+          ],
+          "upvotes": 13,
+          "summary_line": "프런티어급 모델 없이도 강력한 Lean 정리 증명이 가능함을 보이는 연산 효율적 오픈소스 증명기 계열과 검증 부담을 줄이는 ALF 데이터 증강 기법을 제안하고 공개했다.",
+          "image": "days/2026-06-15/img/paper-15.png",
+          "hf_url": "https://huggingface.co/papers/2606.12594"
+        },
+        {
+          "id": "2606.14700",
+          "title": "RepFusion: Leveraging Multimodal Priors for Denoising in Representation Space",
+          "organizations": [
+            "Meta AI",
+            "뉴욕대학교"
+          ],
+          "upvotes": 11,
+          "summary_line": "사전학습된 frozen 멀티모달 LLM을 노이즈 표현 인코더로 재활용해 표현공간 디노이징을 조건화하는 RepFusion을 제안했다.",
+          "image": "days/2026-06-15/img/paper-16.png",
+          "hf_url": "https://huggingface.co/papers/2606.14700"
+        },
+        {
+          "id": "2606.14409",
+          "title": "Hy-Embodied-0.5-VLA: From Vision-Language-Action Models to a Real-World Robot Learning Stack",
+          "organizations": [
+            "Tencent Robotics X",
+            "Tencent Hunyuan(Hy) Team"
+          ],
+          "upvotes": 11,
+          "summary_line": "데이터 수집부터 실세계 배포까지 전 과정을 아우르는 종단간 VLA 로봇 학습 스택 Hy-Embodied-0.5-VLA와 1만 시간 규모 UMI 데이터셋, 보상 모델 없는 FlowPRO RL 기법을 제안하고 공개했다.",
+          "image": "days/2026-06-15/img/paper-17.png",
+          "hf_url": "https://huggingface.co/papers/2606.14409"
         },
         {
           "id": "2606.10747",
@@ -291,8 +750,8 @@
             "University of Turin"
           ],
           "upvotes": 11,
-          "summary_line": "다중 에이전트 대화를 예산 제약 하에 실시간 감시·비정렬 탐지하는 Arbiter 에이전트 제안.",
-          "image": "days/2026-06-15/img/paper-11.png",
+          "summary_line": "다중 에이전트 대화를 예산 제약 하에 실시간 감시하며 비정렬을 탐지하는 Arbiter 에이전트를 제안했다.",
+          "image": "days/2026-06-15/img/paper-18.png",
           "hf_url": "https://huggingface.co/papers/2606.10747"
         },
         {
@@ -305,9 +764,122 @@
             "난양공과대학교"
           ],
           "upvotes": 10,
-          "summary_line": "로봇 행동을 motion/contact 이미지로 변환해 공간적으로 명시 조건화한 임바디드 월드 모델 제안.",
-          "image": "days/2026-06-15/img/paper-12.png",
+          "summary_line": "로봇 행동을 motion·contact 이미지로 변환해 공간적으로 명시 조건화한 임바디드 월드 모델 iMaC를 제안했다.",
+          "image": "days/2026-06-15/img/paper-19.png",
           "hf_url": "https://huggingface.co/papers/2606.09813"
+        },
+        {
+          "id": "2606.00793",
+          "title": "MBench: A Comprehensive Benchmark on Memory Capability for Video World Models",
+          "organizations": [
+            "칭화대학교(Tsinghua University)",
+            "WeChat Vision, 텐센트(Tencent)",
+            "베이징대학교(Peking University)"
+          ],
+          "upvotes": 8,
+          "summary_line": "비디오 월드 모델의 장기 기억 능력을 개체·환경·인과 일관성의 3차원 12세부 차원으로 분해해 정량 평가하는 종합 벤치마크 MBench를 제안하고 리더보드와 함께 공개했다.",
+          "image": "days/2026-06-15/img/paper-20.png",
+          "hf_url": "https://huggingface.co/papers/2606.00793"
+        },
+        {
+          "id": "2606.13044",
+          "title": "No Hidden Prompts Needed! You Can Game AI Peer Review with Presentation-Only Revisions",
+          "organizations": [
+            "University of Texas at Austin",
+            "University of Illinois Urbana-Champaign",
+            "University of Texas at Dallas"
+          ],
+          "upvotes": 7,
+          "summary_line": "과학적 내용을 고정한 채 발표 수준만 수정해 AI 동료 심사 점수를 조작하는 폐루프 적대적 재포장 공격과 오염 없는 롤링 벤치마크를 제안하고, 강점·약점 비대칭성 및 전략 효과 기울기라는 구조적 결함을 밝혔다.",
+          "image": "days/2026-06-15/img/paper-21.png",
+          "hf_url": "https://huggingface.co/papers/2606.13044"
+        },
+        {
+          "id": "2606.13769",
+          "title": "μ_0: A Scalable 3D Interaction-Trace World Model",
+          "organizations": [
+            "메릴랜드 대학교 칼리지파크",
+            "서울대학교"
+          ],
+          "upvotes": 7,
+          "summary_line": "TraceExtract 데이터 엔진과 함께 의미적 상호작용 키포인트의 3D 궤적을 예측하는 신체 형태 무관 월드 모델 µ0를 제안하여 영상만으로 사전학습한 운동 사전을 로봇 행동 정책으로 전이시켰다.",
+          "image": "days/2026-06-15/img/paper-22.png",
+          "hf_url": "https://huggingface.co/papers/2606.13769"
+        },
+        {
+          "id": "2606.06309",
+          "title": "RhymeFlow: Training-Free Acceleration for Video Generation with Asynchronous Denoising Flow Scheduling",
+          "organizations": [
+            "칭화대학교",
+            "GigaAI"
+          ],
+          "upvotes": 7,
+          "summary_line": "프레임별 디노이징 궤적을 분리해 핵심 프레임만 완전 처리하고 비핵심 프레임은 단계를 건너뛰는 학습 불필요 비동기 디노이징 흐름 스케줄링 프레임워크 RhymeFlow를 제안했다.",
+          "image": "days/2026-06-15/img/paper-23.png",
+          "hf_url": "https://huggingface.co/papers/2606.06309"
+        },
+        {
+          "id": "2606.14579",
+          "title": "VISTA: View-Consistent Self-Verified Training for GUI Grounding",
+          "organizations": [
+            "저장대학교",
+            "앤트그룹 Venus Team"
+          ],
+          "upvotes": 6,
+          "summary_line": "단일 뷰 GRPO의 보상 퇴화 문제를 타깃 보존 다중 뷰로 그룹을 구성하고 자기검증 교차뷰 앵커로 좌표 생성을 안정화하는 VISTA 학습 프레임워크를 제안했다.",
+          "image": "days/2026-06-15/img/paper-24.png",
+          "hf_url": "https://huggingface.co/papers/2606.14579"
+        },
+        {
+          "id": "2606.12883",
+          "title": "The Hidden Power of Scaling Factor in LoRA Optimization",
+          "organizations": [
+            "JD",
+            "중국과학원대학교(UCAS) 수리과학원",
+            "난카이대학교(NKU) 수리과학원",
+            "중국과학원대학교(UCAS) 첨단학제과학원"
+          ],
+          "upvotes": 6,
+          "summary_line": "스케일링 인자 α가 학습률보다 LoRA 최적화를 더 결정적으로 좌우함을 이론·실험으로 규명하고 α를 제곱근 법칙으로 복원하는 LoRA-α 프레임워크를 제안했다.",
+          "image": "days/2026-06-15/img/paper-25.png",
+          "hf_url": "https://huggingface.co/papers/2606.12883"
+        },
+        {
+          "id": "2606.13872",
+          "title": "Avatar V: Scaling Video-Reference Avatar Video Generation",
+          "organizations": [
+            "HeyGen"
+          ],
+          "upvotes": 5,
+          "summary_line": "참조 영상의 전체 토큰에 선형 복잡도로 조건화하는 Sparse Reference Attention과 모션 표현 스트림을 통해 정적·동적 정체성을 모두 재현하는 프로덕션 규모 토킹 아바타 생성 프레임워크 Avatar V를 제안했다.",
+          "image": "days/2026-06-15/img/paper-26.png",
+          "hf_url": "https://huggingface.co/papers/2606.13872"
+        },
+        {
+          "id": "2606.14697",
+          "title": "ClinHallu: A Benchmark for Diagnosing Stage-Wise Hallucinations in Medical MLLM Reasoning",
+          "organizations": [
+            "홍콩과기대(광저우)",
+            "알리바바 다모 아카데미",
+            "후판 랩",
+            "저장대학교"
+          ],
+          "upvotes": 4,
+          "summary_line": "의료 MLLM 추론 과정을 시각 인식·지식 회상·추론 통합 3단계로 분해해 환각의 발생 단계를 진단하는 벤치마크 ClinHallu를 제안하고 공개했다.",
+          "image": "days/2026-06-15/img/paper-27.png",
+          "hf_url": "https://huggingface.co/papers/2606.14697"
+        },
+        {
+          "id": "2606.11599",
+          "title": "When is Your LLM Steerable?",
+          "organizations": [
+            "University of Maryland, College Park",
+            "MBZUAI"
+          ],
+          "upvotes": 4,
+          "summary_line": "초기 디코딩 은닉 상태로 스티어링 성공 여부를 사전에 예측하는 SteerBoost 분류기와 142만 건 규모의 ASTEER 테스트베드를 제안하고 이를 활용한 효율적 스티어링 강도 탐색 기법을 제시했다.",
+          "image": "days/2026-06-15/img/paper-28.png",
+          "hf_url": "https://huggingface.co/papers/2606.11599"
         },
         {
           "id": "2606.14600",
@@ -316,9 +888,21 @@
             "Humalike Research"
           ],
           "upvotes": 3,
-          "summary_line": "그룹 채팅에서 LLM의 암묵적 지역 규범 추론·적응 능력을 측정하는 벤치마크 LoSoNA 제안.",
-          "image": "days/2026-06-15/img/paper-13.png",
+          "summary_line": "그룹 채팅에서 LLM의 암묵적 지역 사회 규범 추론·적응 능력을 측정하는 벤치마크 LoSoNA를 제안했다.",
+          "image": "days/2026-06-15/img/paper-29.png",
           "hf_url": "https://huggingface.co/papers/2606.14600"
+        },
+        {
+          "id": "2606.13652",
+          "title": "World Tracing: Generative Pixel-Aligned Geometry Beyond the Visible",
+          "organizations": [
+            "World Labs",
+            "University of Illinois Urbana-Champaign"
+          ],
+          "upvotes": 3,
+          "summary_line": "보이는 표면 추정과 가려진 기하 완성을 하나의 카메라 좌표계 다층 텐서로 통합하는 픽셀 정렬 기하 표현과 이를 학습하는 플로우 매칭 디퓨전 트랜스포머 WT-DiT를 제안했다.",
+          "image": "days/2026-06-15/img/paper-30.png",
+          "hf_url": "https://huggingface.co/papers/2606.13652"
         },
         {
           "id": "2606.12736",
@@ -332,8 +916,8 @@
             "Microsoft Research"
           ],
           "upvotes": 3,
-          "summary_line": "5개 과학 도메인을 아우르는 단계별 검증형 AI 에이전트 벤치마크 SciAgentArena 제안.",
-          "image": "days/2026-06-15/img/paper-14.png",
+          "summary_line": "5개 과학 도메인을 아우르는 단계별 검증형 AI 에이전트 벤치마크 SciAgentArena를 제안했다.",
+          "image": "days/2026-06-15/img/paper-31.png",
           "hf_url": "https://huggingface.co/papers/2606.12736"
         },
         {
@@ -343,12 +927,209 @@
             "중국과학기술대학(USTC) 인지지능 국가중점실험실"
           ],
           "upvotes": 3,
-          "summary_line": "에이전트 RL을 스텝 단위 MDP로 재정의해 스텝 단위 신용 할당·정책 최적화를 정렬한 StepPO 제안.",
-          "image": "days/2026-06-15/img/paper-15.png",
+          "summary_line": "에이전트 RL을 스텝 단위 MDP로 재정의해 스텝 단위 신용 할당·정책 최적화를 정렬한 StepPO를 제안했다.",
+          "image": "days/2026-06-15/img/paper-32.png",
           "hf_url": "https://huggingface.co/papers/2604.18401"
+        },
+        {
+          "id": "2606.01462",
+          "title": "An Enigma of Artificial Reason: Investigating the Production-Evaluation Gap in Large Reasoning Models",
+          "organizations": [
+            "National University of Singapore",
+            "MIT",
+            "A*STAR",
+            "Singapore-MIT Alliance for Research and Technology (SMART)"
+          ],
+          "upvotes": 3,
+          "summary_line": "정답은 유효하지만 추론에 사소한 결함을 주입한 VAIR 데이터셋을 구축해 대규모 추론 모델의 생산-평가 격차가 정답 확증 편향에서 비롯됨을 행동·표상·인과 분석으로 규명했다.",
+          "image": "days/2026-06-15/img/paper-33.png",
+          "hf_url": "https://huggingface.co/papers/2606.01462"
+        },
+        {
+          "id": "2606.14240",
+          "title": "AFFORDANCE20Q: Evaluating Affordance Reasoning from Physical Properties",
+          "organizations": [
+            "University of Southern California",
+            "Information Sciences Institute (USC)"
+          ],
+          "upvotes": 2,
+          "summary_line": "물리적 속성만으로 affordance를 추론하도록 객체 정체를 숨긴 스무고개 형식의 벤치마크 AFFORDANCE20Q와 지식베이스 근거 규칙 생성 파이프라인 KARI를 제안하고 코드와 데이터를 공개했다.",
+          "image": "days/2026-06-15/img/paper-34.png",
+          "hf_url": "https://huggingface.co/papers/2606.14240"
+        },
+        {
+          "id": "2606.13657",
+          "title": "Dense Supervision, Sparse Updates: On the Sparsity and Geometry of On-Policy Distillation",
+          "organizations": [
+            "난징대학교(인공지능대학, 신소프트웨어기술 국가핵심연구소)",
+            "알리바바 그룹 Amap"
+          ],
+          "upvotes": 2,
+          "summary_line": "여러 언어 및 비전-언어 모델에서 온정책 증류(OPD)의 파라미터 업데이트가 작고 희소하며 스펙트럼이 집중되고 원본 주성분에서 벗어난다는 것을 체계적으로 분석해 OPD가 조밀한 재작성이 아닌 희소한 온정책 편집에 가깝다는 것을 입증했다.",
+          "image": "days/2026-06-15/img/paper-35.png",
+          "hf_url": "https://huggingface.co/papers/2606.13657"
+        },
+        {
+          "id": "2606.11152",
+          "title": "P3D-Bench: Benchmarking MLLMs for Parametric 3D Generation and Structural Reasoning",
+          "organizations": [
+            "Nanjing University",
+            "Envision"
+          ],
+          "upvotes": 2,
+          "summary_line": "MLLM의 파라메트릭 3D 생성과 구조적 추론 능력을 실행·렌더링 기반으로 평가하는 통합 벤치마크 P3D-BENCH와 P3D-Dataset을 제안하고 공개했다.",
+          "image": "days/2026-06-15/img/paper-36.png",
+          "hf_url": "https://huggingface.co/papers/2606.11152"
+        },
+        {
+          "id": "2606.12366",
+          "title": "APT: Action Expert Pretraining Improves Instruction Generalization of Vision-Language-Action Policies",
+          "organizations": [
+            "저장대학교",
+            "저장 휴머노이드 로봇 혁신센터"
+          ],
+          "upvotes": 1,
+          "summary_line": "베이지안 분해를 기반으로 액션 전문가를 비전-행동 쌍으로 사전학습하는 2단계 학습법 APT와 계층별 게이트 융합 메커니즘을 제안해 VLA 정책의 명령어 일반화를 개선했다.",
+          "image": "days/2026-06-15/img/paper-37.png",
+          "hf_url": "https://huggingface.co/papers/2606.12366"
+        },
+        {
+          "id": "2606.08952",
+          "title": "AlloSpatial: Agentic Harness Framework for Spatial Reasoning in Foundation Models",
+          "organizations": [
+            "베이항대학교 인공지능연구원",
+            "화웨이 노아의 방주 연구소",
+            "베이징과학기술대학교"
+          ],
+          "upvotes": 1,
+          "summary_line": "자기중심 관찰을 질의 가능한 타자중심 공간 사전지식으로 변환하는 World2Mind 샌드박스와 3단계 공간 추론 하네스를 결합한 에이전트 프레임워크 AlloSpatial을 제안하고 강화학습으로 오픈웨이트 모델에 내재화했다.",
+          "image": "days/2026-06-15/img/paper-38.png",
+          "hf_url": "https://huggingface.co/papers/2606.08952"
+        },
+        {
+          "id": "2606.06194",
+          "title": "ActiveMimic: Egocentric Video Pretraining with Active Perception",
+          "organizations": [
+            "푸단대학교",
+            "상하이 혁신연구원",
+            "Current Robotics",
+            "NeoteAI"
+          ],
+          "upvotes": 1,
+          "summary_line": "별도의 캡처 장비 없이 단일 착용형 RGB 카메라에서 복원한 동기화 카메라·손목 궤적으로 능동 지각과 조작을 함께 사전학습하는 ActiveMimic 프레임워크를 제안했다.",
+          "image": "days/2026-06-15/img/paper-39.png",
+          "hf_url": "https://huggingface.co/papers/2606.06194"
+        },
+        {
+          "id": "2606.05308",
+          "title": "Statistically Reliable LLM-Based Ranking Evaluation via Prediction-Powered Inference",
+          "organizations": [
+            "Amazon"
+          ],
+          "upvotes": 1,
+          "summary_line": "사람 라벨과 LLM 판정을 결합해 편향을 통계적으로 보정하고 계층적 순위 지표에 적용 가능한 PPI 확장 프레임워크 PRECISE를 제안했다.",
+          "image": "days/2026-06-15/img/paper-40.png",
+          "hf_url": "https://huggingface.co/papers/2606.05308"
+        },
+        {
+          "id": "2606.01708",
+          "title": "Two-Fidelity Best-Action Identification for Stochastic Minimax Tree",
+          "organizations": [
+            "컬럼비아대학교",
+            "뉴욕대학교 스턴 경영대학원"
+          ],
+          "upvotes": 1,
+          "summary_line": "확률적 미니맥스 트리에서 값싼 편향 평가와 비싼 정확 평가를 적응적으로 결합해 고정 신뢰도 최적 행동을 식별하는 2정밀도 트리 탐색 알고리즘 2FFS를 제안하고, 트리 환경에서의 다정밀도 밴딧에 대한 최초의 이론적 분석 틀을 제시했다.",
+          "image": "days/2026-06-15/img/paper-41.png",
+          "hf_url": "https://huggingface.co/papers/2606.01708"
+        },
+        {
+          "id": "2606.14346",
+          "title": "Squeeze-Release: Iterative Pruning with Exact Structural Minimization",
+          "organizations": [
+            "Uppsala University",
+            "Science for Life Laboratory"
+          ],
+          "upvotes": 0,
+          "summary_line": "압축 텐서 내부의 0 위치를 되살려 반복적으로 정확히 구조를 축소하는 Squeeze-Release 절차와 LayerNorm을 함수 보존 방식으로 축소하는 CompensatedLayerNorm을 제안했다.",
+          "image": "days/2026-06-15/img/paper-42.png",
+          "hf_url": "https://huggingface.co/papers/2606.14346"
+        },
+        {
+          "id": "2606.14694",
+          "title": "AdaSR: Adaptive Streaming Reasoning with Hierarchical Relative Policy Optimization",
+          "organizations": [
+            "Eastern Institute of Technology(닝보)",
+            "상하이교통대학교",
+            "홍콩이공대학교",
+            "둥난대학교",
+            "시안교통-리버풀대학교"
+          ],
+          "upvotes": 0,
+          "summary_line": "스트리밍 입력 환경에서 언제 추론하고 건너뛸지를 학습하는 적응형 스트리밍 추론 프레임워크 AdaSR와 단계별로 어드밴티지를 분해 할당하는 계층적 정책 최적화 기법 HRPO를 제안했다.",
+          "image": "days/2026-06-15/img/paper-43.png",
+          "hf_url": "https://huggingface.co/papers/2606.14694"
+        },
+        {
+          "id": "2606.12476",
+          "title": "Quickest Detection of Hallucination Onset: Delay Bounds and Learned CUSUM Statistics",
+          "organizations": [
+            "독립 연구자(Independent Researcher)"
+          ],
+          "upvotes": 0,
+          "summary_line": "환각 발생 탐지를 최속 변화점 탐지 문제로 정식화하고 Lorden 지연 하한과 학습된 CUSUM 해석을 통해 탐지 지연의 한계와 그 격차의 원인을 정량적으로 규명했다.",
+          "image": "days/2026-06-15/img/paper-44.png",
+          "hf_url": "https://huggingface.co/papers/2606.12476"
+        },
+        {
+          "id": "2606.08670",
+          "title": "WaveDiT: Distribution-Aware Wavelet Flow Matching for Efficient 3D Brain MRI Synthesis",
+          "organizations": [
+            "Politecnico di Bari",
+            "Sapienza University of Rome"
+          ],
+          "upvotes": 0,
+          "summary_line": "웨이블릿 도메인에서 작동하며 대역별 불확실성을 모델링하는 조건부 플로우 매칭 프레임워크 WaveDiT와 상태 인식 불확실성 스케줄러 Morpheus를 제안하고 코드를 공개했다.",
+          "image": "days/2026-06-15/img/paper-45.png",
+          "hf_url": "https://huggingface.co/papers/2606.08670"
+        },
+        {
+          "id": "2606.14732",
+          "title": "Steady-Forcing: Balancing Spatial Persistence and Motion Continuity in Long-Horizon Nature Video Diffusion",
+          "organizations": [
+            "Sogang University"
+          ],
+          "upvotes": 0,
+          "summary_line": "고정 카메라 장기 자연 영상 생성의 안정성-모션 트레이드오프를 정량적으로 규명하고, 이중 싱크 메모리와 주기적 캐시 정화 및 모션 보상 증류를 결합한 Steady-Forcing 프레임워크를 제안했다.",
+          "image": "days/2026-06-15/img/paper-46.png",
+          "hf_url": "https://huggingface.co/papers/2606.14732"
+        },
+        {
+          "id": "2606.01008",
+          "title": "FVSpec: Real-World Property-Based Tests as Lean Challenges",
+          "organizations": [
+            "Galois Inc",
+            "Forall R&D",
+            "Benchify"
+          ],
+          "upvotes": 0,
+          "summary_line": "실세계 파이썬 속성 기반 테스트를 Lean 4 형식 검증 과제로 변환하는 에이전트 파이프라인과 9,415개 과제 벤치마크 FVSpec를 오픈소스로 공개했다.",
+          "image": "days/2026-06-15/img/paper-47.png",
+          "hf_url": "https://huggingface.co/papers/2606.01008"
+        },
+        {
+          "id": "2606.02641",
+          "title": "CARVE: Certified Affordable Repair of Vetoed Maneuvers via Envelopes for Interactive Driving",
+          "organizations": [
+            "McGill University"
+          ],
+          "upvotes": 0,
+          "summary_line": "거짓 거부 회복을 궤적 예측이 아닌 상호작용 인증 문제로 재정의하고, 우선권으로 스케일된 협력 엔벨로프와 형식적 보장을 갖춘 예측 비의존형 수리 인증 계층 CARVE를 제안했다.",
+          "image": "days/2026-06-15/img/paper-48.png",
+          "hf_url": "https://huggingface.co/papers/2606.02641"
         }
       ]
     }
   ],
-  "updated_at": "2026-06-16T14:44:50.171096+00:00"
+  "updated_at": "2026-06-16T15:18:04.652449+00:00"
 }

@@ -21,7 +21,7 @@ argument-hint: "[YYYY-MM-DD] (생략 시 최신 날짜 자동)"
 - `pdf_ok=true` 면 `pdf_path` 의 PDF를 **Read 도구로 직접 읽습니다**(초록·서론·방법·결과·결론 중심, 긴 논문은 pages 인자 활용). `pdf_ok=false` 면 `hf_summary`·`ai_summary` 로 대체합니다.
 - 여러 논문은 **병렬 서브에이전트**(general-purpose)로 나눠 읽으면 빠릅니다. 각 논문에 대해 다음을 **한글로** 채웁니다(간결·핵심 위주):
   - `organizations`: 저자 소속 기관 배열(PDF 표지/각주에서 확인, 없으면 `org_hint` 사용)
-  - `summary.contribution`: **핵심 기여를 표현하는 간결한 한글 1문장**(메인 카드에 표시)
+  - `summary.contribution`: **핵심 기여를 표현하는 간결한 한글 1문장**(메인 카드에 표시) — 반드시 **서술식**(예: "~를 제안했다", "~를 공개했다", "~를 달성했다"). 개조식·명사 종결("~ 제안.", "~ 프레임워크.") 금지.
   - `summary.core_idea`: 핵심 아이디어 2~3문장
   - `summary.key_results`: 주요 결과 불릿 2~4개(수치/벤치마크 위주, **문자열 배열**)
   - `summary.conclusion`: 결론 및 시사점 2~3문장
@@ -57,5 +57,5 @@ python scripts/compose_infographic.py --papers days/DATE/papers.json --all
 
 **유의사항**
 - `index.html`·`assets/`·`templates/` 는 최초 1회 생성된 자산이므로 **수정하지 않습니다**(매일 바뀌는 것은 `data/manifest.json` 추가와 `days/DATE/` 신규 생성뿐).
-- 우선 토픽(MCP·Orchestration·Agentic AI·Ontology) 강제 포함은 1단계 `fetch` 에서 자동 처리됩니다(선정용이며 화면에는 표시하지 않음).
+- 1단계 `fetch` 는 그날 게시된 **모든 논문**을 처리합니다(상위 N편 선별·우선 토픽·상한 없음). 그날 편수가 많으면(수십 편) 요약 서브에이전트를 **여러 배치로 나눠** 진행하세요. 이미 요약된 논문은 fetch가 자동 보존하므로 신규 논문만 채우면 됩니다.
 - 배포(push) 시 인증이 필요하면 사용자에게 알리고 대기합니다.

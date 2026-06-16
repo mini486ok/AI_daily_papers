@@ -153,25 +153,16 @@ def tag_topics(p: dict) -> None:
     p["is_priority"] = bool(found)
 
 
-def select_papers(papers: list, top_n: int) -> list:
+def select_papers(papers: list, top_n=None) -> list:
+    """해당 날짜의 **모든** 논문을 upvote 내림차순으로 반환(기본). top_n 지정 시에만 상위 N편 제한."""
     for p in papers:
-        tag_topics(p)
-    priority = sorted([p for p in papers if p["is_priority"]], key=lambda x: -x["upvotes"])
-    others = sorted([p for p in papers if not p["is_priority"]], key=lambda x: -x["upvotes"])
-
-    selected = list(priority)                       # 우선 토픽은 모두 포함
-    for p in others:
-        if len(selected) >= top_n:
-            break
-        selected.append(p)
-    if len(selected) > HARD_CAP:
-        log(f"  선정 {len(selected)}편 → 상한 {HARD_CAP}편으로 제한(upvote 기준)")
-        selected = sorted(selected, key=lambda x: -x["upvotes"])[:HARD_CAP]
-
-    selected.sort(key=lambda x: -x["upvotes"])      # 표시 순서: upvote 내림차순
-    for rank, p in enumerate(selected, start=1):
+        tag_topics(p)  # 토픽 태그는 저장만(표시·선정에는 미사용)
+    papers.sort(key=lambda x: -x["upvotes"])
+    if top_n:
+        papers = papers[:top_n]
+    for rank, p in enumerate(papers, start=1):
         p["rank"] = rank
-    return selected
+    return papers
 
 
 def download_pdf(p: dict, day_dir: Path) -> None:
@@ -210,10 +201,30 @@ def cmd_fetch(args) -> None:
     day_dir = DAYS_DIR / date_str
     (day_dir / "img").mkdir(parents=True, exist_ok=True)
 
-    log(f"선정 {len(selected)}편 (우선토픽 {sum(p['is_priority'] for p in selected)}편) — PDF 다운로드 시작")
+    # 재실행 시 기존 요약 보존(id 기준): 이미 요약된 논문은 다시 작성하지 않도록 carry-over
+    existing = {}
+    pj_prev = day_dir / "papers.json"
+    if pj_prev.exists():
+        try:
+            old = json.loads(pj_prev.read_text(encoding="utf-8"))
+            existing = {p["id"]: p for p in old.get("papers", [])}
+        except Exception:  # noqa: BLE001
+            pass
+    carried = 0
+    for p in selected:
+        o = existing.get(p["id"])
+        if o and o.get("status", {}).get("summarized"):
+            p["title_ko"] = o.get("title_ko", "")
+            p["organizations"] = o.get("organizations", [])
+            p["summary"] = o.get("summary", p["summary"])
+            p["status"]["summarized"] = True
+            carried += 1
+        p["infographic"]["image_path"] = f"img/paper-{p['rank']:02d}.png"  # 현재 rank 기준 경로
+
+    log(f"전체 {len(selected)}편 처리 (기존 요약 보존 {carried}편, 신규 {len(selected)-carried}편) — PDF 다운로드 시작")
     for p in selected:
         download_pdf(p, day_dir)
-        time.sleep(1.0)  # arxiv 예의상 지연
+        time.sleep(0.4)  # arxiv 예의상 지연
 
     out = {
         "date": date_str,
@@ -334,7 +345,7 @@ def main() -> None:
 
     f = sub.add_parser("fetch", help="논문 수집·선정·PDF 다운로드")
     f.add_argument("--date", help="YYYY-MM-DD (생략 시 최신 자동)")
-    f.add_argument("--top", type=int, default=DEFAULT_TOP_N, help=f"처리 편수(기본 {DEFAULT_TOP_N})")
+    f.add_argument("--top", type=int, default=None, help="처리 편수 제한(기본: 전체 논문)")
     f.set_defaults(func=cmd_fetch)
 
     b = sub.add_parser("build", help="일자별 페이지 생성 + manifest 갱신")
