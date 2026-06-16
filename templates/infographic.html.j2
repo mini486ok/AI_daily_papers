@@ -56,6 +56,7 @@
   .node.n1 { transform: rotate(-.5deg); border-color: rgba(255,224,138,.7); }
   .node.n2 { transform: rotate(.4deg); border-color: rgba(159,208,255,.7); }
   .node.n3 { transform: rotate(-.3deg); border-color: rgba(255,159,182,.75); }
+  .node.n4 { transform: rotate(.35deg); border-color: rgba(255,207,158,.78); }
   .tag {
     position: absolute; top: -20px; left: 26px; padding: 2px 16px; border-radius: 8px;
     font-family: "Gaegu"; font-weight: 700; font-size: 26px; transform: rotate(-1.5deg);
@@ -63,6 +64,7 @@
   .n1 .tag { background: #ffe08a; color: #4a3b10; }
   .n2 .tag { background: #9fd0ff; color: #103048; }
   .n3 .tag { background: #ff9fb6; color: #4a1020; }
+  .n4 .tag { background: #ffcf9e; color: #4a2f10; }
   .node p { font-size: 27px; line-height: 1.55; color: #f1f6f1; margin-top: 6px; }
   .node ul { list-style: none; margin-top: 6px; }
   .node li {
@@ -111,6 +113,13 @@
       <div class="node n3">
         <span class="tag chalk">결론 및 시사점</span>
         <p class="chalk">{{ conclusion }}</p>
+      </div>
+      {% endif %}
+      {% if limitations %}
+      <div class="arrow chalk">↓</div>
+      <div class="node n4">
+        <span class="tag chalk">한계점</span>
+        <p class="chalk">{{ limitations }}</p>
       </div>
       {% endif %}
     </div>

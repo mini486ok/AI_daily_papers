@@ -39,6 +39,7 @@ def spec_from_paper(p: dict, date: str) -> dict:
         "core_idea": s.get("core_idea", ""),
         "key_results": s.get("key_results", []),
         "conclusion": s.get("conclusion", ""),
+        "limitations": s.get("limitations", ""),
     }
 
 

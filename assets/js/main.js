@@ -131,11 +131,7 @@
 
   function cardHtml(p) {
     const href = `${p.page}#paper-${esc(p.id)}`;
-    const thumb = p.image
-      ? `<img loading="lazy" src="${esc(p.image)}" alt="${esc(p.title)} 인포그래픽">`
-      : `<div class="ph">AI</div>`;
     return `<a class="card" href="${href}">
-      <div class="thumb">${thumb}</div>
       <div class="body">
         <div class="card-title">${esc(p.title)}</div>
         ${p.summary_line ? `<div class="card-summary">${esc(p.summary_line)}</div>` : ""}

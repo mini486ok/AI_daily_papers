@@ -287,7 +287,7 @@ def cmd_build(args) -> None:
                 "title": p["title"],
                 "organizations": p.get("organizations", []) or ([p["org_hint"]] if p.get("org_hint") else []),
                 "upvotes": p.get("upvotes", 0),
-                "summary_line": first_sentence(p.get("summary", {}).get("core_idea", "")),
+                "summary_line": p.get("summary", {}).get("contribution") or first_sentence(p.get("summary", {}).get("core_idea", "")),
                 "image": (f"days/{date_str}/" + p["infographic"]["image_path"]) if p["infographic"].get("image_path") else "",
                 "hf_url": p.get("hf_url", ""),
             }

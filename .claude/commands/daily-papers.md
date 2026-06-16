@@ -21,16 +21,19 @@ argument-hint: "[YYYY-MM-DD] (생략 시 최신 날짜 자동)"
 - `pdf_ok=true` 면 `pdf_path` 의 PDF를 **Read 도구로 직접 읽습니다**(초록·서론·방법·결과·결론 중심, 긴 논문은 pages 인자 활용). `pdf_ok=false` 면 `hf_summary`·`ai_summary` 로 대체합니다.
 - 여러 논문은 **병렬 서브에이전트**(general-purpose)로 나눠 읽으면 빠릅니다. 각 논문에 대해 다음을 **한글로** 채웁니다(간결·핵심 위주):
   - `organizations`: 저자 소속 기관 배열(PDF 표지/각주에서 확인, 없으면 `org_hint` 사용)
+  - `summary.contribution`: **핵심 기여를 표현하는 간결한 한글 1문장**(메인 카드에 표시)
   - `summary.core_idea`: 핵심 아이디어 2~3문장
   - `summary.key_results`: 주요 결과 불릿 2~4개(수치/벤치마크 위주, **문자열 배열**)
   - `summary.conclusion`: 결론 및 시사점 2~3문장
+  - `summary.limitations`: **한계점/향후 과제 1~2문장**(논문에 명시된 한계 기반)
   - `infographic.image_path`: `"img/paper-NN.png"` (NN = rank 2자리, 예: `img/paper-01.png`)
   - `status.summarized`: `true`
 - 모든 논문 처리 후, **papers.json 전체를 Write 도구로 다시 저장**합니다(다른 필드·구조 보존).
+- 메인 카드에는 인포그래픽 없이 **영문제목·핵심 기여 1문장·소속**만, 인포그래픽에는 핵심아이디어·주요결과·결론·**한계점**이 칠판 도식으로 들어갑니다.
 - 참고: 제목은 **영문 원제만** 사용합니다(한글 번역 제목은 사이트·인포그래픽 어디에도 쓰지 않으므로 만들 필요 없음).
 
 ### 3단계 · 칠판 인포그래픽 합성 (스크립트, 한 번에)
-모든 논문을 한 번에 렌더링합니다(Playwright로 칠판 도식 HTML 템플릿을 PNG로 — 영문제목·소속·핵심아이디어·주요결과·결론을 한 장에 또렷한 한글로, 통일 스타일):
+모든 논문을 한 번에 렌더링합니다(Playwright로 칠판 도식 HTML 템플릿을 PNG로 — 영문제목·소속·핵심아이디어·주요결과·결론·한계점을 한 장에 또렷한 한글로, 통일 스타일):
 ```
 python scripts/compose_infographic.py --papers days/DATE/papers.json --all
 ```

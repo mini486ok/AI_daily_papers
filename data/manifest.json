@@ -17,7 +17,7 @@
             "JD.com (징둥)"
           ],
           "upvotes": 150,
-          "summary_line": "기존 대형 모델이 사용자가 물을 때만 답하는 '턴 기반' 방식인 데 반해, 매초 영상 스트림을 지켜보며 응답할지·침묵할지·백그라운드 모델에 위임할지를 스스로 결정하는 8B 규모의 비전 우선 상호작용 모델이다.",
+          "summary_line": "세계를 계속 보며 말할지·침묵할지·위임할지를 매초 스스로 결정하는 8B 비전 우선 실시간 상호작용 모델과 배포형 시스템 전체를 오픈소스로 공개했다.",
           "image": "days/2026-06-16/img/paper-01.png",
           "hf_url": "https://huggingface.co/papers/2606.14777"
         },
@@ -29,7 +29,7 @@
             "Stanford University"
           ],
           "upvotes": 82,
-          "summary_line": "Data2Story는 탐정·분석가·편집자·디자이너·프로그래머·감사관, 그리고 핵심인 검수관(Inspector) 등 7개 전문 역할을 하나의 가상 뉴스룸으로 오케스트레이션하는 멀티 에이전트 프레임워크다.",
+          "summary_line": "원본 데이터를 검증·추적 가능한 멀티모달 기사로 만드는 7개 역할 기반 멀티에이전트 데이터 저널리즘 프레임워크를 제안했다.",
           "image": "days/2026-06-16/img/paper-02.png",
           "hf_url": "https://huggingface.co/papers/2606.11176"
         },
@@ -41,7 +41,7 @@
             "Shanghai Jiao Tong University"
           ],
           "upvotes": 47,
-          "summary_line": "코딩 에이전트에서 저장소 탐색은 토큰을 크게 소모하고 컨텍스트를 오염시키는 병목이다.",
+          "summary_line": "저장소 탐색을 본 에이전트와 분리해 파일·라인 근거만 반환하는 전용 탐색 서브에이전트를 SFT·RL로 학습시켜 해결률 최대 5.5%p↑, 토큰 최대 60%↓를 달성했다.",
           "image": "days/2026-06-16/img/paper-03.png",
           "hf_url": "https://huggingface.co/papers/2606.14066"
         },
@@ -55,7 +55,7 @@
             "UC Berkeley"
           ],
           "upvotes": 20,
-          "summary_line": "VisualClaw는 비전언어모델(VLM)의 실시간 배포 비용·고정 스캐폴드·에이전트 평가 부재 문제를 해결하는 자기진화형 멀티모달 에이전트다.",
+          "summary_line": "스트리밍 영상을 엣지에서 캐스케이드 게이팅하고 실패 기반 스킬·메모리를 자가진화시켜 비용을 낮추면서 정확도를 높이는 멀티모달 에이전트를 제안했다.",
           "image": "days/2026-06-16/img/paper-04.png",
           "hf_url": "https://huggingface.co/papers/2606.16295"
         },
@@ -66,7 +66,7 @@
             "Renmin University of China (RUC-DataLab)"
           ],
           "upvotes": 11,
-          "summary_line": "코드 지능과 데이터 지능을 분리해 평가하던 기존 벤치마크의 한계를 극복하기 위해, 두 능력을 동시에 평가하는 최초의 벤치마크 CODA-BENCH를 제안한다.",
+          "summary_line": "코드 지능과 데이터 지능을 동시에 평가하는 최초의 데이터 집약적 에이전트 벤치마크 CODA-BENCH를 제안했다.",
           "image": "days/2026-06-16/img/paper-05.png",
           "hf_url": "https://huggingface.co/papers/2606.15300"
         },
@@ -80,7 +80,7 @@
             "HomologyAI"
           ],
           "upvotes": 10,
-          "summary_line": "장기 세션 LLM 에이전트에서 컨텍스트 누적은 추론 비용을 키우는데, 기존 가지치기 방식은 시퀀스 레이아웃을 변형해 프리픽스 불일치와 KV 캐시 무효화를 일으킨다.",
+          "summary_line": "프롬프트 캐시 정렬을 보존하며 컨텍스트를 압축·제거해 LLM 에이전트의 추론 비용을 대폭 절감하는 이중 단위 컨텍스트 관리 프레임워크를 제안했다.",
           "image": "days/2026-06-16/img/paper-06.png",
           "hf_url": "https://huggingface.co/papers/2606.17016"
         },
@@ -92,7 +92,7 @@
             "Microsoft Research"
           ],
           "upvotes": 10,
-          "summary_line": "기존 웹 에이전트 벤치마크는 최종 성공 여부만 평가해 과정 정보를 모두 버린다.",
+          "summary_line": "웹 에이전트를 시맨틱 MDP로 모델링해 결과가 아닌 과정 단위로 자동 평가하는 벤치마크 WEBSTEP을 제안했다.",
           "image": "days/2026-06-16/img/paper-07.png",
           "hf_url": "https://huggingface.co/papers/2606.15673"
         },
@@ -106,7 +106,7 @@
             "Tsinghua University"
           ],
           "upvotes": 8,
-          "summary_line": "기존 모바일 에이전트가 화면을 보고 탭/스와이프만 예측하는 한계를 넘어, PhoneHarness는 단말 측 CLI 실행, 위임형 GUI 조작, 호스트 측 MCP 도구 호출을 하나의 폰 에이전트 루프에 통합한 혼합 액션 하니스다.",
+          "summary_line": "CLI·GUI·도구 호출을 결합한 혼합 행동 폰 에이전트 하니스와 부수효과 검증 벤치마크 PhoneHarness를 제안했다.",
           "image": "days/2026-06-16/img/paper-08.png",
           "hf_url": "https://huggingface.co/papers/2606.14832"
         },
@@ -117,7 +117,7 @@
             "Inclusion AI (Ling Team)"
           ],
           "upvotes": 6,
-          "summary_line": "Ling-2.0 베이스 모델을 처음부터 재학습하지 않고 아키텍처 이식과 대규모 사후학습으로 업그레이드하여, 즉각 응답에 특화된 Ling-2.6과 심층 추론·에이전트 워크플로에 특화된 Ring-2.6 패밀리(104B~1T)를 만든다.",
+          "summary_line": "Ling-2.0 베이스를 하이브리드 선형 어텐션으로 개조하고 토큰 효율·에이전트 RL(KPop)을 적용해 1조 파라미터급 효율적 에이전트 모델군 Ling/Ring 2.6을 공개했다.",
           "image": "days/2026-06-16/img/paper-09.png",
           "hf_url": "https://huggingface.co/papers/2606.15079"
         },
@@ -128,7 +128,7 @@
             "NVIDIA"
           ],
           "upvotes": 3,
-          "summary_line": "Nemotron 3 Ultra는 총 5,500억(활성 550억) 파라미터의 MoE 하이브리드 Mamba-Attention 언어 모델로, 20조 토큰 사전학습 후 컨텍스트를 100만 토큰까지 확장하고 SFT·RL·다중 교사 온폴리시 증류로 후학습했다.",
+          "summary_line": "MoE 하이브리드 Mamba-Attention 구조로 동급 정확도를 유지하면서 최대 6배 빠른 추론을 달성한 에이전트형 오픈 LLM을 공개했다.",
           "image": "days/2026-06-16/img/paper-10.png",
           "hf_url": "https://huggingface.co/papers/2606.15007"
         },
@@ -139,12 +139,12 @@
             "Independent Researcher (Tel Aviv, Israel)"
           ],
           "upvotes": 1,
-          "summary_line": "콘텐츠 모더레이션 시스템이 모든 표준 정확도 지표에서 우수해 보여도, 분리된 커뮤니티를 잇는 소수의 '브리지' 사용자에게 오류가 집중되면 실제 해악을 일으킬 수 있다.",
+          "summary_line": "집계 지표가 가리는 모듈형 네트워크 브리지 노드의 거버넌스 실패를 드러내는 위치 가중 거버넌스 손실(L_gov) 지표를 제안했다.",
           "image": "days/2026-06-16/img/paper-11.png",
           "hf_url": "https://huggingface.co/papers/2606.14819"
         }
       ]
     }
   ],
-  "updated_at": "2026-06-16T13:57:23.989603+00:00"
+  "updated_at": "2026-06-16T14:21:21.053009+00:00"
 }

@@ -63,6 +63,9 @@
         {% if p.summary.conclusion %}
         <div class="sec"><h4>결론 및 시사점</h4><p>{{ p.summary.conclusion }}</p></div>
         {% endif %}
+        {% if p.summary.limitations %}
+        <div class="sec"><h4>한계점</h4><p>{{ p.summary.limitations }}</p></div>
+        {% endif %}
 
         <div class="links">
           {% if p.arxiv_pdf_url %}<a class="btn primary" href="{{ p.arxiv_pdf_url }}" target="_blank" rel="noopener">arXiv 원문 PDF</a>{% endif %}
