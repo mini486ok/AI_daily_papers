@@ -66,6 +66,17 @@ def kst_today() -> dt.date:
     return (dt.datetime.now(dt.timezone.utc) + dt.timedelta(hours=9)).date()
 
 
+def first_sentence(text: str) -> str:
+    """한글 텍스트의 첫 문장만 반환(카드용 1문장 요약)."""
+    if not text:
+        return ""
+    m = re.search(r".+?(?:다|음|함|됨|임|요)\.(?=\s|$)", text)
+    if m:
+        return m.group(0).strip()
+    p = text.find(". ")
+    return (text[: p + 1] if p > 0 else text).strip()
+
+
 # ---------------------------------------------------------------------------
 # fetch
 # ---------------------------------------------------------------------------
@@ -274,11 +285,9 @@ def cmd_build(args) -> None:
             {
                 "id": p["id"],
                 "title": p["title"],
-                "title_ko": p.get("title_ko", ""),
                 "organizations": p.get("organizations", []) or ([p["org_hint"]] if p.get("org_hint") else []),
                 "upvotes": p.get("upvotes", 0),
-                "topics": p.get("topics", []),
-                "keywords": (p.get("ai_keywords") or [])[:6],
+                "summary_line": first_sentence(p.get("summary", {}).get("core_idea", "")),
                 "image": (f"days/{date_str}/" + p["infographic"]["image_path"]) if p["infographic"].get("image_path") else "",
                 "hf_url": p.get("hf_url", ""),
             }

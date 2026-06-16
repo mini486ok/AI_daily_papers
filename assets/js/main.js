@@ -47,7 +47,7 @@
   }
 
   /* ---------- 인덱스 페이지 ---------- */
-  const state = { query: "", topic: "all", date: "all", sort: "date", days: [] };
+  const state = { query: "", date: "all", sort: "date", days: [] };
 
   function initIndex() {
     fetch("data/manifest.json", { cache: "no-store" })
@@ -73,29 +73,6 @@
   }
 
   function buildControls() {
-    const topics = new Set();
-    allPapers().forEach((p) => (p.topics || []).forEach((t) => topics.add(t)));
-    const chips = document.getElementById("chips");
-    if (!chips) return;
-    const order = ["all", "MCP", "Orchestration", "Agentic AI", "Ontology"];
-    const extra = [...topics].filter((t) => !order.includes(t)).sort();
-    const list = ["all", ...order.slice(1).filter((t) => topics.has(t)), ...extra];
-    chips.innerHTML = list
-      .map(
-        (t) =>
-          `<button class="chip${t === "all" ? " active" : ""}" data-topic="${esc(t)}">${
-            t === "all" ? "전체" : esc(t)
-          }</button>`
-      )
-      .join("");
-    chips.querySelectorAll(".chip").forEach((c) =>
-      c.addEventListener("click", function () {
-        chips.querySelectorAll(".chip").forEach((x) => x.classList.remove("active"));
-        c.classList.add("active");
-        state.topic = c.getAttribute("data-topic");
-        render();
-      })
-    );
     // 날짜 칩
     const dateChips = document.getElementById("dateChips");
     if (dateChips) {
@@ -145,17 +122,13 @@
   }
 
   function matches(p) {
-    if (state.topic !== "all" && !(p.topics || []).includes(state.topic)) return false;
     if (!state.query) return true;
-    const hay = [p.title, p.title_ko, (p.organizations || []).join(" "), (p.topics || []).join(" "), p.date]
+    const hay = [p.title, (p.organizations || []).join(" "), p.summary_line || "", p.date]
       .join(" ")
       .toLowerCase();
     return hay.includes(state.query);
   }
 
-  function kwHtml(p) {
-    return (p.keywords || []).slice(0, 4).map((k) => `<span class="kw">${esc(k)}</span>`).join("");
-  }
   function cardHtml(p) {
     const href = `${p.page}#paper-${esc(p.id)}`;
     const thumb = p.image
@@ -164,8 +137,8 @@
     return `<a class="card" href="${href}">
       <div class="thumb">${thumb}</div>
       <div class="body">
-        <div class="tags">${tagHtml(p.topics)}${kwHtml(p)}</div>
         <div class="card-title">${esc(p.title)}</div>
+        ${p.summary_line ? `<div class="card-summary">${esc(p.summary_line)}</div>` : ""}
         <div class="org">${esc(orgText(p))}</div>
       </div>
     </a>`;
@@ -179,7 +152,7 @@
       app.innerHTML = '<div class="empty">조건에 맞는 논문이 없습니다.</div>';
       return;
     }
-    const flatMode = state.query || state.topic !== "all" || state.sort === "upvotes";
+    const flatMode = state.query || state.sort === "upvotes";
     if (flatMode) {
       const arr = filtered.slice();
       if (state.sort === "upvotes") arr.sort((a, b) => (b.upvotes || 0) - (a.upvotes || 0));

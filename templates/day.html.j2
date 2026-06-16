@@ -43,43 +43,31 @@
     <div class="wrap">
       {% for p in papers %}
       <article class="paper" id="paper-{{ p.id }}">
-        <div class="visual">
-          {% if p.infographic.image_path %}
-          <img loading="lazy" src="{{ p.infographic.image_path }}" alt="{{ p.title_ko or p.title }} 인포그래픽" />
-          {% else %}
-          <div class="ph" style="display:grid;place-items:center;height:100%;font-weight:800;color:var(--text-mute)">인포그래픽 준비 중</div>
-          {% endif %}
+        <div class="prank">#{{ p.rank }}</div>
+        <h3>{{ p.title }}</h3>
+        {% if p.infographic.image_path %}
+        <figure class="paper-figure">
+          <img loading="lazy" src="{{ p.infographic.image_path }}" alt="{{ p.title }} 인포그래픽" />
+        </figure>
+        {% endif %}
+        <div class="meta">
+          <span class="org">🏛 {{ (p.organizations | join(", ")) or p.org_hint or "소속 정보 미상" }}</span>
         </div>
-        <div class="content">
-          <div class="prank">#{{ p.rank }}{% if p.is_priority %} · 우선 토픽{% endif %}</div>
-          <h3>{{ p.title_ko or p.title }}</h3>
-          <div class="en">{{ p.title }}</div>
-          <div class="meta">
-            <span class="org">🏛 {{ (p.organizations | join(", ")) or p.org_hint or "소속 정보 미상" }}</span>
-            {% if p.upvotes %}<span>▲ {{ p.upvotes }}</span>{% endif %}
-            <span class="tags">
-              {% for t in p.topics %}<span class="tag" data-t="{{ t }}">{{ t }}</span>{% endfor %}
-            </span>
-          </div>
 
-          {% if p.summary.core_idea %}
-          <div class="sec"><h4>핵심 아이디어</h4><p>{{ p.summary.core_idea }}</p></div>
-          {% endif %}
-          {% if p.summary.key_results %}
-          <div class="sec"><h4>주요 결과</h4><ul>{% for r in p.summary.key_results %}<li>{{ r }}</li>{% endfor %}</ul></div>
-          {% endif %}
-          {% if p.summary.conclusion %}
-          <div class="sec"><h4>결론 및 시사점</h4><p>{{ p.summary.conclusion }}</p></div>
-          {% endif %}
-          {% if p.summary.affiliations %}
-          <div class="sec"><h4>저자 소속</h4><p>{{ p.summary.affiliations }}</p></div>
-          {% endif %}
+        {% if p.summary.core_idea %}
+        <div class="sec"><h4>핵심 아이디어</h4><p>{{ p.summary.core_idea }}</p></div>
+        {% endif %}
+        {% if p.summary.key_results %}
+        <div class="sec"><h4>주요 결과</h4><ul>{% for r in p.summary.key_results %}<li>{{ r }}</li>{% endfor %}</ul></div>
+        {% endif %}
+        {% if p.summary.conclusion %}
+        <div class="sec"><h4>결론 및 시사점</h4><p>{{ p.summary.conclusion }}</p></div>
+        {% endif %}
 
-          <div class="links">
-            {% if p.arxiv_pdf_url %}<a class="btn primary" href="{{ p.arxiv_pdf_url }}" target="_blank" rel="noopener">arXiv 원문 PDF</a>{% endif %}
-            {% if p.arxiv_abs_url %}<a class="btn" href="{{ p.arxiv_abs_url }}" target="_blank" rel="noopener">arXiv 초록</a>{% endif %}
-            {% if p.hf_url %}<a class="btn" href="{{ p.hf_url }}" target="_blank" rel="noopener">Hugging Face</a>{% endif %}
-          </div>
+        <div class="links">
+          {% if p.arxiv_pdf_url %}<a class="btn primary" href="{{ p.arxiv_pdf_url }}" target="_blank" rel="noopener">arXiv 원문 PDF</a>{% endif %}
+          {% if p.arxiv_abs_url %}<a class="btn" href="{{ p.arxiv_abs_url }}" target="_blank" rel="noopener">arXiv 초록</a>{% endif %}
+          {% if p.hf_url %}<a class="btn" href="{{ p.hf_url }}" target="_blank" rel="noopener">Hugging Face</a>{% endif %}
         </div>
       </article>
       {% endfor %}
