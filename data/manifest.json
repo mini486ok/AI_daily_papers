@@ -21,6 +21,14 @@
           "topics": [
             "Agentic AI"
           ],
+          "keywords": [
+            "vision-language model",
+            "real-time interaction",
+            "autonomous decision-making",
+            "vision-triggered responsiveness",
+            "time awareness",
+            "background model"
+          ],
           "image": "days/2026-06-16/img/paper-01.png",
           "hf_url": "https://huggingface.co/papers/2606.14777"
         },
@@ -37,6 +45,14 @@
             "Orchestration",
             "Agentic AI"
           ],
+          "keywords": [
+            "multi-agent framework",
+            "data journalism",
+            "evidence-grounded",
+            "multimodal generation",
+            "verifiability",
+            "article generation"
+          ],
           "image": "days/2026-06-16/img/paper-02.png",
           "hf_url": "https://huggingface.co/papers/2606.11176"
         },
@@ -51,6 +67,14 @@
           "upvotes": 47,
           "topics": [
             "Agentic AI"
+          ],
+          "keywords": [
+            "large language model",
+            "coding agents",
+            "repository exploration",
+            "context management",
+            "exploration subagent",
+            "tool calls"
           ],
           "image": "days/2026-06-16/img/paper-03.png",
           "hf_url": "https://huggingface.co/papers/2606.14066"
@@ -69,6 +93,14 @@
           "topics": [
             "Agentic AI"
           ],
+          "keywords": [
+            "vision language models",
+            "multimodal agent",
+            "hybrid encoding",
+            "cascaded gate",
+            "hot/cold top-k injection",
+            "skill evolution"
+          ],
           "image": "days/2026-06-16/img/paper-04.png",
           "hf_url": "https://huggingface.co/papers/2606.16295"
         },
@@ -82,6 +114,14 @@
           "upvotes": 11,
           "topics": [
             "Agentic AI"
+          ],
+          "keywords": [
+            "data-intensive environment",
+            "code-centric capabilities",
+            "data-centric capabilities",
+            "agent evaluation",
+            "data discovery",
+            "code execution"
           ],
           "image": "days/2026-06-16/img/paper-05.png",
           "hf_url": "https://huggingface.co/papers/2606.15300"
@@ -100,6 +140,14 @@
           "topics": [
             "Agentic AI"
           ],
+          "keywords": [
+            "LLM agents",
+            "context management",
+            "token footprints",
+            "prompt cache continuity",
+            "Ingestion-Aware Compaction",
+            "Lifecycle-Aware Eviction"
+          ],
           "image": "days/2026-06-16/img/paper-06.png",
           "hf_url": "https://huggingface.co/papers/2606.17016"
         },
@@ -114,6 +162,14 @@
           "upvotes": 10,
           "topics": [
             "Agentic AI"
+          ],
+          "keywords": [
+            "web agents",
+            "semantic MDP",
+            "process-level analysis",
+            "automatic semantic state tracking",
+            "semantic trajectory",
+            "exploration reach"
           ],
           "image": "days/2026-06-16/img/paper-07.png",
           "hf_url": "https://huggingface.co/papers/2606.15673"
@@ -132,6 +188,14 @@
           "topics": [
             "Agentic AI"
           ],
+          "keywords": [
+            "phone-use agents",
+            "mobile workflows",
+            "GUI controller",
+            "action-surface routing",
+            "verifiable execution",
+            "mixed-action benchmark"
+          ],
           "image": "days/2026-06-16/img/paper-08.png",
           "hf_url": "https://huggingface.co/papers/2606.14832"
         },
@@ -145,6 +209,14 @@
           "upvotes": 6,
           "topics": [
             "Agentic AI"
+          ],
+          "keywords": [
+            "architectural migration pre-training",
+            "Lightning Attention",
+            "MLA",
+            "Evolutionary Chain-of-Thought",
+            "Linguistic Unit Policy Optimization",
+            "bidirectional preference alignment"
           ],
           "image": "days/2026-06-16/img/paper-09.png",
           "hf_url": "https://huggingface.co/papers/2606.15079"
@@ -160,6 +232,14 @@
           "topics": [
             "Agentic AI"
           ],
+          "keywords": [
+            "Mixture-of-Experts",
+            "Hybrid Mamba-Attention",
+            "Supervised Fine Tuning",
+            "Reinforcement Learning",
+            "Multi-teacher On-Policy Distillation",
+            "LatentMoE"
+          ],
           "image": "days/2026-06-16/img/paper-10.png",
           "hf_url": "https://huggingface.co/papers/2606.15007"
         },
@@ -174,11 +254,19 @@
           "topics": [
             "Agentic AI"
           ],
+          "keywords": [
+            "agent-based model",
+            "community-structured network",
+            "noisy classifier",
+            "regulator",
+            "bridge users",
+            "governance loss"
+          ],
           "image": "days/2026-06-16/img/paper-11.png",
           "hf_url": "https://huggingface.co/papers/2606.14819"
         }
       ]
     }
   ],
-  "updated_at": "2026-06-16T12:59:44.545015+00:00"
+  "updated_at": "2026-06-16T13:30:57.581783+00:00"
 }

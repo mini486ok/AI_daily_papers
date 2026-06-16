@@ -26,25 +26,26 @@ argument-hint: "[YYYY-MM-DD] (생략 시 최신 날짜 자동)"
   - `summary.key_results`: 주요 결과 불릿 2~4개(수치/벤치마크 위주, **문자열 배열**)
   - `summary.conclusion`: 결론 및 시사점 2~3문장
   - `summary.affiliations`: 소속 한 줄 요약(선택)
-  - `infographic.headline`: 인포그래픽용 **짧은 한글 핵심 한 줄**(20자 내외)
-  - `infographic.points`: 인포그래픽용 **짧은 한글 포인트 3~4개**(각 1줄, 25자 내외 — 요약 본문과 별개로 압축)
   - `infographic.image_path`: `"img/paper-NN.png"` (NN = rank 2자리, 예: `img/paper-01.png`)
   - `status.summarized`: `true`
+  > 인포그래픽 이미지에는 위 요약(제목·소속·핵심 아이디어·주요 결과·결론·키워드)이 **그대로** 한글로
+  > 렌더링되므로(통일 템플릿), 별도의 headline/points는 필요 없습니다. 요약을 충실히 채우면 됩니다.
 - 모든 논문 처리 후, **papers.json 전체를 Write 도구로 다시 저장**합니다(다른 필드·구조 보존).
 
-### 3단계 · 인포그래픽 비주얼 (gpt-image 스킬, 논문별)
-각 논문마다 **gpt-image 스킬**로 **글자 없는** 콘셉트 일러스트(hero)를 생성합니다.
-- 스타일: 논문 주제를 상징하는 모던 에디토리얼/플랫 일러스트, **가로형(3:2 권장)**, **텍스트·글자 금지**(한글은 다음 단계에서 Pillow가 또렷하게 합성).
-- 색감: 토픽에 맞춤 — Agentic AI=보라, MCP=인디고, Orchestration=하늘색, Ontology=초록, 그 외=블루 계열.
+### 3단계 · hero 비주얼 (gpt-image 스킬, 논문별)
+각 논문마다 **gpt-image 스킬**로 인포그래픽 **상단 배너**가 될 **글자 없는** 콘셉트 일러스트(hero)를 생성합니다.
+- 호출: `bash C:/Users/SMYU/.claude/skills/gpt-image/scripts/generate.sh "<프롬프트>" "days/DATE/img/_hero_NN.png" --size 1536x1024 --quality medium` (Bash timeout 300000).
+- 스타일: 논문 주제를 상징하는 모던 에디토리얼/플랫 일러스트, **가로형(3:2)**, **텍스트·글자 절대 금지**(한글은 합성 단계에서 또렷하게 들어감), **보라/인디고 계열로 통일**.
+- "Selected model is at capacity" 오류는 일시적이므로 **재시도**합니다(여러 장은 `scripts/`나 임시 드라이버로 배치 + 재시도 권장).
 - 저장 경로: `days/DATE/img/_hero_NN.png` (NN = rank 2자리).
 
-### 4단계 · 합성 (스크립트, 논문별)
-각 논문(rank N)마다 실행:
+### 4단계 · 인포그래픽 합성 (스크립트, 한 번에)
+모든 논문을 한 번에 렌더링합니다(Playwright로 HTML 템플릿을 PNG로, 통일 스타일·전체 한글 내용):
 ```
-python scripts/compose_infographic.py --papers days/DATE/papers.json --rank N --hero days/DATE/img/_hero_NN.png --out days/DATE/img/paper-NN.png
+python scripts/compose_infographic.py --papers days/DATE/papers.json --all
 ```
-- hero 생성에 실패한 논문은 `--hero` 를 생략하면 그라데이션 플레이스홀더로 합성됩니다.
-- 완료 후 해당 논문의 `status.composed=true`, `status.hero=true` 로 갱신(papers.json 재저장은 마지막에 한 번에 해도 됩니다).
+- 요약(2단계)과 hero(3단계)를 papers.json 기준으로 읽어 `days/DATE/img/paper-NN.png` 11장을 생성합니다.
+- hero가 없는 논문은 그라데이션 배너로 대체됩니다(중단 없음).
 
 ### 5단계 · 품질 검증(QA)
 - 생성된 인포그래픽 중 **2~3장을 Read 도구로 열어** 확인: ① 한글 텍스트가 또렷하고 오탈자 없는지 ② hero 비주얼이 주제에 맞는지 ③ 레이아웃이 깨지지 않았는지.

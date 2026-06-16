@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: #ffffff; }
+  .ig {
+    width: 1080px;
+    font-family: "Pretendard", "Malgun Gothic", sans-serif;
+    background: #ffffff;
+    color: #0f172a;
+    overflow: hidden;
+  }
+  /* 헤더 */
+  .ig-head {
+    background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 55%, #0ea5e9 130%);
+    color: #fff; padding: 30px 56px; display: flex; align-items: center; gap: 18px;
+  }
+  .ig-head .brand { font-weight: 800; font-size: 26px; letter-spacing: .04em; }
+  .ig-head .date { font-size: 22px; opacity: .85; }
+  .ig-head .rank {
+    margin-left: auto; background: rgba(255,255,255,.22); border: 2px solid rgba(255,255,255,.6);
+    width: 64px; height: 64px; border-radius: 50%; display: flex; align-items: center;
+    justify-content: center; font-weight: 800; font-size: 30px;
+  }
+  .ig-head .up { font-size: 22px; font-weight: 700; opacity: .92; }
+  /* 히어로 배너 */
+  .ig-hero { width: 100%; height: 300px; background: #ede9fe; overflow: hidden; }
+  .ig-hero img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .ig-hero.placeholder {
+    background: linear-gradient(135deg, #6366f1, #8b5cf6);
+    display: flex; align-items: center; justify-content: center; color: #fff;
+    font-size: 90px; font-weight: 900; opacity: .9;
+  }
+  /* 본문 */
+  .ig-body { padding: 44px 56px 30px; }
+  .ig-topics { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 18px; }
+  .ig-topics .t {
+    background: linear-gradient(135deg, #6366f1, #8b5cf6); color: #fff; font-weight: 700;
+    font-size: 20px; padding: 7px 18px; border-radius: 999px;
+  }
+  .ig-title { font-size: 46px; line-height: 1.25; font-weight: 800; letter-spacing: -.02em; }
+  .ig-en { font-size: 23px; color: #64748b; margin-top: 8px; line-height: 1.4; }
+  .ig-org { font-size: 24px; color: #334155; font-weight: 600; margin-top: 16px; }
+  /* 섹션 */
+  .ig-sec { margin-top: 30px; }
+  .ig-sec h2 {
+    font-size: 24px; font-weight: 800; color: #6366f1; padding-left: 16px;
+    border-left: 7px solid #8b5cf6; margin-bottom: 12px; letter-spacing: -.01em;
+  }
+  .ig-sec p { font-size: 27px; line-height: 1.55; color: #1e293b; }
+  .ig-sec ul { list-style: none; }
+  .ig-sec ul li {
+    font-size: 26px; line-height: 1.5; color: #1e293b; padding-left: 38px;
+    position: relative; margin: 12px 0;
+  }
+  .ig-sec ul li::before {
+    content: ""; position: absolute; left: 8px; top: 16px; width: 14px; height: 14px;
+    border-radius: 50%; background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  }
+  /* 키워드 */
+  .ig-keywords { margin-top: 30px; display: flex; flex-wrap: wrap; gap: 9px; }
+  .ig-keywords .k {
+    background: #eef2ff; color: #4338ca; font-size: 19px; font-weight: 600;
+    padding: 6px 15px; border-radius: 8px;
+  }
+  /* 푸터 */
+  .ig-foot {
+    margin-top: 34px; border-top: 1px solid #e2e8f0; padding: 22px 56px 30px;
+    font-size: 19px; color: #94a3b8; display: flex; justify-content: space-between;
+  }
+  .ig-foot .src { font-weight: 600; }
+</style>
+</head>
+<body>
+  <div class="ig">
+    <div class="ig-head">
+      <span class="brand">AI DAILY PAPERS</span>
+      <span class="date">{{ date }}</span>
+      {% if upvotes %}<span class="up">▲ {{ upvotes }}</span>{% endif %}
+      <span class="rank">{{ rank }}</span>
+    </div>
+
+    {% if hero_uri %}
+    <div class="ig-hero"><img src="{{ hero_uri }}" alt="" /></div>
+    {% else %}
+    <div class="ig-hero placeholder">AI</div>
+    {% endif %}
+
+    <div class="ig-body">
+      {% if topics %}<div class="ig-topics">{% for t in topics %}<span class="t">{{ t }}</span>{% endfor %}</div>{% endif %}
+      <div class="ig-title">{{ title_ko }}</div>
+      <div class="ig-en">{{ title_en }}</div>
+      {% if organizations %}<div class="ig-org">🏛 {{ organizations | join(" · ") }}</div>{% endif %}
+
+      {% if core_idea %}
+      <div class="ig-sec"><h2>핵심 아이디어</h2><p>{{ core_idea }}</p></div>
+      {% endif %}
+      {% if key_results %}
+      <div class="ig-sec"><h2>주요 결과</h2><ul>{% for r in key_results %}<li>{{ r }}</li>{% endfor %}</ul></div>
+      {% endif %}
+      {% if conclusion %}
+      <div class="ig-sec"><h2>결론 및 시사점</h2><p>{{ conclusion }}</p></div>
+      {% endif %}
+
+      {% if keywords %}
+      <div class="ig-keywords">{% for k in keywords %}<span class="k"># {{ k }}</span>{% endfor %}</div>
+      {% endif %}
+    </div>
+
+    <div class="ig-foot">
+      <span class="src">AI Daily Papers</span>
+      <span>출처 · arXiv / Hugging Face Daily Papers</span>
+    </div>
+  </div>
+</body>
+</html>

@@ -47,7 +47,7 @@
   }
 
   /* ---------- 인덱스 페이지 ---------- */
-  const state = { query: "", topic: "all", sort: "date", days: [] };
+  const state = { query: "", topic: "all", date: "all", sort: "date", days: [] };
 
   function initIndex() {
     fetch("data/manifest.json", { cache: "no-store" })
@@ -96,6 +96,28 @@
         render();
       })
     );
+    // 날짜 칩
+    const dateChips = document.getElementById("dateChips");
+    if (dateChips) {
+      const dates = state.days.map((d) => d.date);
+      dateChips.innerHTML = ["all", ...dates]
+        .map(
+          (dt) =>
+            `<button class="chip${dt === "all" ? " active" : ""}" data-date="${esc(dt)}">${
+              dt === "all" ? "전체" : esc(dt)
+            }</button>`
+        )
+        .join("");
+      dateChips.querySelectorAll(".chip").forEach((c) =>
+        c.addEventListener("click", function () {
+          dateChips.querySelectorAll(".chip").forEach((x) => x.classList.remove("active"));
+          c.classList.add("active");
+          state.date = c.getAttribute("data-date");
+          render();
+        })
+      );
+    }
+
     const search = document.getElementById("search");
     if (search)
       search.addEventListener("input", function () {
@@ -131,20 +153,19 @@
     return hay.includes(state.query);
   }
 
+  function kwHtml(p) {
+    return (p.keywords || []).slice(0, 4).map((k) => `<span class="kw">${esc(k)}</span>`).join("");
+  }
   function cardHtml(p) {
     const href = `${p.page}#paper-${esc(p.id)}`;
     const thumb = p.image
-      ? `<img loading="lazy" src="${esc(p.image)}" alt="${esc(p.title_ko || p.title)}">`
+      ? `<img loading="lazy" src="${esc(p.image)}" alt="${esc(p.title)} 인포그래픽">`
       : `<div class="ph">AI</div>`;
     return `<a class="card" href="${href}">
-      <div class="thumb">
-        ${thumb}
-        ${p.upvotes ? `<span class="up">▲ ${p.upvotes}</span>` : ""}
-      </div>
+      <div class="thumb">${thumb}</div>
       <div class="body">
-        <div class="tags">${tagHtml(p.topics)}</div>
-        <div class="title-ko">${esc(p.title_ko || p.title)}</div>
-        <div class="title-en">${esc(p.title)}</div>
+        <div class="tags">${tagHtml(p.topics)}${kwHtml(p)}</div>
+        <div class="card-title">${esc(p.title)}</div>
         <div class="org">${esc(orgText(p))}</div>
       </div>
     </a>`;
@@ -152,7 +173,8 @@
 
   function render() {
     const app = document.getElementById("app");
-    const filtered = allPapers().filter(matches);
+    const dateOk = (dt) => state.date === "all" || dt === state.date;
+    const filtered = allPapers().filter((p) => matches(p) && dateOk(p.date));
     if (!filtered.length) {
       app.innerHTML = '<div class="empty">조건에 맞는 논문이 없습니다.</div>';
       return;
@@ -167,6 +189,7 @@
     }
     // 날짜별 섹션 (기본)
     app.innerHTML = state.days
+      .filter((d) => dateOk(d.date))
       .map((d) => {
         const papers = (d.papers || []).filter(matches);
         if (!papers.length) return "";
