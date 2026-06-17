@@ -2,6 +2,293 @@
   "site": "AI Daily Papers",
   "days": [
     {
+      "date": "2026-06-17",
+      "count": 21,
+      "topics": [
+        "Agentic AI",
+        "Orchestration"
+      ],
+      "page": "days/2026-06-17/index.html",
+      "papers": [
+        {
+          "id": "2606.18023",
+          "title": "LoopCoder-v2: Only Loop Once for Efficient Test-Time Computation Scaling",
+          "organizations": [
+            "Beihang University",
+            "IQuest Research",
+            "Langboat",
+            "Renmin University of China"
+          ],
+          "upvotes": 53,
+          "summary_line": "병렬 루프 트랜스포머(PLT)의 루프 수 선택을 이득-비용(gain-cost) 관점으로 분석하여 2회 루프가 최적임을 규명하고, 18T 토큰으로 학습한 7B 코더 LoopCoder-v2로 이를 실증했다.",
+          "image": "days/2026-06-17/img/paper-01.png",
+          "hf_url": "https://huggingface.co/papers/2606.18023"
+        },
+        {
+          "id": "2606.17200",
+          "title": "ACE-Ego-0: Unifying Egocentric Human and Robotic Data for VLA Pretraining",
+          "organizations": [
+            "ACE Robotics",
+            "CUHK MMLab",
+            "CUHK Shenzhen",
+            "SJTU",
+            "THU"
+          ],
+          "upvotes": 34,
+          "summary_line": "1인칭 인간 영상과 다중 임바디먼트 로봇 데이터를 통합 행동 표현과 신뢰도 인식 학습 목표로 결합한 VLA 사전학습 프레임워크 ACE-Ego-0를 제안했다.",
+          "image": "days/2026-06-17/img/paper-02.png",
+          "hf_url": "https://huggingface.co/papers/2606.17200"
+        },
+        {
+          "id": "2606.18216",
+          "title": "Zone of Proximal Policy Optimization: Teacher in Prompts, Not Gradients",
+          "organizations": [
+            "NVIDIA"
+          ],
+          "upvotes": 33,
+          "summary_line": "Vygotsky의 근접발달영역에서 영감을 받아 교사를 정책 그래디언트가 아닌 프롬프트 안에만 두는 강화학습 기법 ZPPO(Zone of Proximal Policy Optimization)를 제안했다.",
+          "image": "days/2026-06-17/img/paper-03.png",
+          "hf_url": "https://huggingface.co/papers/2606.18216"
+        },
+        {
+          "id": "2606.17861",
+          "title": "GameCraft-Bench: Can Agents Build Playable Games End-to-End in a Real Game Engine?",
+          "organizations": [
+            "The Chinese University of Hong Kong, Shenzhen",
+            "Shenzhen Loop Area Institute",
+            "Tencent Hunyuan",
+            "USTB",
+            "DualverseAI",
+            "SJTU",
+            "NUS"
+          ],
+          "upvotes": 33,
+          "summary_line": "실제 게임 엔진(Godot) 안에서 자연어 명세로부터 플레이 가능한 게임을 끝까지 생성하는 능력을 측정하는 상호작용 기반 벤치마크 GameCraft-Bench를 제안하고 공개했다.",
+          "image": "days/2026-06-17/img/paper-04.png",
+          "hf_url": "https://huggingface.co/papers/2606.17861"
+        },
+        {
+          "id": "2606.09030",
+          "title": "TRIAGE: Dialectical Reasoning for Explainable Risk Prediction on Irregularly Sampled Medical Time Series with LLMs",
+          "organizations": [
+            "KAIST",
+            "AITRICS",
+            "University of Wisconsin-Madison"
+          ],
+          "upvotes": 24,
+          "summary_line": "불규칙 샘플링 의료 시계열(ISMTS)에서 LLM이 대안 결과별 변증법적 추론을 생성하도록 학습시켜, 연속적 위험 점수와 임상적 설명을 동시에 제공하는 TRIAGE 프레임워크를 제안했다.",
+          "image": "days/2026-06-17/img/paper-05.png",
+          "hf_url": "https://huggingface.co/papers/2606.09030"
+        },
+        {
+          "id": "2606.16428",
+          "title": "LectūraAgents: A Multi-Agent Framework for Adaptive Personalized AI-Assisted Learning and Embodied Teaching",
+          "organizations": [
+            "Beijing Institute of Technology",
+            "Peking University",
+            "Cornell University",
+            "BAAI"
+          ],
+          "upvotes": 22,
+          "summary_line": "교수-학생 관계를 모방한 계층적 멀티에이전트 프레임워크 LectūraAgents로 개인 맞춤형 강의 생성부터 체화된(embodied) 교수 전달까지 종단간 자동화를 구현했다.",
+          "image": "days/2026-06-17/img/paper-06.png",
+          "hf_url": "https://huggingface.co/papers/2606.16428"
+        },
+        {
+          "id": "2606.17628",
+          "title": "OPD-Evolver: Cultivating Holistic Agent Evolver via On-Policy Distillation",
+          "organizations": [
+            "LV-NUS Lab (싱가포르 국립대)",
+            "Fudan University",
+            "Peking University",
+            "ByteDance Inc."
+          ],
+          "upvotes": 20,
+          "summary_line": "경험의 선택·실행·작성·관리라는 네 가지 능력을 온폴리시 자기증류로 하나의 정책에 내재화하는 빠른-느린 공진화 프레임워크 OPD-Evolver를 제안했다.",
+          "image": "days/2026-06-17/img/paper-07.png",
+          "hf_url": "https://huggingface.co/papers/2606.17628"
+        },
+        {
+          "id": "2606.18195",
+          "title": "Learning from the Self-future: On-policy Self-distillation for dLLMs",
+          "organizations": [
+            "Tsinghua University",
+            "Technical University of Munich",
+            "Nanyang Technological University",
+            "University of British Columbia",
+            "University of Texas at Austin",
+            "ELLIS Institute Tübingen",
+            "Max Planck Institute for Intelligent Systems",
+            "Tübingen AI Center"
+          ],
+          "upvotes": 17,
+          "summary_line": "확산 언어모델(dLLM)에 맞춘 최초의 온폴리시 자기증류 프레임워크 d-OPSD를 제안하여, 자기생성 답변을 접미사 조건으로 쓰고 단계 단위 발산 지도를 적용했다.",
+          "image": "days/2026-06-17/img/paper-08.png",
+          "hf_url": "https://huggingface.co/papers/2606.18195"
+        },
+        {
+          "id": "2606.15236",
+          "title": "Show the Signal, Hide the Noise: Spectral Forcing for Pixel-Space Diffusion",
+          "organizations": [
+            "S-Lab, Nanyang Technological University (NTU)"
+          ],
+          "upvotes": 14,
+          "summary_line": "확산 시간에 따라 차단 주파수가 변하는 파라미터 없는 2D-DCT 저역통과 연산자 Spectral Forcing을 픽셀 공간 확산 모델 입력단에 도입해 신호는 보이고 노이즈는 가리는 용량 효율적 학습을 제안했다.",
+          "image": "days/2026-06-17/img/paper-09.png",
+          "hf_url": "https://huggingface.co/papers/2606.15236"
+        },
+        {
+          "id": "2606.15378",
+          "title": "Rethinking the Role of Efficient Attention in Hybrid Architectures",
+          "organizations": [
+            "칭화대학교(Tsinghua University)",
+            "OpenBMB"
+          ],
+          "upvotes": 6,
+          "summary_line": "하이브리드 어텐션 구조에서 장문맥 능력을 실제로 담당하는 것은 풀 어텐션이며 효율적 어텐션은 그 학습 속도를 좌우하는 최적화 사전(prior)일 뿐임을 체계적으로 규명했다.",
+          "image": "days/2026-06-17/img/paper-10.png",
+          "hf_url": "https://huggingface.co/papers/2606.15378"
+        },
+        {
+          "id": "2606.17905",
+          "title": "ChLogic: Evaluating Robustness of Logical Reasoning in Chinese Expressions",
+          "organizations": [
+            "쓰촨대학교(Sichuan University) 수학원",
+            "화웨이(Huawei Technologies) Theory Lab, 2012 Labs"
+          ],
+          "upvotes": 5,
+          "summary_line": "동일한 잠재 논리 구조를 영어와 다양한 중국어 표현으로 정렬해 다국어 논리 추론의 견고성을 평가하는 영어-중국어 정렬 벤치마크 CHLOGIC를 공개했다.",
+          "image": "days/2026-06-17/img/paper-11.png",
+          "hf_url": "https://huggingface.co/papers/2606.17905"
+        },
+        {
+          "id": "2606.16154",
+          "title": "A Gradient Perspective on RLVR Stability and Winner Advantage Policy Optimization",
+          "organizations": [
+            "Layer 6 AI"
+          ],
+          "upvotes": 5,
+          "summary_line": "RLVR 학습 붕괴를 토큰 단위 그래디언트 관점에서 분석하고, 양(+)의 어드밴티지 완성본만으로 업데이트하는 단순한 온라인 정책경사 기법 WAPO를 제안했다.",
+          "image": "days/2026-06-17/img/paper-12.png",
+          "hf_url": "https://huggingface.co/papers/2606.16154"
+        },
+        {
+          "id": "2606.17730",
+          "title": "ActWorld: From Explorable to Interactive World Model via Action-Aware Memory",
+          "organizations": [
+            "Washington University in St. Louis",
+            "Intelligent Creation, ByteDance"
+          ],
+          "upvotes": 3,
+          "summary_line": "내비게이션 중심의 기존 월드 모델을 확장해 단일 실시간 청크-자기회귀 프레임워크 안에서 이동과 객체 상호작용을 동시에 지원하는 인터랙티브 월드 모델 ActWorld를 제안했다.",
+          "image": "days/2026-06-17/img/paper-13.png",
+          "hf_url": "https://huggingface.co/papers/2606.17730"
+        },
+        {
+          "id": "2606.18208",
+          "title": "Looped World Models",
+          "organizations": [
+            "FaceMind Research Asia"
+          ],
+          "upvotes": 3,
+          "summary_line": "파라미터를 공유하는 트랜스포머 블록을 반복 적용해 잠재 상태를 점진적으로 정제하는, 월드 모델 최초의 루프형(looped) 아키텍처 LoopWM을 제안했다.",
+          "image": "days/2026-06-17/img/paper-14.png",
+          "hf_url": "https://huggingface.co/papers/2606.18208"
+        },
+        {
+          "id": "2606.18249",
+          "title": "Unified Multimodal Autoregressive Modeling with Shared Context-Visual Tokenizer is Key to Unification",
+          "organizations": [
+            "Institute of Trustworthy Embodied AI, Fudan University",
+            "Shanghai Innovation Institute",
+            "Qwen Team, Alibaba Inc."
+          ],
+          "upvotes": 3,
+          "summary_line": "이해와 생성을 잇는 단일 이산 비주얼 토크나이저를 핵심 다리로 삼아 두 과제를 공유 컨텍스트에서 통합한 자기회귀 멀티모달 프레임워크 UniAR를 제안했다.",
+          "image": "days/2026-06-17/img/paper-15.png",
+          "hf_url": "https://huggingface.co/papers/2606.18249"
+        },
+        {
+          "id": "2606.17321",
+          "title": "ProCUA-SFT Technical Report",
+          "organizations": [
+            "NVIDIA",
+            "워싱턴 대학교(University of Washington)"
+          ],
+          "upvotes": 2,
+          "summary_line": "사람이 직접 만든 데이터 대신, 단일 VLM이 사전조건 검증을 거쳐 생성·실행한 93K개의 합성 궤적에서 추출한 310만 개의 컴퓨터 사용 에이전트(CUA) 학습 샘플 데이터셋 ProCUA-SFT를 공개했다.",
+          "image": "days/2026-06-17/img/paper-16.png",
+          "hf_url": "https://huggingface.co/papers/2606.17321"
+        },
+        {
+          "id": "2606.18246",
+          "title": "Variable-Width Transformers",
+          "organizations": [
+            "MIT",
+            "MIT-IBM Watson AI Lab"
+          ],
+          "upvotes": 1,
+          "summary_line": "트랜스포머의 모든 층이 동일 폭을 가져야 한다는 통념을 깨고, 양 끝 층은 넓고 가운데 층은 좁은 ×자(모래시계형) 가변 폭 아키텍처를 제안해 동일 파라미터 대비 더 낮은 손실과 더 적은 연산·메모리를 동시에 달성했다.",
+          "image": "days/2026-06-17/img/paper-17.png",
+          "hf_url": "https://huggingface.co/papers/2606.18246"
+        },
+        {
+          "id": "2606.15345",
+          "title": "Beyond Monolingual Deep Research: Evaluating Agents and Retrievers with Cross-Lingual BrowseComp-Plus",
+          "organizations": [
+            "와세다 대학교(Waseda University)",
+            "노스웨스턴 대학교(Northwestern University)",
+            "RIKEN AIP",
+            "Snowflake Inc.",
+            "유타 대학교(University of Utah)",
+            "Duke-NUS Medical School",
+            "도쿄 대학교(The University of Tokyo)"
+          ],
+          "upvotes": 1,
+          "summary_line": "영어 질문-답변 구조는 유지한 채 근거 문서의 언어만 바꾼 최초의 교차언어 딥리서치 평가 벤치마크 XBCP(Cross-lingual BrowseComp-Plus)를 구축해, 근거가 다른 언어로 제시될 때 에이전트와 검색기의 성능 저하를 정량화했다.",
+          "image": "days/2026-06-17/img/paper-18.png",
+          "hf_url": "https://huggingface.co/papers/2606.15345"
+        },
+        {
+          "id": "2606.13811",
+          "title": "Aligning Quantum Operators with Large Language Models",
+          "organizations": [
+            "MIT-IBM Computing Research Lab",
+            "IBM Quantum",
+            "IBM Research"
+          ],
+          "upvotes": 1,
+          "summary_line": "유니터리 연산자(Pauli Transfer Matrix)를 대규모 언어모델의 잠재 공간으로 사상해, LLM이 양자 연산자를 직접 조건으로 받아 회로를 합성하도록 만든 최초의 멀티모달 정렬 기법을 제안했다.",
+          "image": "days/2026-06-17/img/paper-19.png",
+          "hf_url": "https://huggingface.co/papers/2606.13811"
+        },
+        {
+          "id": "2606.16767",
+          "title": "Text-Vision Co-Instructed Image Editing",
+          "organizations": [
+            "The Hong Kong Polytechnic University (Visual Computing Lab, VCLab)",
+            "OPPO Research Institute"
+          ],
+          "upvotes": 0,
+          "summary_line": "텍스트 지시(의미 의도)와 희소 시각 프롬프트(드래그/점 기반 공간 제약)를 함께 입력으로 받아 정밀하고 의도 충실한 이미지 편집을 수행하는 'Text-Vision Co-Instructed Editing' 과제와 TV-Edit 프레임워크를 제안했다.",
+          "image": "days/2026-06-17/img/paper-20.png",
+          "hf_url": "https://huggingface.co/papers/2606.16767"
+        },
+        {
+          "id": "2606.15142",
+          "title": "MotionVLA: Vision-Language-Action Model for Humanoid Motion",
+          "organizations": [
+            "School of Computer Science, Peking University",
+            "AI2 Robotics"
+          ],
+          "upvotes": 0,
+          "summary_line": "인간 모션을 저주파 자세(Base)와 고주파 물리 동역학(Phys) 두 스트림으로 분리해 독립적으로 토큰화하는 이중 스트림 주파수 토크나이저 DSFT와, 이를 통합 자기회귀 시퀀스로 생성하는 비전-언어-행동 모델 MotionVLA를 제안했다.",
+          "image": "days/2026-06-17/img/paper-21.png",
+          "hf_url": "https://huggingface.co/papers/2606.15142"
+        }
+      ]
+    },
+    {
       "date": "2026-06-16",
       "count": 39,
       "topics": [
@@ -1131,5 +1418,5 @@
       ]
     }
   ],
-  "updated_at": "2026-06-16T15:18:04.652449+00:00"
+  "updated_at": "2026-06-17T08:47:00.704703+00:00"
 }
