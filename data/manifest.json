@@ -2,6 +2,449 @@
   "site": "AI Daily Papers",
   "days": [
     {
+      "date": "2026-06-18",
+      "count": 35,
+      "topics": [
+        "Agentic AI",
+        "Orchestration"
+      ],
+      "page": "days/2026-06-18/index.html",
+      "papers": [
+        {
+          "id": "2606.19338",
+          "title": "Beyond the Current Observation: Evaluating Multimodal Large Language Models in Controllable Non-Markov Games",
+          "organizations": [
+            "Fudan University",
+            "Shanghai Innovation Institute",
+            "Shanghai AI Laboratory",
+            "Zhejiang University",
+            "The Chinese University of Hong Kong"
+          ],
+          "upvotes": 37,
+          "summary_line": "과거 관측을 재구성해 행동에 활용하는 능력만을 고립시켜 측정하는 폐루프 비(非)마르코프 게임 벤치마크 RNG-Bench를 공개하고, 망각과 의사결정 실패를 분리하는 Memory Gap 지표를 함께 제안했다.",
+          "image": "days/2026-06-18/img/paper-01.png",
+          "hf_url": "https://huggingface.co/papers/2606.19338"
+        },
+        {
+          "id": "2606.18558",
+          "title": "MolmoMotion: Forecasting Point Trajectories in 3D with Language Instruction",
+          "organizations": [
+            "Allen Institute for AI (Ai2)",
+            "University of Washington",
+            "UNC-Chapel Hill"
+          ],
+          "upvotes": 30,
+          "summary_line": "월드 좌표계의 3D 포인트를 클래스 비의존적이고 시점에 안정적인 일반 표현으로 삼아, 짧은 영상 이력과 객체 위 3D 질의점, 그리고 의도된 목표를 서술한 언어 지시로부터 각 점의 미래 3D 궤적을 예측하는 목표 조건부 3D 포인트 모션 예측 과제를 정식화하고, 데이터·벤치마크·모델을 아우르는 전체 스택을 제시한다",
+          "image": "days/2026-06-18/img/paper-02.png",
+          "hf_url": "https://huggingface.co/papers/2606.18558"
+        },
+        {
+          "id": "2606.16533",
+          "title": "Kairos: A Native World Model Stack for Physical AI",
+          "organizations": [
+            "SenseTime (SenseNova / Kairos Team)"
+          ],
+          "upvotes": 26,
+          "summary_line": "월드 모델을 수동적 영상 생성기에서 Physical AI를 위한 운영 인프라로 재정의하고, 이종 경험으로부터 세계 지식을 학습하는 사전학습 패러다임·장기 상태를 유지하는 통합 아키텍처·실배포 제약 아래 효율적으로 구동하는 시스템 공동설계를 하나로 묶은 네이티브 월드 모델 스택 Kairos를 제안한다",
+          "image": "days/2026-06-18/img/paper-03.png",
+          "hf_url": "https://huggingface.co/papers/2606.16533"
+        },
+        {
+          "id": "2606.18363",
+          "title": "Guava: An Effective and Universal Harness for Embodied Manipulation",
+          "organizations": [
+            "University of Maryland College Park",
+            "University of Illinois Urbana-Champaign",
+            "University of Waterloo",
+            "Mohamed bin Zayed University of Artificial Intelligence",
+            "University of Pennsylvania",
+            "Amazon FAR"
+          ],
+          "upvotes": 23,
+          "summary_line": "에이전트 워크플로·행동공간·관찰공간의 설계 공간을 체계적으로 탐색해 체화 조작(embodied manipulation)에 효과적인 보편적 하네스 프레임워크 Guava를 제안하고, 2K 미만의 시뮬레이션 궤적만으로 소형 모델에 강력한 조작 능력을 이식한다",
+          "image": "days/2026-06-18/img/paper-04.png",
+          "hf_url": "https://huggingface.co/papers/2606.18363"
+        },
+        {
+          "id": "2606.19162",
+          "title": "The Reward Was in Your Data All Along: Correcting Flow Matching with Discriminator-Guided RL",
+          "organizations": [
+            "AI at Meta"
+          ],
+          "upvotes": 16,
+          "summary_line": "matching 손실이 학습 분포에서의 속도·스코어 필드에 대한 l2 회귀 오차만 측정해 추론 시점의 시각·의미적 품질과 어긋난다는 구조적 불일치를 지적하고, 사전학습 표현 공간에서 데이터와 모델 샘플을 구분하는 판별기의 로짓을 보상으로 삼는 Discriminator-Guided RL(DRL)을 통해 인간 선호 없이도 시각적 사실성과 객체 구조를 교정한다",
+          "image": "days/2026-06-18/img/paper-05.png",
+          "hf_url": "https://huggingface.co/papers/2606.19162"
+        },
+        {
+          "id": "2606.18967",
+          "title": "EfficientRollout: System-Aware Self-Speculative Decoding for RL Rollouts",
+          "organizations": [
+            "FuriosaAI",
+            "캘리포니아대학교 버클리(UC Berkeley)"
+          ],
+          "upvotes": 16,
+          "summary_line": "진화하는 RL 정책에 맞춰 양자화된 자기 드래프터와 시스템 인지형 SD 토글·적응형 드래프트 길이를 결합한 EfficientRollout을 제안해 롤아웃 지연을 최대 19.6% 줄였다.",
+          "image": "days/2026-06-18/img/paper-06.png",
+          "hf_url": "https://huggingface.co/papers/2606.18967"
+        },
+        {
+          "id": "2606.18322",
+          "title": "SAE Interventions are Unreliable: Post-Intervention Recovery of Suppressed Behavior",
+          "organizations": [
+            "홍콩이공대학교(The Hong Kong Polytechnic University)"
+          ],
+          "upvotes": 15,
+          "summary_line": "SAE 특징을 클램핑한 방어 상태에서 제약 잔차 최적화로 억제된 행동을 복구하는 '개입 후 복구(post-intervention recovery)' 진단을 제안해 SAE 개입이 완전한 행동 차단막이 아님을 입증했다.",
+          "image": "days/2026-06-18/img/paper-07.png",
+          "hf_url": "https://huggingface.co/papers/2606.18322"
+        },
+        {
+          "id": "2606.17539",
+          "title": "Reinforcing Dual-Path Reasoning in Spatial Vision Language Models",
+          "organizations": [
+            "홍콩대학교(The University of Hong Kong)",
+            "엔비디아(NVIDIA)",
+            "캘리포니아대학교 샌디에이고(University of California, San Diego)"
+          ],
+          "upvotes": 13,
+          "summary_line": "언어 전용 추론(LOR)과 탐지-후-추론(DTR)이라는 두 보완적 경로를 단일 공간 VLM에 통합하고 강화학습으로 함께 최적화하는 SR-ReaL 프레임워크를 제안했다.",
+          "image": "days/2026-06-18/img/paper-08.png",
+          "hf_url": "https://huggingface.co/papers/2606.17539"
+        },
+        {
+          "id": "2606.18101",
+          "title": "Trust the Right Teacher: Quality-Aware Self-Distillation for GUI Grounding",
+          "organizations": [
+            "조지아대학교(University of Georgia)",
+            "INFLY Tech",
+            "텐센트 AI 랩(Tencent AI Lab)",
+            "홍콩이공대학교(The Hong Kong Polytechnic University)"
+          ],
+          "upvotes": 13,
+          "summary_line": "GUI 그라운딩의 좌표 토큰 교사 신호를 정답 박스로 검증하는 소프트 정합성 게이팅과 교사 확률 스케일링으로 보정하는 품질 인지형 자기 증류(quality-aware self-distillation)를 제안했다.",
+          "image": "days/2026-06-18/img/paper-09.png",
+          "hf_url": "https://huggingface.co/papers/2606.18101"
+        },
+        {
+          "id": "2606.17682",
+          "title": "From Trainee to Trainer: LLM-Designed Training Environment for RL with Multi-Agent Reasoning",
+          "organizations": [
+            "LARK 연구실, 홍콩과기대 광저우(HKUST(GZ))",
+            "케임브리지대학교(University of Cambridge)",
+            "홍콩과기대(HKUST)"
+          ],
+          "upvotes": 12,
+          "summary_line": "현재 정책 모델이 실패 궤적과 맥락을 분석해 다음 단계 학습 환경 설정을 스스로 재설계하는 'LLM을 환경 엔지니어로(LLM-as-Environment-Engineer)' 프레임워크와 제어 가능한 테스트베드 MAPF-FrozenLake를 제안했다.",
+          "image": "days/2026-06-18/img/paper-10.png",
+          "hf_url": "https://huggingface.co/papers/2606.17682"
+        },
+        {
+          "id": "2606.19341",
+          "title": "Native Active Perception as Reasoning for Omni-Modal Understanding",
+          "organizations": [
+            "The Chinese University of Hong Kong",
+            "Shanghai Jiao Tong University",
+            "Qwen Team, Alibaba Group",
+            "Nanyang Technological University"
+          ],
+          "upvotes": 11,
+          "summary_line": "비디오 이해를 POMDP 기반의 능동 지각 추론으로 재정의한 최초의 네이티브 옴니모달 에이전트 OmniAgent를 제안하고, Agentic SFT와 강화학습 2단계 최적화로 추론을 비디오 길이로부터 분리해냈다.",
+          "image": "days/2026-06-18/img/paper-11.png",
+          "hf_url": "https://huggingface.co/papers/2606.19341"
+        },
+        {
+          "id": "2606.19005",
+          "title": "Sumi: Open Uniform Diffusion Language Model from Scratch",
+          "organizations": [
+            "Tohoku University"
+          ],
+          "upvotes": 8,
+          "summary_line": "1.5조 토큰으로 처음부터 사전학습한 7B 규모의 완전 공개 균일 확산 언어모델(UDLM) Sumi를 공개하여, 대규모 파라미터·토큰 스케일에서 네이티브로 학습된 최초의 UDLM을 실현했다.",
+          "image": "days/2026-06-18/img/paper-12.png",
+          "hf_url": "https://huggingface.co/papers/2606.19005"
+        },
+        {
+          "id": "2606.19236",
+          "title": "STARE: Surprisal-Guided Token-Level Advantage Reweighting for Policy Entropy Stability",
+          "organizations": [
+            "Shenzhen International Graduate School, Tsinghua University",
+            "Tencent Hunyuan"
+          ],
+          "upvotes": 8,
+          "summary_line": "GRPO의 토큰 단위 엔트로피 동역학을 1차 그래디언트로 분석해 어드밴티지-서프라이절 4분면 구조와 임계 근접성 성질을 규명하고, 서프라이절 기반 토큰 단위 어드밴티지 재가중 기법 STARE를 제안하여 정책 엔트로피 붕괴를 안정적으로 억제했다.",
+          "image": "days/2026-06-18/img/paper-13.png",
+          "hf_url": "https://huggingface.co/papers/2606.19236"
+        },
+        {
+          "id": "2606.17800",
+          "title": "MaineCoon: Pursuing A Real-Time Audio-Visual Social World Model",
+          "organizations": [
+            "Catnip AI Team"
+          ],
+          "upvotes": 8,
+          "summary_line": "소셜 월드 모델 패러다임을 정립하고, 단일 GPU에서 최대 47.5 FPS의 실시간 스트리밍 생성과 서브초 상호작용이 가능한 최초의 22B 실시간 오디오-비주얼 자기회귀 모델 MaineCoon을 제안했다.",
+          "image": "days/2026-06-18/img/paper-14.png",
+          "hf_url": "https://huggingface.co/papers/2606.17800"
+        },
+        {
+          "id": "2606.05985",
+          "title": "Beyond Alignment: Value Diversity as a Collective Property in Multicultural Agent Systems",
+          "organizations": [
+            "iNLP Lab @ SUTD"
+          ],
+          "upvotes": 7,
+          "summary_line": "가치 다양성을 개별 에이전트의 속성이 아닌 다문화 에이전트 시스템 전체의 집단적 창발 속성으로 재개념화하여, 정렬을 넘어선 가치 다양성의 측정·분석 틀을 제시했다.",
+          "image": "days/2026-06-18/img/paper-15.png",
+          "hf_url": "https://huggingface.co/papers/2606.05985"
+        },
+        {
+          "id": "2606.18543",
+          "title": "CEO-Bench: Can Agents Play the Long Game?",
+          "organizations": [
+            "Princeton University"
+          ],
+          "upvotes": 6,
+          "summary_line": "스타트업을 500일간 운영하는 장기 시뮬레이션 환경 CEO-Bench를 제안해 LLM 에이전트의 장기 전략 수행 능력을 평가했다.",
+          "image": "days/2026-06-18/img/paper-16.png",
+          "hf_url": "https://huggingface.co/papers/2606.18543"
+        },
+        {
+          "id": "2606.14024",
+          "title": "ViT-Up: Faithful Feature Upsampling for Vision Transformers",
+          "organizations": [
+            "Shanghai Jiao Tong University"
+          ],
+          "upvotes": 6,
+          "summary_line": "외부 이미지 가이드 대신 ViT 중간 은닉 상태로부터 계층별 쿼리를 구성하는 암묵적 특징 업샘플링 프레임워크 ViT-Up을 제안했다.",
+          "image": "days/2026-06-18/img/paper-17.png",
+          "hf_url": "https://huggingface.co/papers/2606.14024"
+        },
+        {
+          "id": "2606.18375",
+          "title": "PAIWorld: A 3D-Consistent World Foundation Model for Robotic Manipulation",
+          "organizations": [
+            "Institute of AI for Industries, Chinese Academy of Sciences"
+          ],
+          "upvotes": 5,
+          "summary_line": "로봇 조작을 위해 다중 뷰 3D 일관성을 갖춘 월드 파운데이션 모델 PAIWorld를 제안했다.",
+          "image": "days/2026-06-18/img/paper-18.png",
+          "hf_url": "https://huggingface.co/papers/2606.18375"
+        },
+        {
+          "id": "2606.15872",
+          "title": "SciOrch: Learning to Orchestrate Expert LLMs for Solving Frontier Multimodal Scientific Reasoning Tasks",
+          "organizations": [
+            "Imperial College London",
+            "The Chinese University of Hong Kong",
+            "University of Illinois Urbana-Champaign",
+            "Shanghai Jiao Tong University",
+            "Shanghai Artificial Intelligence Laboratory",
+            "University of Oxford",
+            "Shenzhen Loop Area Institute"
+          ],
+          "upvotes": 4,
+          "summary_line": "프런티어 LLM들을 조율해 멀티모달 과학 추론을 푸는 경량 8B 오케스트레이터를 학습하는 프레임워크 SciOrch를 제안했다.",
+          "image": "days/2026-06-18/img/paper-19.png",
+          "hf_url": "https://huggingface.co/papers/2606.15872"
+        },
+        {
+          "id": "2606.19047",
+          "title": "RODS: Reward-Driven Online Data Synthesis for Multi-Turn Tool-Use Agents",
+          "organizations": [
+            "Inclusion AI, Ant Group",
+            "Zhejiang University",
+            "Shanghai Innovation Institute",
+            "Westlake University"
+          ],
+          "upvotes": 3,
+          "summary_line": "다중 턴 도구 사용 에이전트의 RL을 위해 보상 분산을 활용한 온라인 데이터 합성 프레임워크 RODS를 제안했다.",
+          "image": "days/2026-06-18/img/paper-20.png",
+          "hf_url": "https://huggingface.co/papers/2606.19047"
+        },
+        {
+          "id": "2606.18531",
+          "title": "When Does Trajectory-Level Supervision Permit Efficient Offline Reinforcement Learning?",
+          "organizations": [
+            "University of Wisconsin–Madison"
+          ],
+          "upvotes": 3,
+          "summary_line": "과정 단위 보상 없이 궤적 전체에 단 하나의 스칼라 라벨만 주어지는 오프라인 강화학습의 통계적 비용을 상·하한이 일치하는 형태로 규명하고, 이를 달성하는 비관적 액터-크리틱 알고리즘 OPAC을 제안한다",
+          "image": "days/2026-06-18/img/paper-21.png",
+          "hf_url": "https://huggingface.co/papers/2606.18531"
+        },
+        {
+          "id": "2606.19336",
+          "title": "Learning User Simulators with Turing Rewards",
+          "organizations": [
+            "Massachusetts Institute of Technology",
+            "Stanford University",
+            "MIT-IBM Watson AI Lab"
+          ],
+          "upvotes": 2,
+          "summary_line": "단일 정답 응답을 모방하는 기존 방식 대신, 생성한 응답이 실제 사용자의 응답과 구별 불가능하도록 LLM 판별자 기반의 튜링 보상으로 강화학습하는 Turing-RL을 제안해 사용자 시뮬레이터를 훈련했다",
+          "image": "days/2026-06-18/img/paper-22.png",
+          "hf_url": "https://huggingface.co/papers/2606.19336"
+        },
+        {
+          "id": "2606.18943",
+          "title": "Physics-IQ Verified",
+          "organizations": [
+            "Anates Labs",
+            "뮌헨 공과대학교(TUM)",
+            "뉘른베르크 공과대학교",
+            "튀빙겐 AI 센터(튀빙겐 대학교)",
+            "Helmholtz AI",
+            "Google DeepMind"
+          ],
+          "upvotes": 2,
+          "summary_line": "영상 생성 모델의 물리 이해도를 측정하는 Physics-IQ 벤치마크를 체계적으로 감사하고, 프롬프트·정답 품질 개선과 샘플 단위 채점을 도입해 측정 신뢰도를 높인 개정판 Physics-IQ Verified를 제안한다.",
+          "image": "days/2026-06-18/img/paper-23.png",
+          "hf_url": "https://huggingface.co/papers/2606.18943"
+        },
+        {
+          "id": "2606.18874",
+          "title": "Externalizing Research Synthesis and Validation in AI Scientists through a Research Harness",
+          "organizations": [
+            "상하이교통대학교 컴퓨터과학대학 X-LANCE Lab",
+            "상하이 혁신연구원",
+            "장쑤성 언어컴퓨팅 중점연구실",
+            "쑤저우 연구소"
+          ],
+          "upvotes": 2,
+          "summary_line": "AI 과학자의 연구 종합과 실험 검증 과정을 검사 가능하고 계약(contract)으로 통제되는 외부화된 프로세스로 전환하는 연구 하네스 XCIENTIST를 제안하여, 근거에서 메커니즘 설계·검증·제한적 수정에 이르는 추적 가능한 연구 궤적을 보존한다",
+          "image": "days/2026-06-18/img/paper-24.png",
+          "hf_url": "https://huggingface.co/papers/2606.18874"
+        },
+        {
+          "id": "2606.16748",
+          "title": "MyPCBench: A Benchmark for Personally Intelligent Computer-Use Agents",
+          "organizations": [
+            "Carnegie Mellon University"
+          ],
+          "upvotes": 2,
+          "summary_line": "컴퓨터 사용 에이전트를 개인 비서로 평가하기 위해, 한 인물의 디지털 생활 전반을 재현한 가상 데스크톱 환경과 184개 과제로 구성된 벤치마크 MyPCBench를 제안한다",
+          "image": "days/2026-06-18/img/paper-25.png",
+          "hf_url": "https://huggingface.co/papers/2606.16748"
+        },
+        {
+          "id": "2606.14383",
+          "title": "IndustryBench-MIPU: Benchmarking Multi-Image Attribute Value Extraction for Industrial Products",
+          "organizations": [
+            "알리바바 그룹(Taobao & Tmall) Multimodal and Industrial AI Team"
+          ],
+          "upvotes": 2,
+          "summary_line": "여러 장의 제품 이미지에서 산업재 속성-값을 추출하는 능력을 평가하는 최초의 대규모 멀티이미지 벤치마크 IndustryBench-MIPU를 공개했다.",
+          "image": "days/2026-06-18/img/paper-26.png",
+          "hf_url": "https://huggingface.co/papers/2606.14383"
+        },
+        {
+          "id": "2606.09764",
+          "title": "iOSWorld: A Benchmark for Personally Intelligent Phone Agents",
+          "organizations": [
+            "Carnegie Mellon University"
+          ],
+          "upvotes": 2,
+          "summary_line": "단일 사용자 정체성과 앱 간 연결 데이터를 갖춘 26개 네이티브 iOS 앱 위에서 동작하는 최초의 대화형 iOS 시뮬레이터 벤치마크 iOSWorld를 공개했다.",
+          "image": "days/2026-06-18/img/paper-27.png",
+          "hf_url": "https://huggingface.co/papers/2606.09764"
+        },
+        {
+          "id": "2606.12629",
+          "title": "Bag of Dims: Training-Free Mechanistic Interpretability via Dimension-Level Sign Patterns",
+          "organizations": [
+            "Amazon Web Services"
+          ],
+          "upvotes": 1,
+          "summary_line": "트랜스포머 은닉 상태의 표준 기저 자체가 학습 없는 일반 특징 기저가 되며 각 차원의 부호 패턴만으로 의미 특징을 읽을 수 있음을 보인 'Bag of Dims' 프레임워크를 제안했다.",
+          "image": "days/2026-06-18/img/paper-28.png",
+          "hf_url": "https://huggingface.co/papers/2606.12629"
+        },
+        {
+          "id": "2606.19120",
+          "title": "Seeing Before Reasoning: Decoupling Perception and Reasoning for Shortcut-Resilient Multimodal On-Policy Self-Distillation",
+          "organizations": [
+            "중국과학원 선양자동화연구소 로봇·지능시스템 국가중점실험실",
+            "중국과학원대학교(UCAS)"
+          ],
+          "upvotes": 1,
+          "summary_line": "지각과 추론을 분리해 멀티모달 온폴리시 자기증류의 텍스트 단축 학습 위험을 완화하는 시각 접지 프레임워크 ViGOS를 제안했다.",
+          "image": "days/2026-06-18/img/paper-29.png",
+          "hf_url": "https://huggingface.co/papers/2606.19120"
+        },
+        {
+          "id": "2606.18717",
+          "title": "Morpheus: A Morphology-Aware Neural Tokenizer and Word Embedder for Turkish",
+          "organizations": [
+            "Lonewolf Research & Development(독립 연구자)"
+          ],
+          "upvotes": 1,
+          "summary_line": "튀르키예어를 위한 무손실 형태소 인식 토크나이저이자 단어 임베딩 생성기를 한 모델로 통합한 신경망 Morpheus를 제안했다.",
+          "image": "days/2026-06-18/img/paper-30.png",
+          "hf_url": "https://huggingface.co/papers/2606.18717"
+        },
+        {
+          "id": "2606.13898",
+          "title": "HiLo-Token: Input-Adaptive High-Low Frequency Token Compression for Efficient Image Editing",
+          "organizations": [
+            "Adobe ART AI Lab",
+            "Adobe Research"
+          ],
+          "upvotes": 1,
+          "summary_line": "이미지 편집용 확산 트랜스포머의 추론 지연을 줄이기 위해 입력 적응형 고저주파 토큰 압축 프레임워크 HiLo-Token을 제안했다.",
+          "image": "days/2026-06-18/img/paper-31.png",
+          "hf_url": "https://huggingface.co/papers/2606.13898"
+        },
+        {
+          "id": "2606.15514",
+          "title": "Reinforcement Learning-Guided Retrieval with Soft Fusion for Robust Multimodal Imitation Learning under Missing Modalities",
+          "organizations": [
+            "Bournemouth University"
+          ],
+          "upvotes": 0,
+          "summary_line": "센서 결손 상황에서 정책 재학습 없이 강건하게 동작하는 강화학습 기반 검색·소프트 융합 모방학습 프레임워크 RL4IL을 제안했다.",
+          "image": "days/2026-06-18/img/paper-32.png",
+          "hf_url": "https://huggingface.co/papers/2606.15514"
+        },
+        {
+          "id": "2606.13802",
+          "title": "A Benchmark and Framework for Evaluating Next Action Predictions in Spreadsheets",
+          "organizations": [
+            "Microsoft"
+          ],
+          "upvotes": 0,
+          "summary_line": "스프레드시트에서 사용자 행동 시퀀스를 관찰해 다음 행동을 예측하는 시스템을 위한 최초의 벤치마크와 온라인 평가 프레임워크를 공개했다.",
+          "image": "days/2026-06-18/img/paper-33.png",
+          "hf_url": "https://huggingface.co/papers/2606.13802"
+        },
+        {
+          "id": "2606.11877",
+          "title": "LLM-Enabled NWDAF: A Step Toward AI-Native 6G Network Intelligence",
+          "organizations": [
+            "Khalifa University",
+            "Simon Fraser University",
+            "Universita degli Studi di Milano"
+          ],
+          "upvotes": 0,
+          "summary_line": "오픈소스 코어망 Free5GC와 호환되며 LLM 기반 자연어 인터페이스를 통합한 오픈소스 NWDAF를 개발해 AI-네이티브 6G 네트워크 지능으로의 한 걸음을 제시했다.",
+          "image": "days/2026-06-18/img/paper-34.png",
+          "hf_url": "https://huggingface.co/papers/2606.11877"
+        },
+        {
+          "id": "2606.06614",
+          "title": "Re-Centering Humans in LLM Personalization",
+          "organizations": [
+            "University of Illinois Urbana-Champaign",
+            "Carnegie Mellon University"
+          ],
+          "upvotes": 0,
+          "summary_line": "LLM 개인화 평가에서 합성 데이터와 실제 인간 데이터 사이의 성능 격차를 3단계 파이프라인으로 체계적으로 규명하고 인간 기반 데이터셋을 공개했다.",
+          "image": "days/2026-06-18/img/paper-35.png",
+          "hf_url": "https://huggingface.co/papers/2606.06614"
+        }
+      ]
+    },
+    {
       "date": "2026-06-17",
       "count": 21,
       "topics": [
@@ -1418,5 +1861,5 @@
       ]
     }
   ],
-  "updated_at": "2026-06-17T08:47:00.704703+00:00"
+  "updated_at": "2026-06-18T23:13:47.665261+00:00"
 }
